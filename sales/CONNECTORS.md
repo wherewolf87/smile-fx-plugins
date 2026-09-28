@@ -1,3 +1,5 @@
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
+
 # Connectors
 
 ## How tool references work
