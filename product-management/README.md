@@ -46,6 +46,8 @@ Claude uses a skill when your request matches it. You can also call one by name.
 
 ## Commands (1)
 
+Claude Code and Cowork show these in the same list as the skills.
+
 | Command | What it does |
 |---|---|
 | `/sfx-product-management:brainstorm` | Brainstorms an idea, problem or strategic question with you as a thinking partner. |

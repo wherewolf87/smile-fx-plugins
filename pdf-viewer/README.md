@@ -39,6 +39,8 @@ Claude uses a skill when your request matches it. You can also call one by name.
 
 ## Commands (4)
 
+Claude Code and Cowork show these in the same list as the skills.
+
 | Command | What it does |
 |---|---|
 | `/sfx-pdf-viewer:annotate` | Proposes markup section by section for you to review in the viewer. |

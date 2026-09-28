@@ -39,7 +39,7 @@ Practice and business owners, office managers and the small teams around them: d
 
 ## The plugins
 
-16 plugins, 175 skills and 5 commands. Counts come from the files in this repository.
+16 plugins, 175 skills and 5 commands. Counts come from the files in this repository. Claude Code and Cowork show commands in the same list as skills.
 
 | Plugin | Install id | What it does | Skills | Commands |
 |---|---|---|---:|---:|
