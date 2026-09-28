@@ -48,13 +48,10 @@ Claude uses a skill when your request matches it. You can also call one by name.
 
 ## Connectors
 
-Set up: PDF server (local).
-
-Each connector signs in with your own account, and nothing connects until you do. [CONNECTORS.md](CONNECTORS.md) lists what each one needs.
+The PDF server runs on your computer with `npx`. It needs Node.js 20 or later and no account. [CONNECTORS.md](CONNECTORS.md) has the details.
 
 ## Good to know
 
-- The viewer runs a local server with npx, so it needs Node.js 20 or later (package requirement checked September 27, 2026).
 - Do not put patient health information (PHI) into Claude, a plugin or a connected tool unless your Claude plan and every connected service are covered by a signed Business Associate Agreement (BAA). Use de-identified examples when you test.
 - Software suggests. People decide. Check what a skill produces before you use it.
 

@@ -40,6 +40,7 @@ This file states how SMILE-FX® Plugins differs from the work it adapts, as sect
 | `small-business/skills/smb-onboard/SKILL.md` | connector registration name `small-business:<server>` renamed to `sfx-small-business:<server>`; SMILE-FX modification notice added |
 | `small-business/skills/smb-router/reference/connector-map.md` | connector registration name `small-business:<server>` renamed to `sfx-small-business:<server>`; SMILE-FX modification notice added |
 | `small-business/skills/smb-router/SKILL.md` | connector registration name `small-business:<server>` renamed to `sfx-small-business:<server>`; SMILE-FX modification notice added |
+| `small-business/CONNECTORS.md` | added |
 | `small-business/LICENSE` | added (copy of the Apache License 2.0) |
 
 All other files in this folder are unchanged from upstream.
@@ -49,6 +50,7 @@ All other files in this folder are unchanged from upstream.
 | File | Change |
 |---|---|
 | `marketing/.claude-plugin/plugin.json` | renamed `marketing` to `sfx-marketing`; display name "SMILE-FX Marketing"; new description, author (SMILE-FX), homepage, repository, licence and keywords; version reset from 1.2.0 to 1.0.0 |
+| `marketing/CONNECTORS.md` | intro rewritten; category table corrected to match `.mcp.json` (placeholders unchanged); setup notes added for every connector |
 | `marketing/README.md` | rewritten: SMILE-FX install steps, skill and command lists counted from the files, connector notes, health data note, credits |
 
 All other files in this folder are unchanged from upstream.
@@ -58,6 +60,7 @@ All other files in this folder are unchanged from upstream.
 | File | Change |
 |---|---|
 | `sales/.claude-plugin/plugin.json` | renamed `sales` to `sfx-sales`; display name "SMILE-FX Sales"; new description, author (SMILE-FX), homepage, repository, licence and keywords; version reset from 2.0.1 to 1.0.0 |
+| `sales/CONNECTORS.md` | intro rewritten; category table corrected to match `.mcp.json` (placeholders unchanged); setup notes added for every connector |
 | `sales/README.md` | rewritten: SMILE-FX install steps, skill and command lists counted from the files, connector notes, health data note, credits |
 
 All other files in this folder are unchanged from upstream.
@@ -67,6 +70,7 @@ All other files in this folder are unchanged from upstream.
 | File | Change |
 |---|---|
 | `customer-support/.claude-plugin/plugin.json` | renamed `customer-support` to `sfx-customer-support`; display name "SMILE-FX Customer Support"; new description, author (SMILE-FX), homepage, repository, licence and keywords; version reset from 1.3.0 to 1.0.0 |
+| `customer-support/CONNECTORS.md` | intro rewritten; category table corrected to match `.mcp.json` (placeholders unchanged); setup notes added for every connector |
 | `customer-support/README.md` | rewritten: SMILE-FX install steps, skill and command lists counted from the files, connector notes, health data note, credits |
 
 All other files in this folder are unchanged from upstream.
@@ -76,6 +80,7 @@ All other files in this folder are unchanged from upstream.
 | File | Change |
 |---|---|
 | `operations/.claude-plugin/plugin.json` | renamed `operations` to `sfx-operations`; display name "SMILE-FX Operations"; new description, author (SMILE-FX), homepage, repository, licence and keywords; version reset from 1.3.0 to 1.0.0 |
+| `operations/CONNECTORS.md` | intro rewritten; category table corrected to match `.mcp.json` (placeholders unchanged); setup notes added for every connector |
 | `operations/README.md` | rewritten: SMILE-FX install steps, skill and command lists counted from the files, connector notes, health data note, credits |
 | `operations/LICENSE` | added (copy of the Apache License 2.0) |
 
@@ -86,6 +91,7 @@ All other files in this folder are unchanged from upstream.
 | File | Change |
 |---|---|
 | `finance/.claude-plugin/plugin.json` | renamed `finance` to `sfx-finance`; display name "SMILE-FX Finance"; new description, author (SMILE-FX), homepage, repository, licence and keywords; version reset from 1.3.0 to 1.0.0 |
+| `finance/CONNECTORS.md` | intro rewritten; category table corrected to match `.mcp.json` (placeholders unchanged); setup notes added for every connector |
 | `finance/README.md` | rewritten: SMILE-FX install steps, skill and command lists counted from the files, connector notes, health data note, credits |
 
 All other files in this folder are unchanged from upstream.
@@ -95,6 +101,7 @@ All other files in this folder are unchanged from upstream.
 | File | Change |
 |---|---|
 | `human-resources/.claude-plugin/plugin.json` | renamed `human-resources` to `sfx-human-resources`; display name "SMILE-FX Human Resources"; new description, author (SMILE-FX), homepage, repository, licence and keywords; version reset from 1.3.0 to 1.0.0 |
+| `human-resources/CONNECTORS.md` | intro rewritten; category table corrected to match `.mcp.json` (placeholders unchanged); setup notes added for every connector |
 | `human-resources/README.md` | rewritten: SMILE-FX install steps, skill and command lists counted from the files, connector notes, health data note, credits |
 | `human-resources/LICENSE` | added (copy of the Apache License 2.0) |
 
@@ -105,6 +112,7 @@ All other files in this folder are unchanged from upstream.
 | File | Change |
 |---|---|
 | `productivity/.claude-plugin/plugin.json` | renamed `productivity` to `sfx-productivity`; display name "SMILE-FX Productivity"; new description, author (SMILE-FX), homepage, repository, licence and keywords; version reset from 1.3.1 to 1.0.0 |
+| `productivity/CONNECTORS.md` | intro rewritten; category table corrected to match `.mcp.json` (placeholders unchanged); setup notes added for every connector |
 | `productivity/README.md` | rewritten: SMILE-FX install steps, skill and command lists counted from the files, connector notes, health data note, credits |
 | `productivity/skills/memory-management/SKILL.md` | slash command namespace renamed (for example `/productivity:start` to `/sfx-productivity:start`); SMILE-FX modification notice added |
 | `productivity/skills/start/SKILL.md` | slash command namespace renamed (for example `/productivity:start` to `/sfx-productivity:start`); SMILE-FX modification notice added |
@@ -118,6 +126,7 @@ All other files in this folder are unchanged from upstream.
 | File | Change |
 |---|---|
 | `legal/.claude-plugin/plugin.json` | renamed `legal` to `sfx-legal`; display name "SMILE-FX Legal"; new description, author (SMILE-FX), homepage, repository, licence and keywords; version reset from 1.3.0 to 1.0.0 |
+| `legal/CONNECTORS.md` | intro rewritten; category table corrected to match `.mcp.json` (placeholders unchanged); setup notes added for every connector |
 | `legal/README.md` | rewritten: SMILE-FX install steps, skill and command lists counted from the files, connector notes, health data note, credits |
 
 All other files in this folder are unchanged from upstream.
@@ -127,6 +136,8 @@ All other files in this folder are unchanged from upstream.
 | File | Change |
 |---|---|
 | `data/.claude-plugin/plugin.json` | renamed `data` to `sfx-data`; display name "SMILE-FX Data"; new description, author (SMILE-FX), homepage, repository, licence and keywords; version reset from 1.1.0 to 1.0.0 |
+| `data/.mcp.json` | Definite connector address set to blank (the upstream address returned HTTP 404 on September 27, 2026) |
+| `data/CONNECTORS.md` | intro rewritten; category table corrected to match `.mcp.json` (placeholders unchanged); setup notes added for every connector |
 | `data/README.md` | rewritten: SMILE-FX install steps, skill and command lists counted from the files, connector notes, health data note, credits |
 
 All other files in this folder are unchanged from upstream.
@@ -136,6 +147,7 @@ All other files in this folder are unchanged from upstream.
 | File | Change |
 |---|---|
 | `design/.claude-plugin/plugin.json` | renamed `design` to `sfx-design`; display name "SMILE-FX Design"; new description, author (SMILE-FX), homepage, repository, licence and keywords; version reset from 1.2.0 to 1.0.0 |
+| `design/CONNECTORS.md` | intro rewritten; category table corrected to match `.mcp.json` (placeholders unchanged); setup notes added for every connector |
 | `design/README.md` | rewritten: SMILE-FX install steps, skill and command lists counted from the files, connector notes, health data note, credits |
 | `design/LICENSE` | added (copy of the Apache License 2.0) |
 
@@ -146,6 +158,7 @@ All other files in this folder are unchanged from upstream.
 | File | Change |
 |---|---|
 | `enterprise-search/.claude-plugin/plugin.json` | renamed `enterprise-search` to `sfx-enterprise-search`; display name "SMILE-FX Enterprise Search"; new description, author (SMILE-FX), homepage, repository, licence and keywords; version reset from 1.3.0 to 1.0.0 |
+| `enterprise-search/CONNECTORS.md` | intro rewritten; category table corrected to match `.mcp.json` (placeholders unchanged); setup notes added for every connector |
 | `enterprise-search/README.md` | rewritten: SMILE-FX install steps, skill and command lists counted from the files, connector notes, health data note, credits |
 
 All other files in this folder are unchanged from upstream.
@@ -155,6 +168,7 @@ All other files in this folder are unchanged from upstream.
 | File | Change |
 |---|---|
 | `product-management/.claude-plugin/plugin.json` | renamed `product-management` to `sfx-product-management`; display name "SMILE-FX Product Management"; new description, author (SMILE-FX), homepage, repository, licence and keywords; version reset from 1.2.0 to 1.0.0 |
+| `product-management/CONNECTORS.md` | intro rewritten; category table corrected to match `.mcp.json` (placeholders unchanged); setup notes added for every connector |
 | `product-management/README.md` | rewritten: SMILE-FX install steps, skill and command lists counted from the files, connector notes, health data note, credits |
 
 All other files in this folder are unchanged from upstream.
@@ -167,6 +181,7 @@ All other files in this folder are unchanged from upstream.
 | `pdf-viewer/commands/annotate.md` | slash command namespace renamed (for example `/productivity:start` to `/sfx-productivity:start`); SMILE-FX modification notice added |
 | `pdf-viewer/commands/fill-form.md` | slash command namespace renamed (for example `/productivity:start` to `/sfx-productivity:start`); SMILE-FX modification notice added |
 | `pdf-viewer/commands/sign.md` | slash command namespace renamed (for example `/productivity:start` to `/sfx-productivity:start`); SMILE-FX modification notice added |
+| `pdf-viewer/CONNECTORS.md` | intro rewritten; category table corrected to match `.mcp.json` (placeholders unchanged); setup notes added for every connector |
 | `pdf-viewer/README.md` | rewritten: SMILE-FX install steps, skill and command lists counted from the files, connector notes, health data note, credits |
 
 All other files in this folder are unchanged from upstream.
@@ -176,6 +191,7 @@ All other files in this folder are unchanged from upstream.
 | File | Change |
 |---|---|
 | `engineering/.claude-plugin/plugin.json` | renamed `engineering` to `sfx-engineering`; display name "SMILE-FX Engineering"; new description, author (SMILE-FX), homepage, repository, licence and keywords; version reset from 1.2.0 to 1.0.0 |
+| `engineering/CONNECTORS.md` | intro rewritten; category table corrected to match `.mcp.json` (placeholders unchanged); setup notes added for every connector |
 | `engineering/README.md` | rewritten: SMILE-FX install steps, skill and command lists counted from the files, connector notes, health data note, credits |
 | `engineering/LICENSE` | added (copy of the Apache License 2.0) |
 

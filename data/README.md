@@ -48,7 +48,7 @@ Claude uses a skill when your request matches it. You can also call one by name.
 
 ## Connectors
 
-Set up: BigQuery, Hex, Amplitude (US), Amplitude (EU), Atlassian (Jira, Confluence), Definite. Blank on purpose, connect them yourself: Snowflake, Databricks.
+Set up: BigQuery, Hex, Amplitude (US), Amplitude (EU), Atlassian (Jira, Confluence). Blank on purpose, connect them yourself: Snowflake, Databricks, Definite.
 
 Each connector signs in with your own account, and nothing connects until you do. [CONNECTORS.md](CONNECTORS.md) lists what each one needs.
 
