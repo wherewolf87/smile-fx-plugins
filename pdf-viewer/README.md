@@ -2,7 +2,7 @@
 
 > Opens PDFs in an interactive viewer so you can read, annotate, fill forms and place signatures, then download the marked-up copy.
 
-**Install id:** `sfx-pdf-viewer` | **Version:** 1.0.0 | **Skills:** 1 | **Commands:** 4 | **Licence:** Apache-2.0
+**Install id:** `sfx-pdf-viewer` | **Version:** 1.0.1 | **Skills:** 1 | **Commands:** 4 | **Licence:** Apache-2.0
 
 ## Who it is for
 
@@ -19,7 +19,7 @@ Anyone who reviews, fills or signs PDFs.
 
 The install command opens the plugin panel so you can review it and pick a scope. From your shell, use `claude plugin marketplace add wherewolf87/smile-fx-plugins` and `claude plugin install sfx-pdf-viewer@smile-fx-plugins`.
 
-**Cowork.** Open **Customize**, then **Plugins**, then **Add marketplace**, and enter `wherewolf87/smile-fx-plugins`. Select **SMILE-FX PDF Viewer** and **Install**, then connect your tools on its **Connectors** tab. Plugins need a paid Claude plan.
+**Cowork.** Open **Customize**, then **Plugins**. Select **Add**, then **Add marketplace**, and enter `wherewolf87/smile-fx-plugins`. Select **SMILE-FX PDF Viewer** and **Install**. The PDF server runs on your computer and needs no account. Plugins need a paid Claude plan.
 
 Full steps: [install guide](../README.md#install).
 
@@ -39,7 +39,7 @@ Claude uses a skill when your request matches it. You can also call one by name.
 
 ## Commands (4)
 
-Claude Code and Cowork show these in the same list as the skills.
+Claude Code shows these in the same list as the skills.
 
 | Command | What it does |
 |---|---|
@@ -50,7 +50,7 @@ Claude Code and Cowork show these in the same list as the skills.
 
 ## Connectors
 
-The PDF server runs on your computer with `npx`. It needs Node.js 20 or later and no account. [CONNECTORS.md](CONNECTORS.md) has the details.
+The PDF server (`@modelcontextprotocol/server-pdf@2.0.3`) runs on your computer with `npx`. It needs Node.js 20 or later and no account. [CONNECTORS.md](CONNECTORS.md) has the details.
 
 ## Good to know
 
@@ -59,6 +59,6 @@ The PDF server runs on your computer with `npx`. It needs Node.js 20 or later an
 
 ## Credits and licence
 
-Adapted by SMILE-FX P.A. from the `pdf-viewer` plugin in Anthropic's [knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) (commit `da38ec1`), under the Apache License 2.0. SMILE-FX changed the plugin name and metadata, this README, the connector notes, and skill text that named the old plugin. The changes are listed in [MODIFICATIONS.md](../MODIFICATIONS.md). Licence: [LICENSE](LICENSE). Notices: [NOTICE](../NOTICE).
+Adapted by SMILE-FX P.A. from the `pdf-viewer` plugin in Anthropic's [knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) (commit `da38ec1`), under the Apache License 2.0. SMILE-FX changed the plugin name and metadata, this README, the connector notes, the connector settings (PDF server version pinned), skill text that named the old plugin, and punctuation in skill descriptions (long dashes replaced with commas or colons). The changes are listed in [MODIFICATIONS.md](../MODIFICATIONS.md). Licence: [LICENSE](LICENSE). Notices: [NOTICE](../NOTICE).
 
-© 2026 SMILE-FX P.A. SMILE-FX® is a registered trademark of SMILE-FX P.A. SMILE-FX P.A. is not affiliated with, sponsored by or endorsed by Anthropic. Anthropic, Claude, Claude Code and Cowork are trademarks of Anthropic and are named here only to describe compatibility.
+© 2026 SMILE-FX P.A. SMILE-FX® is a registered trademark of SMILE-FX P.A. SMILE-FX P.A. is not affiliated with, sponsored by or endorsed by Anthropic. Anthropic, Claude, Claude Code and Claude Cowork are trademarks of Anthropic, PBC. They are named here only to describe compatibility.

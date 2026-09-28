@@ -7,14 +7,15 @@ description: >
   drafts a tone-matched reply in the owner's writing
   voice, and can issue a refund through the payments connector with explicit
   owner approval. With Shopify connected it also runs a proactive
-  order-triage mode that surfaces orders needing attention — unfulfilled past
-  the promised window, payment problems, pending refunds, stuck shipments —
+  order-triage mode that surfaces orders needing attention: unfulfilled past
+  the promised window, payment problems, pending refunds, stuck shipments,
   and drafts the next action for each before the customer has to ask. Use when
   the user says "draft a response," "answer this customer," "where's my order,"
   "I want a refund," "check my orders," or "anything about to blow up."
 compatibility: "Works from pasted or forwarded text alone. Atlassian, HubSpot, Mail, PayPal, Shopify, Square, Stripe, Zoho Desk all optional and deepen the workflow."
 allowed-tools: Read, WebFetch
 ---
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # Ticket Deflector
 

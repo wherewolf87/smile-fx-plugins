@@ -1,7 +1,7 @@
 {
   "name": "sfx-pdf-viewer",
   "displayName": "SMILE-FX PDF Viewer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Opens PDFs in an interactive viewer so you can read, annotate, fill forms and place signatures, then download the marked-up copy.",
   "author": {
     "name": "SMILE-FX",

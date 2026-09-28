@@ -21,9 +21,9 @@ Out of scope. Please report these to the company that runs them:
 
 - Skills are written instructions. They run with the permissions of the app you use and the connectors you approve.
 - Connectors are third-party servers. Each one signs in with your own account. Your app's permission settings decide whether each tool runs straight away or asks you first.
-- SMILE-FX PDF Viewer starts a local server with `npx`, which downloads a package from npm the first time it runs.
-- Review a plugin before you install it. Claude Code and Cowork show its skills and connectors first.
+- SMILE-FX PDF Viewer starts a local server with `npx`, which downloads version 2.0.3 of `@modelcontextprotocol/server-pdf` from npm the first time it runs.
+- Review a plugin before you install it. Claude Code shows its skills and connectors before it installs. In Cowork, open the plugin after you install it to see what it adds.
 
 ## Supported versions
 
-Only the newest release receives fixes. Update with `/plugin marketplace update smile-fx-plugins` in Claude Code, or **Check for updates** in Cowork.
+Only the newest release receives fixes. In Claude Code, refresh the marketplace with `/plugin marketplace update smile-fx-plugins`, then select **Update now** on the plugin's **Installed** tab in `/plugin` (or run `claude plugin update <install id>@smile-fx-plugins` from your shell). In Cowork, select **Check for updates** on the marketplace.

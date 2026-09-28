@@ -1,19 +1,20 @@
 ---
 name: proposal-builder
 description: >
-  Turns whatever came out of a discovery conversation — a call transcript, a
+  Turns whatever came out of a discovery conversation, a call transcript, a
   voice memo, jobsite photos, an RFP document, a set of drawings, or scrappy
-  notes — into a branded, costed proposal, estimate, or statement of work built
+  notes, into a branded, costed proposal, estimate, or statement of work built
   on the owner's own templates and historical pricing. Routes it for signature
   and triggers the deposit invoice once it's accepted. Works entirely from
   uploaded files when no connector is available, producing DOCX and PDF the
   owner can send themselves. Use this whenever a quote, bid, estimate, proposal,
-  or SOW is the deliverable — including phrasings like "write this up for them,"
+  or SOW is the deliverable, including phrasings like "write this up for them,"
   "put together a quote," "I need to bid this job," "turn my notes into a
   proposal," "respond to this RFP," or "price this out." Reach for it when the
   owner describes a job they just looked at, even without saying the word quote.
 allowed-tools: Read, WebFetch
 ---
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # Proposal Builder
 

@@ -7,13 +7,14 @@ description: >
   skill with approval checkpoints in the right places, registers it with the
   router, and shares it with the team. This is how a business gets a workflow
   nobody shipped for them. Use this whenever the owner describes something
-  repetitive they wish were automatic — including phrasings like "I do this
+  repetitive they wish were automatic, including phrasings like "I do this
   every week," "can you remember how to do this," "make this a thing I can just
   ask for," "build me an agent," "automate this for me," "turn this into a
   workflow," or "I want this to happen every Monday." Reach for it when they
   describe a routine, even without asking for automation.
 allowed-tools: Read, WebFetch
 ---
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # Build Agent
 

@@ -9,7 +9,7 @@ description: >
   Gmail and Google Calendar, deepens with Gusto, DocuSign, and Drive or
   M365, and works entirely from uploaded resumes with drafted replies the
   owner sends by hand. Use this whenever the owner has applicants to deal
-  with — including phrasings like "I've got 40 resumes and no time," "who
+  with, including phrasings like "I've got 40 resumes and no time," "who
   should I interview," "screen these applications," "help me narrow this
   down," "set up interviews for the top three," or "I need to tell the rest
   no." Reach
@@ -17,6 +17,7 @@ description: >
   buried in a hiring inbox.
 allowed-tools: Read, WebFetch
 ---
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # Hiring Screener
 

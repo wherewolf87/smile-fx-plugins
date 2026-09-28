@@ -7,7 +7,7 @@ description: >
   a next-step queue so nothing sits unowned. Runs on demand or on a schedule,
   includes a hygiene sweep for duplicates and stale records, and builds a
   lightweight CRM in a spreadsheet for owners who don't have one. Use this
-  whenever CRM data or pipeline hygiene comes up — including phrasings like
+  whenever CRM data or pipeline hygiene comes up, including phrasings like
   "update my CRM," "log this call," "clean up HubSpot," "clean up Salesforce,"
   "add this to the deal,"
   "turn my meeting into a deal note," "which deals have gone quiet," "I hate
@@ -15,6 +15,7 @@ description: >
   describes a call or meeting worth recording, even without naming the CRM.
 allowed-tools: Read, WebFetch
 ---
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # CRM Autopilot
 

@@ -6,7 +6,7 @@ description: >
   connection for other ad platforms, explains in plain English what is working and
   what is burning money, recommends budget, targeting, and creative changes
   with the dollar impact of each, drafts new ad copy in the owner's voice
-  plus Canva creative briefs, and — only after an explicit yes — executes
+  plus Canva creative briefs, and, only after an explicit yes, executes
   the approved changes in the ad account. Works from exported CSV reports
   when nothing is connected, the normal starting point. Use this whenever the owner
   talks about ads or ad spend at all, including "are my ads working," "what's
@@ -15,6 +15,7 @@ description: >
   "write me a new ad," "who should I be targeting," or "the ad guy quit."
 allowed-tools: Read, WebFetch
 ---
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # Ad Manager
 

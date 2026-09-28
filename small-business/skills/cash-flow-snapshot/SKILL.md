@@ -2,8 +2,8 @@
 name: cash-flow-snapshot
 description: >
   Reads AR/AP, historical cash timing, and known fixed costs from the ledger
-  (MYOB, NetSuite, QuickBooks, Xero, or Zoho Books) or from PayPal, Square, or Stripe — or
-  a CSV upload — and produces a 30/60/90-day cash flow forecast with
+  (MYOB, NetSuite, QuickBooks, Xero, or Zoho Books) or from PayPal, Square, or Stripe, or
+  a CSV upload, and produces a 30/60/90-day cash flow forecast with
   percentage-variance confidence bands and named risk flags. Delivers a chat
   summary and a downloadable XLSX. Use when the user asks "forecast my cash
   flow," "will I make payroll," mentions "runway," or says "cash crunch."
@@ -11,6 +11,7 @@ description: >
 compatibility: "Requires one or more of: a ledger MCP (MYOB, NetSuite, QuickBooks, Xero, Zoho Books), PayPal MCP, Shopify MCP, Square MCP, Stripe MCP, file upload (CSV fallback). Output uses xlsx skill."
 allowed-tools: Read, WebFetch
 ---
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # Cash Flow Snapshot
 

@@ -7,13 +7,14 @@ description: >
   deadlines buried in long threads, files what is finished, and hands bills,
   leads, and scheduling requests to the skills that own them. Works from pasted
   or forwarded email text when no mailbox is connected. Use this whenever the
-  owner mentions email at all — including "drowning in email," "I have 300
+  owner mentions email at all, including "drowning in email," "I have 300
   unread," "what emails need me," "go through my inbox," "clean up my email,"
   "did I miss anything," "who am I supposed to get back to," "draft a reply to
   this," or "catch me up on my mail." Reach for it for one forwarded message as
   readily as for a whole morning's backlog.
 allowed-tools: Read, WebFetch
 ---
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # Inbox Manager
 

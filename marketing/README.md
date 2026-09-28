@@ -19,7 +19,7 @@ Whoever runs marketing for the practice, in house or with an agency.
 
 The install command opens the plugin panel so you can review it and pick a scope. From your shell, use `claude plugin marketplace add wherewolf87/smile-fx-plugins` and `claude plugin install sfx-marketing@smile-fx-plugins`.
 
-**Cowork.** Open **Customize**, then **Plugins**, then **Add marketplace**, and enter `wherewolf87/smile-fx-plugins`. Select **SMILE-FX Marketing** and **Install**, then connect your tools on its **Connectors** tab. Plugins need a paid Claude plan.
+**Cowork.** Open **Customize**, then **Plugins**. Select **Add**, then **Add marketplace**, and enter `wherewolf87/smile-fx-plugins`. Select **SMILE-FX Marketing** and **Install**, then connect your tools on its **Connectors** tab. Plugins need a paid Claude plan.
 
 Full steps: [install guide](../README.md#install).
 
@@ -42,11 +42,13 @@ Claude uses a skill when your request matches it. You can also call one by name.
 | `/sfx-marketing:brand-review` | Checks content against your brand voice and style guide, with specific before and after fixes. |
 | `/sfx-marketing:campaign-plan` | Writes a campaign brief: goals, audience, messages, channels, calendar and success measures. |
 | `/sfx-marketing:competitive-brief` | Compares competitor positioning and messaging and finds content gaps. |
-| `/sfx-marketing:content-creation` | Drafts content for blogs, social, email newsletters, landing pages and press releases. |
+| `content-creation` (automatic) | Drafts content for blogs, social, email newsletters, landing pages and press releases. |
 | `/sfx-marketing:draft-content` | Drafts one specific piece with channel formatting, headline options and SEO notes. |
 | `/sfx-marketing:email-sequence` | Designs multi-email sequences with copy, timing, branches and exit rules. |
 | `/sfx-marketing:performance-report` | Builds a marketing report with key measures, trends, wins, misses and next steps. |
 | `/sfx-marketing:seo-audit` | Audits keywords, on-page content, technical issues and competitor gaps. |
+
+Skills marked automatic have no slash command. Claude uses them when your request needs them.
 
 ## Connectors
 
@@ -62,6 +64,6 @@ Each connector signs in with your own account, and nothing connects until you do
 
 ## Credits and licence
 
-Adapted by SMILE-FX P.A. from the `marketing` plugin in Anthropic's [knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) (commit `da38ec1`), under the Apache License 2.0. SMILE-FX changed the plugin name and metadata, this README, the connector notes, and skill text that named the old plugin. The changes are listed in [MODIFICATIONS.md](../MODIFICATIONS.md). Licence: [LICENSE](LICENSE). Notices: [NOTICE](../NOTICE).
+Adapted by SMILE-FX P.A. from the `marketing` plugin in Anthropic's [knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) (commit `da38ec1`), under the Apache License 2.0. SMILE-FX changed the plugin name and metadata, this README, the connector notes, and punctuation in skill descriptions (long dashes replaced with commas or colons). The changes are listed in [MODIFICATIONS.md](../MODIFICATIONS.md). Licence: [LICENSE](LICENSE). Notices: [NOTICE](../NOTICE).
 
-© 2026 SMILE-FX P.A. SMILE-FX® is a registered trademark of SMILE-FX P.A. SMILE-FX P.A. is not affiliated with, sponsored by or endorsed by Anthropic. Anthropic, Claude, Claude Code and Cowork are trademarks of Anthropic and are named here only to describe compatibility.
+© 2026 SMILE-FX P.A. SMILE-FX® is a registered trademark of SMILE-FX P.A. SMILE-FX P.A. is not affiliated with, sponsored by or endorsed by Anthropic. Anthropic, Claude, Claude Code and Claude Cowork are trademarks of Anthropic, PBC. They are named here only to describe compatibility.

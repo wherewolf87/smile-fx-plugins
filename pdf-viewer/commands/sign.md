@@ -2,7 +2,7 @@
 description: Place a signature or initials image on a PDF
 argument-hint: "[path-or-url] [signature-image-path]"
 ---
-<!-- Modified by SMILE-FX P.A. in 2026: plugin and skill names rebranded for SMILE-FX Plugins. See MODIFICATIONS.md at the repository root. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 > If you need to check which tools are connected, see [CONNECTORS.md](../CONNECTORS.md).
 

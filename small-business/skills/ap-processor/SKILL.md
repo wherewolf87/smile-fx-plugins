@@ -8,7 +8,7 @@ description: >
   the entries and a proposed payment run in QuickBooks, Xero, or NetSuite for
   the owner to approve in one pass. Nothing is entered and nothing is paid
   without an explicit yes. Reach for this whenever bills, vendor invoices, or
-  paying people comes up — including "what do I owe," "the bills are piling
+  paying people comes up, including "what do I owe," "the bills are piling
   up," "pull the invoices out of my email and into QuickBooks," "code these
   for me," "who needs to get paid this week," "did we get billed twice," or
   when the owner forwards a supplier invoice with no message at all. Use it
@@ -16,6 +16,7 @@ description: >
   instead of a guess.
 allowed-tools: Read, WebFetch
 ---
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # AP Processor
 

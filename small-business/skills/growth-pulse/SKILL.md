@@ -1,7 +1,7 @@
 ---
 name: growth-pulse
 description: >
-  Answers one question for an SMB owner — is the growth engine actually working?
+  Answers one question for an SMB owner: is the growth engine actually working?
   Pulls sales trend by channel, funnel conversion, campaign return, best and
   worst performing products, and customer sentiment from whatever is connected,
   then ends with the three growth actions worth taking this week. The growth-side
@@ -13,6 +13,7 @@ description: >
   even when the owner names a single channel rather than growth overall.
 allowed-tools: Read, WebFetch
 ---
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # Growth Pulse
 

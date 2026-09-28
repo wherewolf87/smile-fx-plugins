@@ -2,19 +2,20 @@
 name: report-builder
 description: >
   Turns a plain-English description of a recurring report into a real, repeatable
-  report — defines the metrics, pulls them from whatever data sources are
+  report: defines the metrics, pulls them from whatever data sources are
   connected, delivers a chat summary plus an XLSX workbook, and saves the
   definition so the same report reruns on demand or on a schedule. Handles
   anything from "sales by location versus last year" to AR aging to labor as a
   percentage of revenue. Works fully from an uploaded CSV or XLSX when no
   connector is available. Use this whenever the owner asks for a report,
-  dashboard, KPI pack, metrics summary, or recurring numbers — including
+  dashboard, KPI pack, metrics summary, or recurring numbers, including
   phrasings like "can you track this every week," "I need to see these numbers
   monthly," "build me a report on," "same report as last time," or "put together
   a KPI dashboard." Reach for it even when the owner names the metrics without
   using the word report.
 allowed-tools: Read, WebFetch
 ---
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # Report Builder
 

@@ -1,7 +1,7 @@
 ---
 name: seo-ai-visibility
 description: >
-  Audits and fixes both halves of being found — classic search and AI answers.
+  Audits and fixes both halves of being found: classic search and AI answers.
   Search side: rankings, site structure, page speed, titles and descriptions,
   and content that answers what customers search for. AI side: whether
   assistant crawlers can reach the site, pages render without JavaScript, an
@@ -15,6 +15,7 @@ description: >
   listings," or "I asked an AI about my industry and we weren't in the answer."
 allowed-tools: Read, WebFetch
 ---
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # SEO and AI Visibility
 

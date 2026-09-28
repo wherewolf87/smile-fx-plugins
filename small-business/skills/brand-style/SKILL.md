@@ -3,8 +3,8 @@ name: brand-style
 description: >
   Sets and updates the owner's brand look and output preferences, which every
   page and document the plugin produces then follows automatically. Captures
-  the brand from a pasted website link or a plain-words description — never a
-  hex code, color picker, or upload — previews it on a sample page, asks how
+  the brand from a pasted website link or a plain-words description, never a
+  hex code, color picker, or upload, previews it on a sample page, asks how
   they want their outputs delivered (visual artifacts, Word docs, markdown, Notion pages,
   Canva Docs, or best-for-the-skill), and saves both to the business profile. Runs inside
   smb-onboard on first setup and stands alone forever after. Use when the
@@ -14,6 +14,7 @@ description: >
   hands them.
 allowed-tools: Read, WebFetch
 ---
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # Brand Style
 

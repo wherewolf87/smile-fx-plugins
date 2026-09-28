@@ -9,7 +9,7 @@ description: >
   product photos and prices from Shopify when connected; with no connectors,
   drafts the calendar and asset briefs for manual posting. Use this whenever
   the owner talks about
-  posting, content, or social — including "I need to post more," "we've gone
+  posting, content, or social, including "I need to post more," "we've gone
   quiet on Instagram," "what should we post this month," "make the content,"
   "give me a month of posts," "write this in my voice," "repurpose this," or
   "set up our content calendar." Reach for it for a single post as readily as
@@ -17,6 +17,7 @@ description: >
   to canva-creator; this skill owns the standing operation.
 allowed-tools: Read, WebFetch
 ---
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # Social Content Engine
 

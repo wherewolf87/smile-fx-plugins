@@ -4,17 +4,18 @@ description: >
   Takes an approved content brief and executes a campaign end-to-end: builds
   the posting calendar, generates Canva designs for social posts, drafts
   caption and email copy, and stages social sends in HubSpot. Canva is used
-  for social posts only (Instagram, Facebook, X, LinkedIn) — email content
+  for social posts only (Instagram, Facebook, X, LinkedIn): email content
   is drafted as plain text and surfaced inline for the owner to send from
   their own tool. Every step requires explicit owner approval. This is the
   one-shot campaign executor: a finished brief goes in, a complete campaign
-  comes out. Use when the owner hands off an approved brief or points at one
-  — "run this brief," "execute the campaign," "turn this brief into posts,"
+  comes out. Use when the owner hands off an approved brief or points at one:
+  "run this brief," "execute the campaign," "turn this brief into posts,"
   "build the campaign from the plan we approved." For day-to-day posting with
-  no brief — "I need to post more," "what should we post" — use
+  no brief, "I need to post more," "what should we post", use
   social-content-engine instead; it owns the standing calendar.
 allowed-tools: Read, WebFetch
 ---
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # Canva Creator
 

@@ -10,12 +10,13 @@ description: >
   order and fulfillment patterns become a sentiment signal too. Works from
   pasted or exported reviews when nothing is connected. Use this whenever the
   owner asks about reviews, ratings, reputation, complaints, or repeat
-  business — including "what are people saying about us," "did we get any bad
+  business, including "what are people saying about us," "did we get any bad
   reviews," "how do I respond to this one-star," "our rating dropped," "which
   customers have gone quiet," "who hasn't ordered in a while," "how do I win
   them back," or "are customers happy."
 allowed-tools: Read, WebFetch
 ---
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # Review and Reputation
 

@@ -4,18 +4,19 @@ description: >
   Gets payroll ready to run without anyone getting shorted: pulls timesheets
   from Gusto, QuickBooks Payroll, or an uploaded spreadsheet, totals regular,
   overtime, and PTO
-  hours by person, flags every anomaly it finds — missed punches, overtime
+  hours by person, flags every anomaly it finds: missed punches, overtime
   spikes, rate changes, mid-period hires and terminations, hours off the
-  schedule — and stages the run for the owner to approve line by line before
+  schedule, and stages the run for the owner to approve line by line before
   a dollar moves. Anomalies are always raised, never quietly corrected. Once
   the owner runs it, the journal posts to the ledger or goes to the
-  bookkeeper. Reach for this whenever payroll comes up at all
-  — "run payroll," "payroll is due," "check the timecards," "did everyone
+  bookkeeper. Reach for this whenever payroll comes up at all:
+  "run payroll," "payroll is due," "check the timecards," "did everyone
   clock out," "how many hours did the crew put in," "why is payroll so high
-  this week," "I need to pay the guys Friday" — and use it after
+  this week," "I need to pay the guys Friday", and use it after
   cash-flow-snapshot when the owner is worried about whether payroll clears.
 allowed-tools: Read, WebFetch
 ---
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # Payroll Prep
 

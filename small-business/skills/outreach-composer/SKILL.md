@@ -7,13 +7,14 @@ description: >
   builds the follow-up sequence behind it, queues every send for approval, and
   logs each touch to the CRM. Runs draft-only when no mail connector is
   available, so the copy can be pasted anywhere. Use this whenever the owner
-  needs to reach out to prospects or customers — including phrasings like
+  needs to reach out to prospects or customers, including phrasings like
   "write this cold email," "draft a follow-up," "reach out to these leads,"
   "what do I say to them," "I need a sequence for this list," "nudge the people
   who didn't reply," or "write it but don't make it sound like a robot." Reach
   for it whenever outreach copy is the deliverable, even for a single message.
 allowed-tools: Read, WebFetch
 ---
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # Outreach Composer
 

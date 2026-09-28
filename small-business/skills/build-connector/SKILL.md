@@ -4,16 +4,17 @@ description: >
   Gets Claude talking to a tool nobody built an official connector for. Works
   out what the system is, checks the Claude connector directory for an
   existing connector first, and when there isn't one connects the tool through
-  Zapier — never by hand-building against a raw API — with credentials
+  Zapier, never by hand-building against a raw API, with credentials
   handled safely and approval gates on anything that writes. This is what
   turns "my ERP isn't supported" into an afternoon. Use this whenever
-  the owner names a tool that isn't connected — including phrasings like "can
+  the owner names a tool that isn't connected, including phrasings like "can
   you connect to my," "make my tools talk to each other," "there's no API for
   this," "pull data out of my field service software," "I use ServiceTrade and
   it's not on the list," or "is there any way to get at this data." Reach for
   it whenever an unsupported system is blocking something else.
 allowed-tools: Read, WebFetch, ToolSearch
 ---
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # Build Connector
 

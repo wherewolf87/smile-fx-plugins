@@ -32,14 +32,50 @@ This file states how SMILE-FX® Plugins differs from the work it adapts, as sect
 | `small-business/README.md` | rewritten: SMILE-FX install steps, skill and command lists counted from the files, connector notes, health data note, credits |
 | `small-business/shared/connector-call-shapes.md` | connector registration name `small-business:<server>` renamed to `sfx-small-business:<server>`; tool name prefix `mcp__plugin_small-business_` renamed to `mcp__plugin_sfx-small-business_`; SMILE-FX modification notice added |
 | `small-business/shared/connector-neutrality.md` | connector registration name `small-business:<server>` renamed to `sfx-small-business:<server>`; tool name prefix `mcp__plugin_small-business_` renamed to `mcp__plugin_sfx-small-business_`; wording "Anthropic's positioning for the plugin" changed to "the plugin's positioning"; SMILE-FX modification notice added |
+| `small-business/skills/ad-manager/SKILL.md` | front matter `description`: 2 long dashes replaced with 2 commas, no other wording changed; SMILE-FX modification notice added |
+| `small-business/skills/ap-processor/SKILL.md` | front matter `description`: long dash replaced with a comma, no other wording changed; SMILE-FX modification notice added |
+| `small-business/skills/brand-style/SKILL.md` | front matter `description`: 2 long dashes replaced with 2 commas, no other wording changed; SMILE-FX modification notice added |
+| `small-business/skills/build-agent/SKILL.md` | front matter `description`: long dash replaced with a comma, no other wording changed; SMILE-FX modification notice added |
 | `small-business/skills/build-connector/reference/discovery.md` | connector registration name `small-business:<server>` renamed to `sfx-small-business:<server>`; SMILE-FX modification notice added |
+| `small-business/skills/build-connector/SKILL.md` | front matter `description`: 3 long dashes replaced with 3 commas, no other wording changed; SMILE-FX modification notice added |
+| `small-business/skills/business-pulse/SKILL.md` | front matter `description`: 2 long dashes replaced with 2 colons, no other wording changed; SMILE-FX modification notice added |
+| `small-business/skills/canva-creator/SKILL.md` | front matter `description`: 4 long dashes replaced with 2 colons and 2 commas, no other wording changed; SMILE-FX modification notice added |
+| `small-business/skills/cash-flow-snapshot/SKILL.md` | front matter `description`: 2 long dashes replaced with 2 commas, no other wording changed; SMILE-FX modification notice added |
+| `small-business/skills/close-month/SKILL.md` | front matter `description`: long dash replaced with a colon, no other wording changed; the value is now in quotes so the colon stays valid YAML; SMILE-FX modification notice added |
+| `small-business/skills/content-strategy/SKILL.md` | front matter `description`: long dash replaced with a colon, no other wording changed; SMILE-FX modification notice added |
+| `small-business/skills/crm-autopilot/SKILL.md` | front matter `description`: long dash replaced with a comma, no other wording changed; SMILE-FX modification notice added |
+| `small-business/skills/grant-rfp-writer/SKILL.md` | front matter `description`: long dash replaced with a comma, no other wording changed; SMILE-FX modification notice added |
+| `small-business/skills/grow-pipeline/SKILL.md` | front matter `description`: long dash replaced with a colon, no other wording changed; the value is now in quotes so the colon stays valid YAML; SMILE-FX modification notice added |
 | `small-business/skills/growth-pulse/reference/data_sources.md` | connector registration name `small-business:<server>` renamed to `sfx-small-business:<server>`; SMILE-FX modification notice added |
+| `small-business/skills/growth-pulse/SKILL.md` | front matter `description`: long dash replaced with a colon, no other wording changed; SMILE-FX modification notice added |
+| `small-business/skills/hiring-screener/SKILL.md` | front matter `description`: long dash replaced with a comma, no other wording changed; SMILE-FX modification notice added |
+| `small-business/skills/inbox-manager/SKILL.md` | front matter `description`: long dash replaced with a comma, no other wording changed; SMILE-FX modification notice added |
+| `small-business/skills/inventory-planner/SKILL.md` | front matter `description`: 2 long dashes replaced with 2 colons, no other wording changed; SMILE-FX modification notice added |
+| `small-business/skills/job-post-builder/SKILL.md` | front matter `description`: 3 long dashes replaced with 2 colons and a comma, no other wording changed; SMILE-FX modification notice added |
+| `small-business/skills/lead-finder/SKILL.md` | front matter `description`: long dash replaced with a comma, no other wording changed; SMILE-FX modification notice added |
+| `small-business/skills/marketing-monday/SKILL.md` | front matter `description`: long dash replaced with a colon, no other wording changed; the value is now in quotes so the colon stays valid YAML; SMILE-FX modification notice added |
+| `small-business/skills/monday-brief/SKILL.md` | front matter `description`: 2 long dashes replaced with a colon and a comma, no other wording changed; the value is now in quotes so the colon stays valid YAML; SMILE-FX modification notice added |
 | `small-business/skills/month-end-prep/reference/xero-reconcile.md` | connector registration name `small-business:<server>` renamed to `sfx-small-business:<server>`; SMILE-FX modification notice added |
 | `small-business/skills/month-end-prep/reference/zoho-books-reconcile.md` | connector registration name `small-business:<server>` renamed to `sfx-small-business:<server>`; SMILE-FX modification notice added |
+| `small-business/skills/outreach-composer/SKILL.md` | front matter `description`: long dash replaced with a comma, no other wording changed; SMILE-FX modification notice added |
+| `small-business/skills/pay-the-bills/SKILL.md` | front matter `description`: long dash replaced with a colon, no other wording changed; the value is now in quotes so the colon stays valid YAML; SMILE-FX modification notice added |
+| `small-business/skills/payroll-prep/SKILL.md` | front matter `description`: 4 long dashes replaced with 2 colons and 2 commas, no other wording changed; SMILE-FX modification notice added |
+| `small-business/skills/plan-payroll/SKILL.md` | front matter `description`: long dash replaced with a colon, no other wording changed; the value is now in quotes so the colon stays valid YAML; SMILE-FX modification notice added |
+| `small-business/skills/proposal-builder/SKILL.md` | front matter `description`: 3 long dashes replaced with 3 commas, no other wording changed; SMILE-FX modification notice added |
+| `small-business/skills/reactivate/SKILL.md` | front matter `description`: long dash replaced with a colon, no other wording changed; the value is now in quotes so the colon stays valid YAML; SMILE-FX modification notice added |
+| `small-business/skills/report-builder/SKILL.md` | front matter `description`: 2 long dashes replaced with a colon and a comma, no other wording changed; SMILE-FX modification notice added |
+| `small-business/skills/report-pack/SKILL.md` | front matter `description`: long dash replaced with a colon, no other wording changed; the value is now in quotes so the colon stays valid YAML; SMILE-FX modification notice added |
+| `small-business/skills/restock/SKILL.md` | front matter `description`: long dash replaced with a colon, no other wording changed; the value is now in quotes so the colon stays valid YAML; SMILE-FX modification notice added |
+| `small-business/skills/review-reputation/SKILL.md` | front matter `description`: long dash replaced with a comma, no other wording changed; SMILE-FX modification notice added |
+| `small-business/skills/seo-ai-visibility/SKILL.md` | front matter `description`: long dash replaced with a colon, no other wording changed; SMILE-FX modification notice added |
 | `small-business/skills/smb-onboard/reference/onboard-checklist.md` | connector registration name `small-business:<server>` renamed to `sfx-small-business:<server>`; SMILE-FX modification notice added |
 | `small-business/skills/smb-onboard/SKILL.md` | connector registration name `small-business:<server>` renamed to `sfx-small-business:<server>`; SMILE-FX modification notice added |
 | `small-business/skills/smb-router/reference/connector-map.md` | connector registration name `small-business:<server>` renamed to `sfx-small-business:<server>`; SMILE-FX modification notice added |
-| `small-business/skills/smb-router/SKILL.md` | connector registration name `small-business:<server>` renamed to `sfx-small-business:<server>`; SMILE-FX modification notice added |
+| `small-business/skills/smb-router/SKILL.md` | connector registration name `small-business:<server>` renamed to `sfx-small-business:<server>`; front matter `description`: 2 long dashes replaced with 2 commas, no other wording changed; SMILE-FX modification notice added |
+| `small-business/skills/social-content-engine/SKILL.md` | front matter `description`: long dash replaced with a comma, no other wording changed; SMILE-FX modification notice added |
+| `small-business/skills/speed-to-lead/SKILL.md` | front matter `description`: long dash replaced with a comma, no other wording changed; SMILE-FX modification notice added |
+| `small-business/skills/tax-prep/SKILL.md` | front matter `description`: long dash replaced with a colon, no other wording changed; the value is now in quotes so the colon stays valid YAML; SMILE-FX modification notice added |
+| `small-business/skills/ticket-deflector/SKILL.md` | front matter `description`: 2 long dashes replaced with a colon and a comma, no other wording changed; SMILE-FX modification notice added |
 | `small-business/CONNECTORS.md` | added |
 | `small-business/LICENSE` | added (copy of the Apache License 2.0) |
 
@@ -52,6 +88,8 @@ All other files in this folder are unchanged from upstream.
 | `marketing/.claude-plugin/plugin.json` | renamed `marketing` to `sfx-marketing`; display name "SMILE-FX Marketing"; new description, author (SMILE-FX), homepage, repository, licence and keywords; version reset from 1.2.0 to 1.0.0 |
 | `marketing/CONNECTORS.md` | intro rewritten; category table corrected to match `.mcp.json` (placeholders unchanged); setup notes added for every connector |
 | `marketing/README.md` | rewritten: SMILE-FX install steps, skill and command lists counted from the files, connector notes, health data note, credits |
+| `marketing/skills/content-creation/SKILL.md` | front matter `description`: long dash replaced with a colon, no other wording changed; the value is now in quotes so the colon stays valid YAML; SMILE-FX modification notice added |
+| `marketing/skills/seo-audit/SKILL.md` | front matter `description`: long dash replaced with a colon, no other wording changed; the value is now in quotes so the colon stays valid YAML; SMILE-FX modification notice added |
 
 All other files in this folder are unchanged from upstream.
 
@@ -82,6 +120,9 @@ All other files in this folder are unchanged from upstream.
 | `operations/.claude-plugin/plugin.json` | renamed `operations` to `sfx-operations`; display name "SMILE-FX Operations"; new description, author (SMILE-FX), homepage, repository, licence and keywords; version reset from 1.3.0 to 1.0.0 |
 | `operations/CONNECTORS.md` | intro rewritten; category table corrected to match `.mcp.json` (placeholders unchanged); setup notes added for every connector |
 | `operations/README.md` | rewritten: SMILE-FX install steps, skill and command lists counted from the files, connector notes, health data note, credits |
+| `operations/skills/capacity-plan/SKILL.md` | front matter `description`: long dash replaced with a colon, no other wording changed; the value is now in quotes so the colon stays valid YAML; SMILE-FX modification notice added |
+| `operations/skills/process-doc/SKILL.md` | front matter `description`: long dash replaced with a colon, no other wording changed; the value is now in quotes so the colon stays valid YAML; SMILE-FX modification notice added |
+| `operations/skills/vendor-review/SKILL.md` | front matter `description`: long dash replaced with a colon, no other wording changed; the value is now in quotes so the colon stays valid YAML; SMILE-FX modification notice added |
 | `operations/LICENSE` | added (copy of the Apache License 2.0) |
 
 All other files in this folder are unchanged from upstream.
@@ -103,6 +144,7 @@ All other files in this folder are unchanged from upstream.
 | `human-resources/.claude-plugin/plugin.json` | renamed `human-resources` to `sfx-human-resources`; display name "SMILE-FX Human Resources"; new description, author (SMILE-FX), homepage, repository, licence and keywords; version reset from 1.3.0 to 1.0.0 |
 | `human-resources/CONNECTORS.md` | intro rewritten; category table corrected to match `.mcp.json` (placeholders unchanged); setup notes added for every connector |
 | `human-resources/README.md` | rewritten: SMILE-FX install steps, skill and command lists counted from the files, connector notes, health data note, credits |
+| `human-resources/skills/comp-analysis/SKILL.md` | front matter `description`: long dash replaced with a colon, no other wording changed; the value is now in quotes so the colon stays valid YAML; SMILE-FX modification notice added |
 | `human-resources/LICENSE` | added (copy of the Apache License 2.0) |
 
 All other files in this folder are unchanged from upstream.
@@ -115,9 +157,9 @@ All other files in this folder are unchanged from upstream.
 | `productivity/CONNECTORS.md` | intro rewritten; category table corrected to match `.mcp.json` (placeholders unchanged); setup notes added for every connector |
 | `productivity/README.md` | rewritten: SMILE-FX install steps, skill and command lists counted from the files, connector notes, health data note, credits |
 | `productivity/skills/memory-management/SKILL.md` | slash command namespace renamed (for example `/productivity:start` to `/sfx-productivity:start`); SMILE-FX modification notice added |
-| `productivity/skills/start/SKILL.md` | slash command namespace renamed (for example `/productivity:start` to `/sfx-productivity:start`); SMILE-FX modification notice added |
+| `productivity/skills/start/SKILL.md` | slash command namespace renamed (for example `/productivity:update` to `/sfx-productivity:update`); SMILE-FX modification notice added |
 | `productivity/skills/task-management/SKILL.md` | slash command namespace renamed (for example `/productivity:start` to `/sfx-productivity:start`); SMILE-FX modification notice added |
-| `productivity/skills/update/SKILL.md` | slash command namespace renamed (for example `/productivity:start` to `/sfx-productivity:start`); SMILE-FX modification notice added |
+| `productivity/skills/update/SKILL.md` | slash command namespace renamed (for example `/productivity:update` to `/sfx-productivity:update`); SMILE-FX modification notice added |
 
 All other files in this folder are unchanged from upstream.
 
@@ -128,6 +170,10 @@ All other files in this folder are unchanged from upstream.
 | `legal/.claude-plugin/plugin.json` | renamed `legal` to `sfx-legal`; display name "SMILE-FX Legal"; new description, author (SMILE-FX), homepage, repository, licence and keywords; version reset from 1.3.0 to 1.0.0 |
 | `legal/CONNECTORS.md` | intro rewritten; category table corrected to match `.mcp.json` (placeholders unchanged); setup notes added for every connector |
 | `legal/README.md` | rewritten: SMILE-FX install steps, skill and command lists counted from the files, connector notes, health data note, credits |
+| `legal/skills/brief/SKILL.md` | front matter `description`: long dash replaced with a colon, no other wording changed; the value is now in quotes so the colon stays valid YAML; SMILE-FX modification notice added |
+| `legal/skills/review-contract/SKILL.md` | front matter `description`: long dash replaced with a colon, no other wording changed; the value is now in quotes so the colon stays valid YAML; SMILE-FX modification notice added |
+| `legal/skills/signature-request/SKILL.md` | front matter `description`: long dash replaced with a colon, no other wording changed; the value is now in quotes so the colon stays valid YAML; SMILE-FX modification notice added |
+| `legal/skills/vendor-check/SKILL.md` | front matter `description`: 2 long dashes replaced with a colon and a comma, no other wording changed; the value is now in quotes so the colon stays valid YAML; SMILE-FX modification notice added |
 
 All other files in this folder are unchanged from upstream.
 
@@ -149,6 +195,7 @@ All other files in this folder are unchanged from upstream.
 | `design/.claude-plugin/plugin.json` | renamed `design` to `sfx-design`; display name "SMILE-FX Design"; new description, author (SMILE-FX), homepage, repository, licence and keywords; version reset from 1.2.0 to 1.0.0 |
 | `design/CONNECTORS.md` | intro rewritten; category table corrected to match `.mcp.json` (placeholders unchanged); setup notes added for every connector |
 | `design/README.md` | rewritten: SMILE-FX install steps, skill and command lists counted from the files, connector notes, health data note, credits |
+| `design/skills/ux-copy/SKILL.md` | front matter `description`: long dash replaced with a colon, no other wording changed; the value is now in quotes so the colon stays valid YAML; SMILE-FX modification notice added |
 | `design/LICENSE` | added (copy of the Apache License 2.0) |
 
 All other files in this folder are unchanged from upstream.
@@ -170,6 +217,7 @@ All other files in this folder are unchanged from upstream.
 | `product-management/.claude-plugin/plugin.json` | renamed `product-management` to `sfx-product-management`; display name "SMILE-FX Product Management"; new description, author (SMILE-FX), homepage, repository, licence and keywords; version reset from 1.2.0 to 1.0.0 |
 | `product-management/CONNECTORS.md` | intro rewritten; category table corrected to match `.mcp.json` (placeholders unchanged); setup notes added for every connector |
 | `product-management/README.md` | rewritten: SMILE-FX install steps, skill and command lists counted from the files, connector notes, health data note, credits |
+| `product-management/skills/sprint-planning/SKILL.md` | front matter `description`: long dash replaced with a colon, no other wording changed; the value is now in quotes so the colon stays valid YAML; SMILE-FX modification notice added |
 
 All other files in this folder are unchanged from upstream.
 
@@ -177,12 +225,14 @@ All other files in this folder are unchanged from upstream.
 
 | File | Change |
 |---|---|
-| `pdf-viewer/.claude-plugin/plugin.json` | renamed `pdf-viewer` to `sfx-pdf-viewer`; display name "SMILE-FX PDF Viewer"; new description, author (SMILE-FX), homepage, repository, licence and keywords; version reset from 0.2.0 to 1.0.0 |
-| `pdf-viewer/commands/annotate.md` | slash command namespace renamed (for example `/productivity:start` to `/sfx-productivity:start`); SMILE-FX modification notice added |
-| `pdf-viewer/commands/fill-form.md` | slash command namespace renamed (for example `/productivity:start` to `/sfx-productivity:start`); SMILE-FX modification notice added |
-| `pdf-viewer/commands/sign.md` | slash command namespace renamed (for example `/productivity:start` to `/sfx-productivity:start`); SMILE-FX modification notice added |
+| `pdf-viewer/.claude-plugin/plugin.json` | renamed `pdf-viewer` to `sfx-pdf-viewer`; display name "SMILE-FX PDF Viewer"; new description, author (SMILE-FX), homepage, repository, licence and keywords; version reset from 0.2.0 to 1.0.0, then 1.0.1 (see CHANGELOG.md) |
+| `pdf-viewer/.mcp.json` | PDF server pinned to `@modelcontextprotocol/server-pdf@2.0.3`; upstream ran the newest npm version |
+| `pdf-viewer/commands/annotate.md` | slash command namespace renamed (for example `/pdf-viewer:sign` to `/sfx-pdf-viewer:sign`); front matter `description`: long dash replaced with a colon, no other wording changed; the value is now in quotes so the colon stays valid YAML; SMILE-FX modification notice added |
+| `pdf-viewer/commands/fill-form.md` | slash command namespace renamed (for example `/pdf-viewer:sign` to `/sfx-pdf-viewer:sign`); SMILE-FX modification notice added |
+| `pdf-viewer/commands/sign.md` | slash command namespace renamed (for example `/pdf-viewer:fill-form` to `/sfx-pdf-viewer:fill-form`); SMILE-FX modification notice added |
 | `pdf-viewer/CONNECTORS.md` | intro rewritten; category table corrected to match `.mcp.json` (placeholders unchanged); setup notes added for every connector |
 | `pdf-viewer/README.md` | rewritten: SMILE-FX install steps, skill and command lists counted from the files, connector notes, health data note, credits |
+| `pdf-viewer/skills/view-pdf/SKILL.md` | front matter `description`: long dash replaced with a colon, no other wording changed; the value is now in quotes so the colon stays valid YAML; SMILE-FX modification notice added |
 
 All other files in this folder are unchanged from upstream.
 
@@ -193,6 +243,9 @@ All other files in this folder are unchanged from upstream.
 | `engineering/.claude-plugin/plugin.json` | renamed `engineering` to `sfx-engineering`; display name "SMILE-FX Engineering"; new description, author (SMILE-FX), homepage, repository, licence and keywords; version reset from 1.2.0 to 1.0.0 |
 | `engineering/CONNECTORS.md` | intro rewritten; category table corrected to match `.mcp.json` (placeholders unchanged); setup notes added for every connector |
 | `engineering/README.md` | rewritten: SMILE-FX install steps, skill and command lists counted from the files, connector notes, health data note, credits |
+| `engineering/skills/debug/SKILL.md` | front matter `description`: long dash replaced with a colon, no other wording changed; the value is now in quotes so the colon stays valid YAML; SMILE-FX modification notice added |
+| `engineering/skills/documentation/SKILL.md` | front matter `description`: long dash replaced with a colon, no other wording changed; the value is now in quotes so the colon stays valid YAML; SMILE-FX modification notice added |
+| `engineering/skills/incident-response/SKILL.md` | front matter `description`: long dash replaced with a colon, no other wording changed; the value is now in quotes so the colon stays valid YAML; SMILE-FX modification notice added |
 | `engineering/LICENSE` | added (copy of the Apache License 2.0) |
 
 All other files in this folder are unchanged from upstream.

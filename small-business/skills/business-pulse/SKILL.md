@@ -1,19 +1,20 @@
 ---
 name: business-pulse
 description: >
-  Produces a one-page cross-functional business snapshot for SMB owners —
+  Produces a one-page cross-functional business snapshot for SMB owners:
   cash position (the ledger: MYOB, NetSuite, QuickBooks, Xero, or Zoho Books), sales trend
   (PayPal/Square/Stripe), pipeline movement (HubSpot), this week's commitments
   (Calendar), urgent watch-list items (Gmail or M365, Slack), and the single most
   important thing needing attention today.
   Proactively tries every available connector and gracefully scopes to
-  whatever is connected — one connector gives a partial pulse; the full stack
+  whatever is connected: one connector gives a partial pulse; the full stack
   gives the full picture. Trigger when the user asks how the business is
   doing, wants a snapshot, a daily brief, a Friday recap, or says anything
   like "what am I missing" or "catch me up on the business." A start-of-week
   briefing routes to /monday-brief, which runs this skill as its first link.
 allowed-tools: Read, WebFetch
 ---
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # Business Pulse
 

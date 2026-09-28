@@ -8,7 +8,7 @@ description: >
   and logs the whole thing to the CRM. Never sends on its own. Built to run on
   a schedule so overnight inquiries are drafted and sorted by morning, and
   works from forwarded or pasted inquiries when no connector is available. Use
-  this whenever the owner is worried about inbound leads or response time —
+  this whenever the owner is worried about inbound leads or response time,
   including phrasings like "leads are going cold," "did anyone answer that
   inquiry," "I keep missing form submissions," "nothing falls through the
   cracks," "handle my inbound," "respond to this lead," or "we lose people
@@ -16,6 +16,7 @@ description: >
   inquiry as readily as for a standing setup.
 allowed-tools: Read, WebFetch
 ---
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # Speed to Lead
 

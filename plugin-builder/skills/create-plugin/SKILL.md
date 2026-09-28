@@ -6,7 +6,7 @@ description: >
   This skill requires Cowork mode with access to the outputs directory for delivering the final .plugin file.
 compatibility: Requires Cowork desktop app environment with access to the outputs directory for delivering .plugin files.
 ---
-<!-- Modified by SMILE-FX P.A. in 2026: plugin and skill names rebranded for SMILE-FX Plugins. See MODIFICATIONS.md at the repository root. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # Create Plugin
 

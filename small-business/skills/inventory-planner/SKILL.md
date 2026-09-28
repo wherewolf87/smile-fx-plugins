@@ -6,16 +6,17 @@ description: >
   uploaded CSV, computes 7-day and 28-day sales velocity per item, projects a
   conservative stockout date for each, sizes a 60-day reorder quantity, and
   drafts the purchase orders and vendor emails to cover it. Flags the money
-  sitting still too — overstock, dead stock, and zero-velocity items, reported
+  sitting still too: overstock, dead stock, and zero-velocity items, reported
   as slow movers to clear rather than things to buy more of. Seasonality is
   applied where the history supports it and named where it does not. Nothing
   is ordered and no vendor is emailed without approval. Reach for this
-  whenever stock comes up — "what do I need to reorder," "am I going to run
+  whenever stock comes up: "what do I need to reorder," "am I going to run
   out," "what should I order this month," "we keep running out of filters,"
   "how much cash is sitting in the warehouse," "what is not moving," or "draft
   a PO for my supplier."
 allowed-tools: Read, WebFetch
 ---
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # Inventory Planner
 

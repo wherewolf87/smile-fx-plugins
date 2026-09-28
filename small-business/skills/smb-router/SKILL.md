@@ -2,7 +2,7 @@
 name: smb-router
 description: >
   The front door to the Small Business plugin. Listens to what the owner needs
-  right now — vague or specific — and routes them to the best skill or slash
+  right now, vague or specific, and routes them to the best skill or slash
   command for the moment. Also serves as a guide: explains what's available,
   suggests what to try next, and adapts recommendations based on stored business
   context. Trigger whenever the owner asks "what can you do," "help me with my
@@ -10,7 +10,7 @@ description: >
   open-ended business request that doesn't clearly match a single skill.
 allowed-tools: Read, WebFetch
 ---
-<!-- Modified by SMILE-FX P.A. in 2026: plugin and skill names rebranded for SMILE-FX Plugins. See MODIFICATIONS.md at the repository root. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # SMB Router
 

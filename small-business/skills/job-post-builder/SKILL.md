@@ -1,16 +1,17 @@
 ---
 name: job-post-builder
 description: >
-  Builds end-to-end hiring packets — job post, structured interview guide with
-  scoring rubric, and offer letter template — from a hiring brief. Triggers on:
+  Builds end-to-end hiring packets: job post, structured interview guide with
+  scoring rubric, and offer letter template, from a hiring brief. Triggers on:
   "help me hire", "we're hiring for", "write a job post", "job description",
   "JD", "open role", "create a job ad", "interview questions", "scoring rubric",
   "draft an offer letter", "send an offer", "make a hiring packet", or any
-  request to recruit for a position. When in doubt, trigger — covers the full
+  request to recruit for a position. When in doubt, trigger: covers the full
   hiring workflow from job post through DocuSign envelope creation via browser.
   Does NOT screen or rank applicants.
 allowed-tools: Read, WebFetch
 ---
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # Job Post Builder
 

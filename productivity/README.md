@@ -19,7 +19,7 @@ Anyone who wants a daily task list and a memory of people, projects and shorthan
 
 The install command opens the plugin panel so you can review it and pick a scope. From your shell, use `claude plugin marketplace add wherewolf87/smile-fx-plugins` and `claude plugin install sfx-productivity@smile-fx-plugins`.
 
-**Cowork.** Open **Customize**, then **Plugins**, then **Add marketplace**, and enter `wherewolf87/smile-fx-plugins`. Select **SMILE-FX Productivity** and **Install**, then connect your tools on its **Connectors** tab. Plugins need a paid Claude plan.
+**Cowork.** Open **Customize**, then **Plugins**. Select **Add**, then **Add marketplace**, and enter `wherewolf87/smile-fx-plugins`. Select **SMILE-FX Productivity** and **Install**, then connect your tools on its **Connectors** tab. Plugins need a paid Claude plan.
 
 Full steps: [install guide](../README.md#install).
 
@@ -39,10 +39,12 @@ Claude uses a skill when your request matches it. You can also call one by name.
 
 | Skill | What it does |
 |---|---|
-| `/sfx-productivity:memory-management` | Keeps a working memory of your people, projects and shorthand so requests need less explaining. |
+| `memory-management` (automatic) | Keeps a working memory of your people, projects and shorthand so requests need less explaining. |
 | `/sfx-productivity:start` | Sets up the task list and memory, and opens the dashboard. |
-| `/sfx-productivity:task-management` | Keeps a shared task list in a TASKS.md file. |
+| `task-management` (automatic) | Keeps a shared task list in a TASKS.md file. |
 | `/sfx-productivity:update` | Pulls in new tasks, triages stale ones and fills memory gaps from recent activity. |
+
+Skills marked automatic have no slash command. Claude uses them when your request needs them.
 
 ## Connectors
 
@@ -59,4 +61,4 @@ Each connector signs in with your own account, and nothing connects until you do
 
 Adapted by SMILE-FX P.A. from the `productivity` plugin in Anthropic's [knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) (commit `da38ec1`), under the Apache License 2.0. SMILE-FX changed the plugin name and metadata, this README, the connector notes, and skill text that named the old plugin. The changes are listed in [MODIFICATIONS.md](../MODIFICATIONS.md). Licence: [LICENSE](LICENSE). Notices: [NOTICE](../NOTICE).
 
-© 2026 SMILE-FX P.A. SMILE-FX® is a registered trademark of SMILE-FX P.A. SMILE-FX P.A. is not affiliated with, sponsored by or endorsed by Anthropic. Anthropic, Claude, Claude Code and Cowork are trademarks of Anthropic and are named here only to describe compatibility.
+© 2026 SMILE-FX P.A. SMILE-FX® is a registered trademark of SMILE-FX P.A. SMILE-FX P.A. is not affiliated with, sponsored by or endorsed by Anthropic. Anthropic, Claude, Claude Code and Claude Cowork are trademarks of Anthropic, PBC. They are named here only to describe compatibility.

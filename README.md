@@ -14,7 +14,6 @@ Marketing, sales, front desk, finance, HR, operations, legal and more. Install o
   <img alt="Licence: Apache-2.0" src="https://img.shields.io/badge/licence-Apache--2.0-08E8F6?labelColor=000000">
   <img alt="16 plugins" src="https://img.shields.io/badge/plugins-16-08E8F6?labelColor=000000">
   <img alt="175 skills" src="https://img.shields.io/badge/skills-175-08E8F6?labelColor=000000">
-  <img alt="Works with Claude Code and Cowork" src="https://img.shields.io/badge/works%20with-Claude%20Code%20%7C%20Cowork-FB48C4?labelColor=000000">
 </p>
 
 <p align="center">
@@ -31,7 +30,7 @@ A plugin is a folder of written know-how that Claude loads when you need it. Eac
 
 You ask in plain words. Claude picks the matching skill, asks for what it needs and does the work. Your app's permission settings decide whether a connected tool runs straight away or asks you first, so keep anything that sends, posts, pays or changes a record on ask. You can also call a skill by name, for example `/sfx-marketing:draft-content`.
 
-All 16 plugins work in Claude Code and in Cowork in the Claude desktop app.
+All 16 plugins install in Claude Code and in Cowork in the Claude desktop app. SMILE-FX Plugin Builder is written for Cowork first.
 
 ## Who it is for
 
@@ -39,7 +38,7 @@ Practice and business owners, office managers and the small teams around them: d
 
 ## The plugins
 
-16 plugins, 175 skills and 5 commands. Counts come from the files in this repository. Claude Code and Cowork show commands in the same list as skills.
+16 plugins, 175 skills and 5 commands. Counts come from the files in this repository. Claude Code shows commands in the same list as skills.
 
 | Plugin | Install id | What it does | Skills | Commands |
 |---|---|---|---:|---:|
@@ -66,7 +65,7 @@ Practice and business owners, office managers and the small teams around them: d
 
 **SMILE-FX Small Business** (`sfx-small-business`): `ad-manager`, `ap-processor`, `brand-style`, `build-agent`, `build-connector`, `business-pulse`, `call-list`, `canva-creator`, `cash-flow-snapshot`, `close-month`, `content-strategy`, `contract-review`, `crm-autopilot`, `grant-rfp-writer`, `grow-pipeline`, `growth-pulse`, `hiring-screener`, `inbox-manager`, `inventory-planner`, `invoice-chase`, `job-post-builder`, `lead-finder`, `lead-triage`, `marketing-monday`, `monday-brief`, `month-end-prep`, `outreach-composer`, `pay-the-bills`, `payroll-prep`, `plan-payroll`, `proposal-builder`, `reactivate`, `report-builder`, `report-pack`, `restock`, `review-reputation`, `seo-ai-visibility`, `smb-onboard`, `smb-router`, `social-content-engine`, `speed-to-lead`, `tax-prep`, `tax-season-organizer`, `ticket-deflector`
 
-**SMILE-FX Marketing** (`sfx-marketing`): `brand-review`, `campaign-plan`, `competitive-brief`, `content-creation`, `draft-content`, `email-sequence`, `performance-report`, `seo-audit`
+**SMILE-FX Marketing** (`sfx-marketing`): `brand-review`, `campaign-plan`, `competitive-brief`, `content-creation` (automatic), `draft-content`, `email-sequence`, `performance-report`, `seo-audit`
 
 **SMILE-FX Sales** (`sfx-sales`): `account-context`, `account-plan`, `account-research`, `account-tiering`, `call-prep`, `call-summary`, `close-plan`, `competitive-intelligence`, `create-an-asset`, `crm-hygiene-check`, `customer-health`, `customer-voice`, `daily-briefing`, `deal-advance-gap`, `deal-review`, `deal-signals`, `deal-slip-scenario`, `draft-outreach`, `end-of-day`, `expansion-whitespace`, `forecast`, `handle-objection`, `inbox-sweep`, `lead-triage`, `log-activity`, `pipeline-review`, `renewal-radar`, `rep-context`, `route-lead`, `schedule-meeting`, `setup`, `stakeholder-map`, `team-pipeline`, `update-opportunity`, `weekly-wrap`, `win-loss-review`
 
@@ -74,19 +73,19 @@ Practice and business owners, office managers and the small teams around them: d
 
 **SMILE-FX Operations** (`sfx-operations`): `capacity-plan`, `change-request`, `compliance-tracking`, `process-doc`, `process-optimization`, `risk-assessment`, `runbook`, `status-report`, `vendor-review`
 
-**SMILE-FX Finance** (`sfx-finance`): `audit-support`, `close-management`, `financial-statements`, `journal-entry`, `journal-entry-prep`, `reconciliation`, `sox-testing`, `variance-analysis`
+**SMILE-FX Finance** (`sfx-finance`): `audit-support` (automatic), `close-management` (automatic), `financial-statements`, `journal-entry`, `journal-entry-prep` (automatic), `reconciliation`, `sox-testing`, `variance-analysis`
 
 **SMILE-FX Human Resources** (`sfx-human-resources`): `comp-analysis`, `draft-offer`, `interview-prep`, `onboarding`, `org-planning`, `people-report`, `performance-review`, `policy-lookup`, `recruiting-pipeline`
 
-**SMILE-FX Productivity** (`sfx-productivity`): `memory-management`, `start`, `task-management`, `update`
+**SMILE-FX Productivity** (`sfx-productivity`): `memory-management` (automatic), `start`, `task-management` (automatic), `update`
 
 **SMILE-FX Legal** (`sfx-legal`): `brief`, `compliance-check`, `legal-response`, `legal-risk-assessment`, `meeting-briefing`, `review-contract`, `signature-request`, `triage-nda`, `vendor-check`
 
-**SMILE-FX Data** (`sfx-data`): `analyze`, `build-dashboard`, `create-viz`, `data-context-extractor`, `data-visualization`, `explore-data`, `sql-queries`, `statistical-analysis`, `validate-data`, `write-query`
+**SMILE-FX Data** (`sfx-data`): `analyze`, `build-dashboard`, `create-viz`, `data-context-extractor`, `data-visualization` (automatic), `explore-data`, `sql-queries` (automatic), `statistical-analysis` (automatic), `validate-data`, `write-query`
 
 **SMILE-FX Design** (`sfx-design`): `accessibility-review`, `design-critique`, `design-handoff`, `design-system`, `research-synthesis`, `user-research`, `ux-copy`
 
-**SMILE-FX Enterprise Search** (`sfx-enterprise-search`): `digest`, `knowledge-synthesis`, `search`, `search-strategy`, `source-management`
+**SMILE-FX Enterprise Search** (`sfx-enterprise-search`): `digest`, `knowledge-synthesis` (automatic), `search`, `search-strategy` (automatic), `source-management` (automatic)
 
 **SMILE-FX Product Management** (`sfx-product-management`): `competitive-brief`, `metrics-review`, `product-brainstorming`, `roadmap-update`, `sprint-planning`, `stakeholder-update`, `synthesize-research`, `write-spec`; commands: `brainstorm`
 
@@ -95,6 +94,8 @@ Practice and business owners, office managers and the small teams around them: d
 **SMILE-FX Engineering** (`sfx-engineering`): `architecture`, `code-review`, `debug`, `deploy-checklist`, `documentation`, `incident-response`, `standup`, `system-design`, `tech-debt`, `testing-strategy`
 
 **SMILE-FX Plugin Builder** (`sfx-plugin-builder`): `create-plugin`, `customize-plugin`
+
+Skills marked automatic have no slash command. Claude uses them when your request needs them.
 
 </details>
 
@@ -120,20 +121,26 @@ claude plugin install sfx-marketing@smile-fx-plugins
 
 One step, on Claude Code 2.1.275 or later: `/plugin install sfx-marketing --marketplace wherewolf87/smile-fx-plugins`.
 
-Skills then run as `/<install id>:<skill>`, for example `/sfx-marketing:draft-content`. To share plugins with everyone who works in a repository, add the marketplace with `--scope project` and commit `.claude/settings.json`.
+Skills then run as `/<install id>:<skill>`, for example `/sfx-marketing:draft-content`. Skills marked automatic in the plugin lists have no slash command.
+
+To share plugins with everyone who works in a repository, run `claude plugin marketplace add wherewolf87/smile-fx-plugins --scope project` from your shell in that repository and commit `.claude/settings.json`. Each person then runs `claude plugin install <install id>@smile-fx-plugins --scope project` once.
 
 ### Cowork (Claude desktop app)
 
 1. Open **Cowork**, then **Customize** in the left sidebar, then **Plugins**.
-2. Select **Add marketplace** and enter `wherewolf87/smile-fx-plugins` (or `https://github.com/wherewolf87/smile-fx-plugins`).
+2. Select **Add**, then **Add marketplace**, and enter `wherewolf87/smile-fx-plugins` (or `https://github.com/wherewolf87/smile-fx-plugins`).
 3. Select a SMILE-FX plugin, then **Install**.
 4. Open the plugin's **Connectors** tab and connect the tools you use. Installing does not sign you in to anything.
 
 Plugins need a paid Claude plan: Pro, Max, Team or Enterprise. Plugins you add in Cowork are saved to your Claude account.
 
+Cowork adds Anthropic's Knowledge Work marketplace by default. Its plugins and these SMILE-FX plugins cover many of the same roles, so install one version of each role to avoid duplicate skills.
+
 ### Updates
 
-Updates from third-party marketplaces are off by default. In Claude Code, run `/plugin marketplace update smile-fx-plugins`, or turn on auto-update in `/plugin` under **Marketplaces**. In Cowork, select **Check for updates** on the marketplace, or turn on **Sync automatically**.
+Automatic updates for third-party marketplaces are off by default. To turn them on in Claude Code, run `/plugin`, open **Marketplaces**, select `smile-fx-plugins` and choose **Enable auto-update**. To update by hand, run `/plugin marketplace update smile-fx-plugins` to refresh the list, then open each plugin on the **Installed** tab in `/plugin` and select **Update now**. From your shell: `claude plugin marketplace update smile-fx-plugins`, then `claude plugin update sfx-marketing@smile-fx-plugins`. An update loads in your next session, or when you run `/reload-plugins`.
+
+In Cowork, select **Check for updates** on the marketplace, or turn on **Sync automatically**.
 
 ## Your first ten minutes
 
@@ -168,7 +175,7 @@ This repository is one of three free resources from SMILE-FX®. The AI Operating
 
 ## Credits and licence
 
-SMILE-FX® Plugins adapts 16 plugins from Anthropic's open-source [knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) at commit `da38ec1` (September 24, 2026), under the Apache License 2.0. SMILE-FX P.A. renamed and rebranded them, rewrote the documentation and adjusted connector setup. Skill instructions are unchanged apart from renamed references.
+SMILE-FX® Plugins adapts 16 plugins from Anthropic's open-source [knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) at commit `da38ec1` (September 24, 2026), under the Apache License 2.0. SMILE-FX P.A. renamed and rebranded them, rewrote the documentation and adjusted connector setup. Skill instructions are unchanged apart from renamed references and the punctuation of some skill descriptions (long dashes replaced with commas or colons).
 
 - Licence: [LICENSE](LICENSE) (Apache License 2.0, also in every plugin folder)
 - Attribution: [NOTICE](NOTICE)
@@ -178,6 +185,6 @@ SMILE-FX® Plugins adapts 16 plugins from Anthropic's open-source [knowledge-wor
 
 © 2026 SMILE-FX P.A. SMILE-FX® is a registered trademark of SMILE-FX P.A. The logo files in `assets/` are not licensed under the Apache License.
 
-SMILE-FX P.A. is not affiliated with, sponsored by or endorsed by Anthropic. Anthropic, Claude, Claude Code and Cowork are trademarks of Anthropic and are named here only to describe compatibility. Other product names are trademarks of their owners. Naming a product does not mean its maker endorses or sponsors SMILE-FX®.
+SMILE-FX P.A. is not affiliated with, sponsored by or endorsed by Anthropic. Anthropic, Claude, Claude Code and Claude Cowork are trademarks of Anthropic, PBC. They are named here only to describe compatibility. Other product names are trademarks of their owners. Naming a product does not mean its maker endorses or sponsors SMILE-FX®.
 
 <p align="center"><em>Elevating Smiles, Elevating You</em></p>

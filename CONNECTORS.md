@@ -69,7 +69,7 @@ The check column is an anonymous MCP request sent on September 27, 2026 with no 
 | Outreach | `https://api.outreach.io/mcp/` | `sfx-sales` | Your own Outreach account | Sign-in required (401) | None. |
 | PagerDuty | `https://mcp.pagerduty.com/mcp` | `sfx-engineering` | Your own PagerDuty account | Sign-in required (401) | None. |
 | PayPal | `https://mcp.paypal.com/mcp` | `sfx-small-business` | Your own PayPal account | Sign-in required (401) | Its tools may include payments, refunds and invoices. Read every action before you approve it. |
-| PDF server (local) | `npx -y @modelcontextprotocol/server-pdf --stdio` | `sfx-pdf-viewer` | Node.js 20 or later on your computer | Local | Runs on your computer with `npx`. The first run downloads `@modelcontextprotocol/server-pdf` from npm (version 2.0.3 on September 27, 2026 requires Node.js 20 or later). No account or API key. |
+| PDF server (local) | `npx -y @modelcontextprotocol/server-pdf@2.0.3 --stdio` | `sfx-pdf-viewer` | Node.js 20 or later on your computer | Local | Runs on your computer with `npx`. The first run downloads `@modelcontextprotocol/server-pdf` version 2.0.3 from npm. The version is pinned, so a new npm release does not change what runs. Version 2.0.3 requires Node.js 20 or later. No account or API key. |
 | Pendo | `https://app.pendo.io/mcp/v0/shttp` | `sfx-product-management` | Your own Pendo account | Sign-in required (401) | None. |
 | QuickBooks | `https://ai-inc.quickbooks.intuit.com/v1/mcp` | `sfx-small-business` | Your own QuickBooks account | Refused anonymous check (403) | The server refused an anonymous check on September 27, 2026, so it could not be verified without an account. Its tools may include creating and changing accounting records. Read every action before you approve it. |
 | Ramp | `https://mcp.ramp.com/mcp` | `sfx-small-business` | Your own Ramp account | Sign-in required (401) | Its tools may include cards, bills and payments. Read every action before you approve it. |
@@ -98,6 +98,7 @@ The check column is an anonymous MCP request sent on September 27, 2026 with no 
 ## What SMILE-FX changed
 
 - Definite: the upstream address `https://api.definite.app/v3/mcp/http` returned HTTP 404 on September 27, 2026, so the entry in `sfx-data` is now a blank placeholder.
+- PDF server: `sfx-pdf-viewer` runs `@modelcontextprotocol/server-pdf@2.0.3` instead of the newest version on npm, so a new npm release does not change what runs until SMILE-FX releases a new plugin version.
 - Every other address is the one upstream shipped. The Slack entry keeps the client ID that Slack publishes for Claude Code.
 
 Company names are trademarks of their owners and are named only to describe compatibility.

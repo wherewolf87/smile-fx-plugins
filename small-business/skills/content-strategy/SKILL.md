@@ -4,10 +4,11 @@ description: >
   Analyzes sales data from PayPal and QuickBooks to find top performers and
   slow movers, layers in seasonality, and produces a prioritized 30-day
   content brief: what to push, what offers to run, what to hold. Strategic
-  output only — no calendars or assets. Use when the user asks what to post,
+  output only: no calendars or assets. Use when the user asks what to post,
   wants a content plan, asks what's selling, or what to promote this month.
 allowed-tools: Read, WebFetch
 ---
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # Content Strategy
 

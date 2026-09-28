@@ -8,13 +8,14 @@ description: >
   XLSX, with an offer to also create the records in the CRM. Runs on Apollo
   when connected and falls back to web research plus an uploaded customer list
   when it isn't. Use this whenever the owner wants new prospects, a target
-  list, or help finding customers — including phrasings like "who should I be
+  list, or help finding customers, including phrasings like "who should I be
   calling," "find me more customers like my best ones," "build me a prospect
   list," "I need leads," "who else looks like Acme," or "help me find
   companies in this area that need what we do." Reach for it even when the
   owner describes the customer they want rather than asking for a list.
 allowed-tools: Read, WebFetch
 ---
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # Lead Finder
 

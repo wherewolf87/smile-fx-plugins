@@ -9,12 +9,13 @@ description: >
   feeds like SAM.gov or DIBBS down to the handful worth bidding. Runs on
   Google Drive or M365 with DocuSign and Calendar deepening it, and works from
   uploaded past submissions plus web research when nothing is connected. Use
-  this whenever a funding or bidding opportunity is in play — including "find
+  this whenever a funding or bidding opportunity is in play, including "find
   grants we qualify for," "should we bid this," "draft the response to this
   RFP," "we've got 50 solicitations to filter," "what's due on the federal
   grant," or "help me write the proposal narrative."
 allowed-tools: Read, WebFetch
 ---
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # Grant and RFP Writer
 
