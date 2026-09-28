@@ -1,138 +1,64 @@
-# HR Plugin
+# SMILE-FX® Human Resources
 
-A people operations plugin primarily designed for [Cowork](https://claude.com/product/cowork), Anthropic's agentic desktop application — though it also works in Claude Code. Helps with recruiting, onboarding, performance management, policy guidance, and compensation analysis. Works with any HR team — standalone with your input, supercharged when you connect your HRIS, ATS, and other tools.
+> Supports recruiting, onboarding, performance reviews, compensation analysis and policy questions.
 
-## Installation
+**Install id:** `sfx-human-resources` | **Version:** 1.0.0 | **Skills:** 9 | **Commands:** 0 | **Licence:** Apache-2.0
 
-```bash
-claude plugin marketplace add anthropics/knowledge-work-plugins
-claude plugin install human-resources@knowledge-work-plugins
+## Who it is for
+
+Owners and HR leads who hire, onboard and review a team.
+
+## Install
+
+**Claude Code.** In a session:
+
+```text
+/plugin marketplace add wherewolf87/smile-fx-plugins
+/plugin install sfx-human-resources@smile-fx-plugins
 ```
 
-## Commands
+The install command opens the plugin panel so you can review it and pick a scope. From your shell, use `claude plugin marketplace add wherewolf87/smile-fx-plugins` and `claude plugin install sfx-human-resources@smile-fx-plugins`.
 
-Explicit workflows you invoke with a slash command:
+**Cowork.** Open **Customize**, then **Plugins**, then **Add marketplace**, and enter `wherewolf87/smile-fx-plugins`. Select **SMILE-FX Human Resources** and **Install**, then connect your tools on its **Connectors** tab. Plugins need a paid Claude plan.
 
-| Command | Description |
+Full steps: [install guide](../README.md#install).
+
+## Try asking
+
+- "Build a first-week onboarding plan for a new front desk hire."
+- "Draft interview questions and a scorecard for a treatment coordinator role."
+- "Explain our PTO policy in plain words."
+
+## Skills (9)
+
+Claude uses a skill when your request matches it. You can also call one by name.
+
+| Skill | What it does |
 |---|---|
-| `/draft-offer` | Draft an offer letter with compensation details, start date, and terms |
-| `/onboarding` | Generate an onboarding checklist and first-week plan for a new hire |
-| `/performance-review` | Structure a performance review — self-assessment prompts, manager template, calibration prep |
-| `/policy-lookup` | Find and explain company policies — PTO, benefits, expense, travel, remote work |
-| `/comp-analysis` | Analyze compensation data — benchmarking, band placement, equity refresh modeling |
-| `/people-report` | Generate headcount, attrition, diversity, or org health reports |
+| `/sfx-human-resources:comp-analysis` | Benchmarks pay, checks band placement and models equity. |
+| `/sfx-human-resources:draft-offer` | Drafts an offer letter with pay details and terms. |
+| `/sfx-human-resources:interview-prep` | Builds structured interview plans with questions and scorecards. |
+| `/sfx-human-resources:onboarding` | Creates an onboarding checklist and a first-week plan. |
+| `/sfx-human-resources:org-planning` | Plans headcount, team structure and reporting lines. |
+| `/sfx-human-resources:people-report` | Builds headcount, attrition and team health reports. |
+| `/sfx-human-resources:performance-review` | Structures a performance review with self-assessment and manager templates. |
+| `/sfx-human-resources:policy-lookup` | Finds a company policy and explains it in plain words. |
+| `/sfx-human-resources:recruiting-pipeline` | Tracks candidates through each recruiting stage. |
 
-All commands work **standalone** (provide context and details) and get **supercharged** with MCP connectors.
+## Connectors
 
-## Skills
+Set up: Slack, Notion, Atlassian (Jira, Confluence). Blank on purpose, connect them yourself: Google Calendar, Gmail.
 
-Domain knowledge Claude uses automatically when relevant:
+Each connector signs in with your own account, and nothing connects until you do. [CONNECTORS.md](CONNECTORS.md) lists what each one needs.
 
-| Skill | Description |
-|---|---|
-| `recruiting-pipeline` | Track and manage recruiting pipeline — source, screen, interview, offer stages |
-| `employee-handbook` | Answer questions about company policies, benefits, and procedures |
-| `compensation-benchmarking` | Benchmark compensation against market data — base, equity, total comp |
-| `org-planning` | Headcount planning, org design, and team structure optimization |
-| `people-analytics` | Analyze workforce data — attrition trends, engagement signals, diversity metrics |
-| `interview-prep` | Create structured interview plans — competency-based questions, scorecards, debrief templates |
+## Good to know
 
-## Example Workflows
+- Employment law differs by state. Have offer letters and policy changes reviewed by a qualified professional.
+- Do not put patient health information (PHI) into Claude, a plugin or a connected tool unless your Claude plan and every connected service are covered by a signed Business Associate Agreement (BAA). Use de-identified examples when you test.
+- Software suggests. People decide. Check what a skill produces before you use it.
 
-### Drafting an Offer
+## Credits and licence
 
-```
-/draft-offer
-```
+Adapted by SMILE-FX P.A. from the `human-resources` plugin in Anthropic's [knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) (commit `da38ec1`), under the Apache License 2.0. SMILE-FX changed the plugin name and metadata, this README, the connector notes, and skill text that named the old plugin. The changes are listed in [MODIFICATIONS.md](../MODIFICATIONS.md). Licence: [LICENSE](LICENSE). Notices: [NOTICE](../NOTICE).
 
-Tell me the role, level, location, and comp details. Get a complete offer letter draft with terms, equity breakdown, and benefits summary.
-
-### Onboarding a New Hire
-
-```
-/onboarding
-```
-
-Provide the new hire's name, role, team, and start date. Get a comprehensive onboarding checklist, first-week calendar, tool access list, and buddy assignment template.
-
-### Preparing for Performance Reviews
-
-```
-/performance-review
-```
-
-Get templates for self-assessments, manager reviews, and calibration. I'll help structure feedback that's specific, actionable, and fair.
-
-### Understanding Benefits
-
-Just ask naturally:
-```
-What's our parental leave policy?
-```
-
-The `employee-handbook` skill triggers automatically and searches your connected knowledge base for the answer.
-
-### Compensation Benchmarking
-
-```
-/comp-analysis
-```
-
-Upload comp data or describe your bands. Get market comparisons, band placement analysis, and recommendations for adjustments.
-
-## Standalone + Supercharged
-
-Every command and skill works without any integrations:
-
-| What You Can Do | Standalone | Supercharged With |
-|-----------------|------------|-------------------|
-| Draft offers | Provide details manually | HRIS, ATS for auto-fill |
-| Onboarding checklists | Describe your process | HRIS, Knowledge base for templates |
-| Performance reviews | Manual input | HRIS for review history |
-| Policy lookup | Paste handbook content | Knowledge base |
-| Comp analysis | Upload CSV, describe bands | Compensation data MCP |
-| People reports | Upload data | HRIS for live data |
-
-## MCP Integrations
-
-> If you see unfamiliar placeholders or need to check which tools are connected, see [CONNECTORS.md](CONNECTORS.md).
-
-Connect your tools for a richer experience:
-
-| Category | Examples | What It Enables |
-|---|---|---|
-| **HRIS** | Workday, BambooHR, Rippling | Employee data, org structure, PTO balances |
-| **ATS** | Greenhouse, Lever, Ashby | Candidate pipeline, interview schedules, offer tracking |
-| **Compensation** | Pave, Radford | Market benchmarks, comp band data |
-| **Chat** | Slack, Teams | Team announcements, candidate coordination |
-| **Calendar** | Google Calendar, Microsoft 365 | Interview scheduling, onboarding calendar |
-| **Email** | Gmail, Microsoft 365 | Offer letters, candidate communications |
-
-See [CONNECTORS.md](CONNECTORS.md) for the full list of supported integrations.
-
-## Settings
-
-Create a `settings.local.json` file to personalize:
-
-- **Cowork**: Save it in any folder you've shared with Cowork (via the folder picker). The plugin finds it automatically.
-- **Claude Code**: Save it at `human-resources/.claude/settings.local.json`.
-
-```json
-{
-  "company": "Your Company",
-  "headquarters": "City, State",
-  "employeeCount": 500,
-  "benefits": {
-    "healthInsurance": "Provider Name",
-    "pto": "Unlimited / X days",
-    "parentalLeave": "X weeks"
-  },
-  "compensation": {
-    "currency": "USD",
-    "equityType": "RSU / Options",
-    "vestingSchedule": "4 years, 1 year cliff"
-  }
-}
-```
-
-The plugin will ask you for this information interactively if it's not configured.
+© 2026 SMILE-FX P.A. SMILE-FX® is a registered trademark of SMILE-FX P.A. SMILE-FX P.A. is not affiliated with, sponsored by or endorsed by Anthropic. Anthropic, Claude, Claude Code and Cowork are trademarks of Anthropic and are named here only to describe compatibility.

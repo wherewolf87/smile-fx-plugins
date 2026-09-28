@@ -1,90 +1,67 @@
-# Marketing Plugin
+# SMILE-FX® Marketing
 
-A marketing plugin primarily designed for [Cowork](https://claude.com/product/cowork), Anthropic's agentic desktop application — though it also works in Claude Code. Content creation, campaign planning, brand voice management, competitive analysis, and performance reporting.
+> Plans campaigns, drafts content, checks brand voice, audits SEO and reports on results across your marketing channels.
 
-## Installation
+**Install id:** `sfx-marketing` | **Version:** 1.0.0 | **Skills:** 8 | **Commands:** 0 | **Licence:** Apache-2.0
 
-```bash
-claude plugin marketplace add anthropics/knowledge-work-plugins
-claude plugin install marketing@knowledge-work-plugins
+## Who it is for
+
+Whoever runs marketing for the practice, in house or with an agency.
+
+## Install
+
+**Claude Code.** In a session:
+
+```text
+/plugin marketplace add wherewolf87/smile-fx-plugins
+/plugin install sfx-marketing@smile-fx-plugins
 ```
 
-## Commands
+The install command opens the plugin panel so you can review it and pick a scope. From your shell, use `claude plugin marketplace add wherewolf87/smile-fx-plugins` and `claude plugin install sfx-marketing@smile-fx-plugins`.
 
-| Command | Description |
+**Cowork.** Open **Customize**, then **Plugins**, then **Add marketplace**, and enter `wherewolf87/smile-fx-plugins`. Select **SMILE-FX Marketing** and **Install**, then connect your tools on its **Connectors** tab. Plugins need a paid Claude plan.
+
+Full steps: [install guide](../README.md#install).
+
+## Try asking
+
+- "Plan a 30-day campaign to announce our new Saturday hours."
+- "Review this newsletter draft against our brand guide."
+- "Run an SEO audit of our home page."
+
+## First run
+
+If you keep a brand style guide in your local settings or share it in the conversation, `brand-review` and the drafting skills check against it. Without one, they ask for your voice and audience.
+
+## Skills (8)
+
+Claude uses a skill when your request matches it. You can also call one by name.
+
+| Skill | What it does |
 |---|---|
-| `/draft-content` | Draft blog posts, social media, email newsletters, landing pages, press releases, and case studies |
-| `/campaign-plan` | Generate a full campaign brief with objectives, channels, content calendar, and success metrics |
-| `/brand-review` | Review content against your brand voice, style guide, and messaging pillars |
-| `/competitive-brief` | Research competitors and generate a positioning and messaging comparison |
-| `/performance-report` | Build a marketing performance report with key metrics, trends, and optimization recommendations |
-| `/seo-audit` | Run a comprehensive SEO audit — keyword research, on-page analysis, content gaps, technical checks, and competitor comparison |
-| `/email-sequence` | Design and draft multi-email sequences for nurture flows, onboarding, drip campaigns, and more |
+| `/sfx-marketing:brand-review` | Checks content against your brand voice and style guide, with specific before and after fixes. |
+| `/sfx-marketing:campaign-plan` | Writes a campaign brief: goals, audience, messages, channels, calendar and success measures. |
+| `/sfx-marketing:competitive-brief` | Compares competitor positioning and messaging and finds content gaps. |
+| `/sfx-marketing:content-creation` | Drafts content for blogs, social, email newsletters, landing pages and press releases. |
+| `/sfx-marketing:draft-content` | Drafts one specific piece with channel formatting, headline options and SEO notes. |
+| `/sfx-marketing:email-sequence` | Designs multi-email sequences with copy, timing, branches and exit rules. |
+| `/sfx-marketing:performance-report` | Builds a marketing report with key measures, trends, wins, misses and next steps. |
+| `/sfx-marketing:seo-audit` | Audits keywords, on-page content, technical issues and competitor gaps. |
 
-## Skills
+## Connectors
 
-| Skill | Description |
-|---|---|
-| `content-creation` | Content type templates, writing best practices by channel, SEO fundamentals, headline formulas, and CTA guidance |
-| `campaign-planning` | Campaign frameworks, channel selection, content calendar creation, budget allocation, and success metrics |
-| `brand-voice` | Brand voice documentation, voice attributes, tone adaptation, style guide enforcement, and terminology management |
-| `competitive-analysis` | Competitive research methodology, messaging comparison, content gap analysis, positioning, and battlecard creation |
-| `performance-analytics` | Key metrics by channel, reporting templates, trend analysis, attribution modeling, and optimization frameworks |
+Set up: Slack, Canva, Figma, HubSpot, Amplitude (US), Amplitude (EU), Notion, Ahrefs, Similarweb, Klaviyo, Supermetrics. Blank on purpose, connect them yourself: Google Calendar, Gmail.
 
-## Example Workflows
+Each connector signs in with your own account, and nothing connects until you do. [CONNECTORS.md](CONNECTORS.md) lists what each one needs.
 
-### Drafting a Blog Post
+## Good to know
 
-```
-> /draft-content
-Type: blog post
-Topic: How AI is transforming B2B marketing
-Audience: Marketing directors at mid-market SaaS companies
-Key messages: AI saves time on repetitive tasks, improves personalization, requires human oversight
-Tone: Authoritative but approachable
-Length: 1200 words
-```
+- Health care advertising rules apply to anything you publish. Check claims with your compliance lead before posting.
+- Do not put patient health information (PHI) into Claude, a plugin or a connected tool unless your Claude plan and every connected service are covered by a signed Business Associate Agreement (BAA). Use de-identified examples when you test.
+- Software suggests. People decide. Check what a skill produces before you use it.
 
-Claude will generate a structured blog post draft with an engaging headline, introduction with a hook, organized sections, SEO-optimized subheadings, and a clear call to action.
+## Credits and licence
 
-### Planning a Campaign
+Adapted by SMILE-FX P.A. from the `marketing` plugin in Anthropic's [knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) (commit `da38ec1`), under the Apache License 2.0. SMILE-FX changed the plugin name and metadata, this README, the connector notes, and skill text that named the old plugin. The changes are listed in [MODIFICATIONS.md](../MODIFICATIONS.md). Licence: [LICENSE](LICENSE). Notices: [NOTICE](../NOTICE).
 
-```
-> /campaign-plan
-Goal: Drive 500 signups for our new product launch
-Audience: Technical decision-makers at enterprise companies
-Timeline: 6 weeks
-Budget range: $20,000-$30,000
-```
-
-Claude will produce a campaign brief covering objectives, audience segmentation, key messages, channel strategy, a week-by-week content calendar, and KPIs to track.
-
-### Reviewing Content Against Brand Guidelines
-
-```
-> /brand-review
-[paste your draft content]
-```
-
-If your brand style guide is configured in local settings, Claude will check your content against voice, tone, terminology, and messaging pillars. If not configured, Claude will ask about your guidelines or provide a generic review for clarity, consistency, and professionalism.
-
-## Configuration
-
-Configure your brand voice, style guide, and target personas in a local settings file for personalized output. This allows commands like `/draft-content` and `/brand-review` to automatically apply your brand standards without prompting each time.
-
-## MCP Integrations
-
-> If you see unfamiliar placeholders or need to check which tools are connected, see [CONNECTORS.md](CONNECTORS.md).
-
-This plugin works with the following MCP servers:
-
-- **Slack** — Share drafts, reports, and briefs with your team
-- **Canva** — Create and edit design assets
-- **Figma** — Access design files and brand assets
-- **HubSpot** — Pull campaign data, manage contacts, and track marketing automation
-- **Amplitude** — Pull product analytics and user behavior data for performance reporting
-- **Notion** — Access briefs, style guides, and campaign documents
-- **Ahrefs** — SEO keyword research, backlink analysis, and site audits
-- **Similarweb** — Competitive traffic analysis and market benchmarking
-- **Klaviyo** — Draft and review email marketing sequences and campaigns
-- **Supermetrics** — Pull marketing data from multiple platforms for analytics and reporting
+© 2026 SMILE-FX P.A. SMILE-FX® is a registered trademark of SMILE-FX P.A. SMILE-FX P.A. is not affiliated with, sponsored by or endorsed by Anthropic. Anthropic, Claude, Claude Code and Cowork are trademarks of Anthropic and are named here only to describe compatibility.

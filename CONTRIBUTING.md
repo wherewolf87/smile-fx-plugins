@@ -21,7 +21,7 @@ Every `.json` file must parse. Connector addresses must be full `https://` addre
 
 ## Writing style
 
-Plain words, present tense, short sentences. No superlatives such as "best" or "leading". No em or en dashes: use commas, colons and periods. Name other companies' products only to describe compatibility.
+Plain words, present tense, short sentences. No superlatives or ranking claims. No em or en dashes: use commas, colons and periods. Name other companies' products only to describe compatibility.
 
 ## Health information
 
@@ -41,20 +41,37 @@ The GitHub owner (`wherewolf87`) and the homepage (`https://smile-fx-ai.vercel.a
 
 - `.claude-plugin/marketplace.json`
 - `customer-support/.claude-plugin/plugin.json`
+- `customer-support/README.md`
 - `data/.claude-plugin/plugin.json`
+- `data/README.md`
 - `design/.claude-plugin/plugin.json`
+- `design/README.md`
 - `engineering/.claude-plugin/plugin.json`
+- `engineering/README.md`
 - `enterprise-search/.claude-plugin/plugin.json`
+- `enterprise-search/README.md`
 - `finance/.claude-plugin/plugin.json`
+- `finance/README.md`
 - `human-resources/.claude-plugin/plugin.json`
+- `human-resources/README.md`
 - `legal/.claude-plugin/plugin.json`
+- `legal/README.md`
 - `marketing/.claude-plugin/plugin.json`
+- `marketing/README.md`
 - `operations/.claude-plugin/plugin.json`
+- `operations/README.md`
 - `pdf-viewer/.claude-plugin/plugin.json`
+- `pdf-viewer/README.md`
 - `plugin-builder/.claude-plugin/plugin.json`
+- `plugin-builder/README.md`
 - `product-management/.claude-plugin/plugin.json`
+- `product-management/README.md`
 - `productivity/.claude-plugin/plugin.json`
+- `productivity/README.md`
+- `README.md`
 - `sales/.claude-plugin/plugin.json`
+- `sales/README.md`
 - `SECURITY.md`
 - `small-business/.claude-plugin/plugin.json`
+- `small-business/README.md`
 - `CONTRIBUTING.md` (this file)

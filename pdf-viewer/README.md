@@ -1,57 +1,65 @@
-# PDF Viewer Plugin
+# SMILE-FX® PDF Viewer
 
-View, annotate, and sign PDFs in a live interactive viewer. Mark up
-contracts, fill forms with visual feedback, stamp approvals, and place
-signatures — then download the annotated copy.
+> Opens PDFs in an interactive viewer so you can read, annotate, fill forms and place signatures, then download the marked-up copy.
 
-## What It Does
+**Install id:** `sfx-pdf-viewer` | **Version:** 1.0.0 | **Skills:** 1 | **Commands:** 4 | **Licence:** Apache-2.0
 
-- **Open PDFs** from local files or academic sources (arXiv, bioRxiv, etc.)
-- **Annotate collaboratively** — Claude proposes highlights, notes, and
-  stamps section by section; you review each batch in the viewer
-- **Fill forms** — guided field-by-field completion with live preview
-- **Sign documents** — place signature/initials images on the page
-- **Stamp approvals** — APPROVED, DRAFT, CONFIDENTIAL, or any custom label
-- **Download** — export the annotated PDF from the viewer toolbar
+## Who it is for
 
-## Commands
+Anyone who reviews, fills or signs PDFs.
+
+## Install
+
+**Claude Code.** In a session:
+
+```text
+/plugin marketplace add wherewolf87/smile-fx-plugins
+/plugin install sfx-pdf-viewer@smile-fx-plugins
+```
+
+The install command opens the plugin panel so you can review it and pick a scope. From your shell, use `claude plugin marketplace add wherewolf87/smile-fx-plugins` and `claude plugin install sfx-pdf-viewer@smile-fx-plugins`.
+
+**Cowork.** Open **Customize**, then **Plugins**, then **Add marketplace**, and enter `wherewolf87/smile-fx-plugins`. Select **SMILE-FX PDF Viewer** and **Install**, then connect your tools on its **Connectors** tab. Plugins need a paid Claude plan.
+
+Full steps: [install guide](../README.md#install).
+
+## Try asking
+
+- "Open this vendor agreement PDF."
+- "Fill in this supplier application form."
+- "Place my initials on page 3."
+
+## Skills (1)
+
+Claude uses a skill when your request matches it. You can also call one by name.
+
+| Skill | What it does |
+|---|---|
+| `/sfx-pdf-viewer:view-pdf` | Opens a PDF in an interactive viewer for markup, forms and signatures. |
+
+## Commands (4)
 
 | Command | What it does |
-|---------|-------------|
-| `/pdf-viewer:open` | Open a PDF in the interactive viewer |
-| `/pdf-viewer:annotate` | Walk through the document, propose + apply markup, review together |
-| `/pdf-viewer:fill-form` | Fill PDF form fields interactively |
-| `/pdf-viewer:sign` | Place a signature or initials image on the page |
+|---|---|
+| `/sfx-pdf-viewer:annotate` | Proposes markup section by section for you to review in the viewer. |
+| `/sfx-pdf-viewer:fill-form` | Fills form fields with a live preview. |
+| `/sfx-pdf-viewer:open` | Opens a PDF in the interactive viewer. |
+| `/sfx-pdf-viewer:sign` | Places a signature or initials image on a page. |
 
-## When to use this vs. just reading a PDF
+## Connectors
 
-This plugin is for **interactive, visual workflows** — when you want to
-see the document, mark it up, and download an annotated copy.
+Set up: PDF server (local).
 
-If you just want Claude to **summarize or extract text** from a PDF,
-don't use this plugin. Claude can read PDF files natively and that's
-faster for pure ingestion.
+Each connector signs in with your own account, and nothing connects until you do. [CONNECTORS.md](CONNECTORS.md) lists what each one needs.
 
-## How It Works
+## Good to know
 
-This plugin uses a **local MCP server** (`@modelcontextprotocol/server-pdf`)
-that runs on your machine via `npx`. No API keys or remote services —
-the PDF server starts automatically when the plugin loads.
+- The viewer runs a local server with npx, so it needs Node.js 20 or later (package requirement checked September 27, 2026).
+- Do not put patient health information (PHI) into Claude, a plugin or a connected tool unless your Claude plan and every connected service are covered by a signed Business Associate Agreement (BAA). Use de-identified examples when you test.
+- Software suggests. People decide. Check what a skill produces before you use it.
 
-## Requirements
+## Credits and licence
 
-- Node.js >= 18
-- Internet for remote PDFs (arXiv, etc.)
+Adapted by SMILE-FX P.A. from the `pdf-viewer` plugin in Anthropic's [knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) (commit `da38ec1`), under the Apache License 2.0. SMILE-FX changed the plugin name and metadata, this README, the connector notes, and skill text that named the old plugin. The changes are listed in [MODIFICATIONS.md](../MODIFICATIONS.md). Licence: [LICENSE](LICENSE). Notices: [NOTICE](../NOTICE).
 
-## Supported PDF Sources
-
-- Local files (file paths in your working directory)
-- [arXiv](https://arxiv.org) — `/abs/` URLs auto-convert to PDF
-- Any direct HTTPS PDF URL (bioRxiv, Zenodo, OSF, etc. — use the PDF
-  link, not the landing page)
-
-## Signature Disclaimer
-
-`/pdf-viewer:sign` places a **visual** signature image on the page. It is not
-a certified or cryptographic digital signature. For legally binding
-e-signatures, use a dedicated signing service.
+© 2026 SMILE-FX P.A. SMILE-FX® is a registered trademark of SMILE-FX P.A. SMILE-FX P.A. is not affiliated with, sponsored by or endorsed by Anthropic. Anthropic, Claude, Claude Code and Cowork are trademarks of Anthropic and are named here only to describe compatibility.

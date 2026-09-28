@@ -20,7 +20,7 @@ Out of scope. Please report these to the company that runs them:
 ## How these plugins run
 
 - Skills are written instructions. They run with the permissions of the app you use and the connectors you approve.
-- Connectors are third-party servers. Each one signs in with your own account, and your app asks before a tool runs unless you change that setting.
+- Connectors are third-party servers. Each one signs in with your own account. Your app's permission settings decide whether each tool runs straight away or asks you first.
 - SMILE-FX PDF Viewer starts a local server with `npx`, which downloads a package from npm the first time it runs.
 - Review a plugin before you install it. Claude Code and Cowork show its skills and connectors first.
 

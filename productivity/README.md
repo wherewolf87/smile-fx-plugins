@@ -1,97 +1,62 @@
-# Productivity Plugin
+# SMILE-FX® Productivity
 
-A productivity plugin primarily designed for [Cowork](https://claude.com/product/cowork), Anthropic's agentic desktop application — though it also works in Claude Code. Task management, workplace memory, and a visual dashboard — Claude learns your people, projects, and terminology so it can act like a colleague, not a chatbot.
+> Keeps a task list and a working memory of your people, projects and shorthand, and pulls new tasks from your calendar, email and chat.
 
-## Installation
+**Install id:** `sfx-productivity` | **Version:** 1.0.0 | **Skills:** 4 | **Commands:** 0 | **Licence:** Apache-2.0
 
-```
-claude plugin marketplace add anthropics/knowledge-work-plugins
-claude plugin install productivity@knowledge-work-plugins
-```
+## Who it is for
 
-## What It Does
+Anyone who wants a daily task list and a memory of people, projects and shorthand.
 
-This plugin gives Claude a persistent understanding of your work:
+## Install
 
-- **Task management** — A markdown task list (`TASKS.md`) that Claude reads, writes, and executes against. Add tasks naturally, and Claude tracks status, triages stale items, and syncs with external tools.
-- **Workplace memory** — A two-tier memory system that teaches Claude your shorthand, people, projects, and terminology. Say "ask todd to do the PSR for oracle" and Claude knows exactly who, what, and which deal.
-- **Visual dashboard** — A local HTML file that gives you a board view of your tasks and a live view of what Claude knows about your workplace. Edit from the board or the file — they stay in sync.
+**Claude Code.** In a session:
 
-## Commands
-
-| Command | What it does |
-|---------|--------------|
-| `/start` | Initialize tasks + memory, open the dashboard |
-| `/update` | Triage stale items, check memory for gaps, sync from external tools if applicable |
-| `/update --comprehensive` | Deep scan email, calendar, chat — flag missed todos and suggest new memories |
-
-## Skills
-
-| Skill | Description |
-|-------|-------------|
-| `memory-management` | Two-tier memory system — CLAUDE.md for working memory, memory/ directory for deep storage |
-| `task-management` | Markdown-based task tracking using a shared TASKS.md file |
-
-## Example Workflows
-
-### Getting Started
-
-```
-You: /start
-
-Claude: [Creates TASKS.md, CLAUDE.md, memory/ directory, and dashboard.html]
-        [Opens the dashboard in your browser]
-        [Asks about your role, team, and current priorities to seed memory]
+```text
+/plugin marketplace add wherewolf87/smile-fx-plugins
+/plugin install sfx-productivity@smile-fx-plugins
 ```
 
-### Adding Tasks Naturally
+The install command opens the plugin panel so you can review it and pick a scope. From your shell, use `claude plugin marketplace add wherewolf87/smile-fx-plugins` and `claude plugin install sfx-productivity@smile-fx-plugins`.
 
-```
-You: I need to review the budget proposal for Sarah by Friday,
-     draft the Q2 roadmap after syncing with Greg, and follow up
-     on the API spec from the Platform team
+**Cowork.** Open **Customize**, then **Plugins**, then **Add marketplace**, and enter `wherewolf87/smile-fx-plugins`. Select **SMILE-FX Productivity** and **Install**, then connect your tools on its **Connectors** tab. Plugins need a paid Claude plan.
 
-Claude: [Adds all three tasks to TASKS.md with context]
-        [Dashboard updates automatically]
-```
+Full steps: [install guide](../README.md#install).
 
-### Morning Sync
+## Try asking
 
-```
-You: /update --comprehensive
+- "Start."
+- "What is on my plate today?"
+- "Add a task: renew the business license by Friday."
 
-Claude: [Scans email, calendar, and chat for new action items]
-        [Flags: "Budget proposal review is due tomorrow — still open"]
-        [Suggests: "New person mentioned in 3 threads: Jamie Park,
-         Design Lead — add to memory?"]
-        [Updates stale tasks and fills memory gaps]
-```
+## First run
 
-### Workplace Shorthand
+Run `/sfx-productivity:start` once to create the task list and memory files, then `/sfx-productivity:update` to pull in new tasks.
 
-Once memory is populated, Claude decodes your shorthand instantly:
+## Skills (4)
 
-```
-You: ask todd to do the PSR for oracle
+Claude uses a skill when your request matches it. You can also call one by name.
 
-Claude: "Ask Todd Martinez (Finance lead) to prepare the Pipeline
-         Status Report for the Oracle Systems deal ($2.3M, closing Q2)"
-```
+| Skill | What it does |
+|---|---|
+| `/sfx-productivity:memory-management` | Keeps a working memory of your people, projects and shorthand so requests need less explaining. |
+| `/sfx-productivity:start` | Sets up the task list and memory, and opens the dashboard. |
+| `/sfx-productivity:task-management` | Keeps a shared task list in a TASKS.md file. |
+| `/sfx-productivity:update` | Pulls in new tasks, triages stale ones and fills memory gaps from recent activity. |
 
-No clarifying questions. No round trips.
+## Connectors
 
-## Data Sources
+Set up: Slack, Notion, Asana, Linear, Atlassian (Jira, Confluence), monday.com, ClickUp. Blank on purpose, connect them yourself: Google Calendar, Gmail.
 
-> If you see unfamiliar placeholders or need to check which tools are connected, see [CONNECTORS.md](CONNECTORS.md).
+Each connector signs in with your own account, and nothing connects until you do. [CONNECTORS.md](CONNECTORS.md) lists what each one needs.
 
-Connect your communication and project management tools for the best experience. Without them, manage tasks and memory manually.
+## Good to know
 
-**Included MCP connections:**
-- Chat (Slack) for team context and message scanning
-- Email and calendar (Microsoft 365) for action item discovery
-- Knowledge base (Notion) for reference documents
-- Project tracker (Asana, Linear, Atlassian, monday.com, ClickUp) for task syncing
-- Office suite (Microsoft 365) for documents
+- Do not put patient health information (PHI) into Claude, a plugin or a connected tool unless your Claude plan and every connected service are covered by a signed Business Associate Agreement (BAA). Use de-identified examples when you test.
+- Software suggests. People decide. Check what a skill produces before you use it.
 
-**Additional options:**
-- See [CONNECTORS.md](CONNECTORS.md) for alternative tools in each category
+## Credits and licence
+
+Adapted by SMILE-FX P.A. from the `productivity` plugin in Anthropic's [knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) (commit `da38ec1`), under the Apache License 2.0. SMILE-FX changed the plugin name and metadata, this README, the connector notes, and skill text that named the old plugin. The changes are listed in [MODIFICATIONS.md](../MODIFICATIONS.md). Licence: [LICENSE](LICENSE). Notices: [NOTICE](../NOTICE).
+
+© 2026 SMILE-FX P.A. SMILE-FX® is a registered trademark of SMILE-FX P.A. SMILE-FX P.A. is not affiliated with, sponsored by or endorsed by Anthropic. Anthropic, Claude, Claude Code and Cowork are trademarks of Anthropic and are named here only to describe compatibility.

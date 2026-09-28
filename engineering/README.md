@@ -1,136 +1,64 @@
-# Engineering Plugin
+# SMILE-FX® Engineering
 
-A software engineering plugin primarily designed for [Cowork](https://claude.com/product/cowork), Anthropic's agentic desktop application — though it also works in Claude Code. Helps with standups, code review, architecture decisions, incident response, debugging, and technical documentation. Works with any engineering team — standalone with your input, supercharged when you connect your source control, project tracker, and monitoring tools.
+> Supports standups, code review, debugging, architecture decisions, incident response and technical documentation.
 
-## Installation
+**Install id:** `sfx-engineering` | **Version:** 1.0.0 | **Skills:** 10 | **Commands:** 0 | **Licence:** Apache-2.0
 
-```bash
-claude plugin marketplace add anthropics/knowledge-work-plugins
-claude plugin install engineering@knowledge-work-plugins
+## Who it is for
+
+Practices or groups with in-house developers or an IT partner.
+
+## Install
+
+**Claude Code.** In a session:
+
+```text
+/plugin marketplace add wherewolf87/smile-fx-plugins
+/plugin install sfx-engineering@smile-fx-plugins
 ```
 
-## Commands
+The install command opens the plugin panel so you can review it and pick a scope. From your shell, use `claude plugin marketplace add wherewolf87/smile-fx-plugins` and `claude plugin install sfx-engineering@smile-fx-plugins`.
 
-Explicit workflows you invoke with a slash command:
+**Cowork.** Open **Customize**, then **Plugins**, then **Add marketplace**, and enter `wherewolf87/smile-fx-plugins`. Select **SMILE-FX Engineering** and **Install**, then connect your tools on its **Connectors** tab. Plugins need a paid Claude plan.
 
-| Command | Description |
+Full steps: [install guide](../README.md#install).
+
+## Try asking
+
+- "Review this pull request."
+- "Write a postmortem for yesterday's website outage."
+- "Create a deploy checklist for our booking site."
+
+## Skills (10)
+
+Claude uses a skill when your request matches it. You can also call one by name.
+
+| Skill | What it does |
 |---|---|
-| `/standup` | Generate a standup update from your recent activity — commits, PRs, tickets, and chat |
-| `/review` | Review code changes — security, performance, style, and correctness |
-| `/debug` | Structured debugging session — reproduce, isolate, diagnose, and fix |
-| `/architecture` | Create or evaluate architecture decisions — ADR format with trade-off analysis |
-| `/incident` | Run an incident response workflow — triage, communicate, mitigate, and write postmortem |
-| `/deploy-checklist` | Pre-deployment checklist — verify tests, review changes, check dependencies, confirm rollback plan |
+| `/sfx-engineering:architecture` | Creates or evaluates an architecture decision record. |
+| `/sfx-engineering:code-review` | Reviews code changes for security, performance and correctness. |
+| `/sfx-engineering:debug` | Runs a structured debugging session: reproduce, isolate, diagnose and fix. |
+| `/sfx-engineering:deploy-checklist` | Runs a pre-deployment verification checklist. |
+| `/sfx-engineering:documentation` | Writes and maintains technical documentation. |
+| `/sfx-engineering:incident-response` | Runs an incident: triage, communication and postmortem. |
+| `/sfx-engineering:standup` | Writes a standup update from recent activity. |
+| `/sfx-engineering:system-design` | Designs systems, services and architectures. |
+| `/sfx-engineering:tech-debt` | Finds, sorts and prioritizes technical debt. |
+| `/sfx-engineering:testing-strategy` | Designs test strategies and test plans. |
 
-All commands work **standalone** (paste code, describe your system, upload files) and get **supercharged** with MCP connectors.
+## Connectors
 
-## Skills
+Set up: Slack, Linear, Asana, Atlassian (Jira, Confluence), Notion, GitHub, PagerDuty, Datadog. Blank on purpose, connect them yourself: Google Calendar, Gmail.
 
-Domain knowledge Claude uses automatically when relevant:
+Each connector signs in with your own account, and nothing connects until you do. [CONNECTORS.md](CONNECTORS.md) lists what each one needs.
 
-| Skill | Description |
-|---|---|
-| `code-review` | Review code for bugs, security issues, performance, and maintainability |
-| `incident-response` | Triage and manage production incidents — status updates, runbooks, postmortems |
-| `system-design` | Design systems and services — architecture diagrams, API design, data modeling |
-| `tech-debt` | Identify, categorize, and prioritize technical debt — build a remediation plan |
-| `testing-strategy` | Design test strategies — unit, integration, e2e coverage, test plan creation |
-| `documentation` | Write and maintain technical documentation — READMEs, API docs, runbooks, onboarding guides |
+## Good to know
 
-## Example Workflows
+- Do not put patient health information (PHI) into Claude, a plugin or a connected tool unless your Claude plan and every connected service are covered by a signed Business Associate Agreement (BAA). Use de-identified examples when you test.
+- Software suggests. People decide. Check what a skill produces before you use it.
 
-### Morning Standup
+## Credits and licence
 
-```
-/standup
-```
+Adapted by SMILE-FX P.A. from the `engineering` plugin in Anthropic's [knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) (commit `da38ec1`), under the Apache License 2.0. SMILE-FX changed the plugin name and metadata, this README, the connector notes, and skill text that named the old plugin. The changes are listed in [MODIFICATIONS.md](../MODIFICATIONS.md). Licence: [LICENSE](LICENSE). Notices: [NOTICE](../NOTICE).
 
-If your tools are connected, I'll pull your recent commits, PR activity, and ticket updates. Otherwise, tell me what you worked on and I'll format it.
-
-### Code Review
-
-```
-/review https://github.com/org/repo/pull/123
-```
-
-Share a PR link, paste a diff, or point to files. Get a structured review covering security, performance, correctness, and style.
-
-### Debugging an Issue
-
-```
-/debug Users are getting 500 errors on the checkout page
-```
-
-Walk through a structured debugging process: reproduce, isolate, diagnose, fix. I'll help you think through it systematically.
-
-### Architecture Decision
-
-```
-/architecture Should we use a message queue or direct API calls between services?
-```
-
-Get a structured ADR with options analysis, trade-offs, and a recommendation.
-
-### Incident Response
-
-```
-/incident The payments service is returning 503s
-```
-
-Start an incident workflow: triage severity, draft communications, track timeline, and generate a postmortem when resolved.
-
-### Pre-Deploy Check
-
-```
-/deploy-checklist auth-service v2.3.0
-```
-
-Get a customized deployment checklist based on your service and what's changing.
-
-## Standalone + Supercharged
-
-Every command and skill works without any integrations:
-
-| What You Can Do | Standalone | Supercharged With |
-|-----------------|------------|-------------------|
-| Standup updates | Describe your work | Source control, Project tracker, Chat |
-| Code review | Paste diff or code | Source control (pull PRs automatically) |
-| Debug sessions | Describe the problem | Monitoring (pull logs and metrics) |
-| Architecture decisions | Describe the system | Knowledge base (find prior ADRs) |
-| Incident response | Describe the incident | Monitoring, Incident management, Chat |
-| Deploy checklists | Describe the deploy | CI/CD, Source control |
-
-## MCP Integrations
-
-> If you see unfamiliar placeholders or need to check which tools are connected, see [CONNECTORS.md](CONNECTORS.md).
-
-Connect your tools for a richer experience:
-
-| Category | Examples | What It Enables |
-|---|---|---|
-| **Source control** | GitHub, GitLab | PR diffs, commit history, branch status |
-| **Project tracker** | Linear, Jira, Asana | Ticket status, sprint data, assignments |
-| **Monitoring** | Datadog, New Relic | Logs, metrics, alerts, dashboards |
-| **Incident management** | PagerDuty, Opsgenie | On-call schedules, incident tracking, paging |
-| **Chat** | Slack, Teams | Team discussions, standup channels |
-| **Knowledge base** | Notion, Confluence | ADRs, runbooks, onboarding docs |
-
-See [CONNECTORS.md](CONNECTORS.md) for the full list of supported integrations.
-
-## Settings
-
-Create a local settings file at `engineering/.claude/settings.local.json` to personalize:
-
-```json
-{
-  "name": "Your Name",
-  "title": "Software Engineer",
-  "team": "Your Team",
-  "company": "Your Company",
-  "techStack": ["Python", "TypeScript", "PostgreSQL", "AWS"],
-  "defaultBranch": "main",
-  "deployProcess": "canary"
-}
-```
-
-The plugin will ask you for this information interactively if it's not configured.
+© 2026 SMILE-FX P.A. SMILE-FX® is a registered trademark of SMILE-FX P.A. SMILE-FX P.A. is not affiliated with, sponsored by or endorsed by Anthropic. Anthropic, Claude, Claude Code and Cowork are trademarks of Anthropic and are named here only to describe compatibility.

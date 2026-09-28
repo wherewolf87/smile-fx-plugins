@@ -1,117 +1,61 @@
-# Design Plugin
+# SMILE-FX® Design
 
-A design productivity plugin primarily designed for [Cowork](https://claude.com/product/cowork), Anthropic's agentic desktop application — though it also works in Claude Code. Helps with design critique, system management, UX writing, accessibility, research synthesis, and developer handoff. Works with any design team — standalone with your input, supercharged when you connect Figma and other tools.
+> Critiques designs, writes interface copy, reviews accessibility, synthesizes research and prepares developer handoff notes.
 
-## Installation
+**Install id:** `sfx-design` | **Version:** 1.0.0 | **Skills:** 7 | **Commands:** 0 | **Licence:** Apache-2.0
 
-```bash
-claude plugin marketplace add anthropics/knowledge-work-plugins
-claude plugin install design@knowledge-work-plugins
+## Who it is for
+
+Teams that make websites, forms, print pieces or app screens.
+
+## Install
+
+**Claude Code.** In a session:
+
+```text
+/plugin marketplace add wherewolf87/smile-fx-plugins
+/plugin install sfx-design@smile-fx-plugins
 ```
 
-## Commands
+The install command opens the plugin panel so you can review it and pick a scope. From your shell, use `claude plugin marketplace add wherewolf87/smile-fx-plugins` and `claude plugin install sfx-design@smile-fx-plugins`.
 
-Explicit workflows you invoke with a slash command:
+**Cowork.** Open **Customize**, then **Plugins**, then **Add marketplace**, and enter `wherewolf87/smile-fx-plugins`. Select **SMILE-FX Design** and **Install**, then connect your tools on its **Connectors** tab. Plugins need a paid Claude plan.
 
-| Command | Description |
+Full steps: [install guide](../README.md#install).
+
+## Try asking
+
+- "Critique this landing page screenshot."
+- "Review our online form for accessibility issues."
+- "Rewrite the error messages on our booking form."
+
+## Skills (7)
+
+Claude uses a skill when your request matches it. You can also call one by name.
+
+| Skill | What it does |
 |---|---|
-| `/critique` | Get structured design feedback — usability, visual hierarchy, accessibility, and consistency |
-| `/design-system` | Audit, document, or extend your design system — components, tokens, patterns |
-| `/handoff` | Generate developer handoff specs — measurements, tokens, states, interactions, and edge cases |
-| `/ux-copy` | Write or review UX copy — microcopy, error messages, empty states, onboarding flows |
-| `/accessibility` | Run an accessibility audit — WCAG compliance, color contrast, screen reader, and keyboard navigation |
-| `/research-synthesis` | Synthesize user research — interviews, surveys, usability tests into actionable insights |
+| `/sfx-design:accessibility-review` | Runs a WCAG 2.1 AA accessibility audit on a design or page. |
+| `/sfx-design:design-critique` | Gives structured feedback on usability, hierarchy and consistency. |
+| `/sfx-design:design-handoff` | Writes developer handoff specs from a design. |
+| `/sfx-design:design-system` | Audits, documents or extends your design system. |
+| `/sfx-design:research-synthesis` | Turns user research into themes, insights and recommendations. |
+| `/sfx-design:user-research` | Plans, runs and synthesizes user research. |
+| `/sfx-design:ux-copy` | Writes or reviews interface copy: microcopy, error messages, empty states and calls to action. |
 
-All commands work **standalone** (describe your design or paste screenshots) and get **supercharged** with MCP connectors.
+## Connectors
 
-## Skills
+Set up: Slack, Figma, Linear, Asana, Atlassian (Jira, Confluence), Notion, Intercom. Blank on purpose, connect them yourself: Google Calendar, Gmail.
 
-Domain knowledge Claude uses automatically when relevant:
+Each connector signs in with your own account, and nothing connects until you do. [CONNECTORS.md](CONNECTORS.md) lists what each one needs.
 
-| Skill | Description |
-|---|---|
-| `design-critique` | Evaluate designs for usability, visual hierarchy, consistency, and adherence to design principles |
-| `design-system-management` | Manage design tokens, component libraries, and pattern documentation |
-| `ux-writing` | Write effective microcopy — clear, concise, consistent, and brand-aligned |
-| `accessibility-review` | Audit designs and code for WCAG 2.1 AA compliance |
-| `user-research` | Plan, conduct, and synthesize user research — interviews, surveys, usability testing |
-| `design-handoff` | Create comprehensive developer handoff documentation from designs |
+## Good to know
 
-## Example Workflows
+- Do not put patient health information (PHI) into Claude, a plugin or a connected tool unless your Claude plan and every connected service are covered by a signed Business Associate Agreement (BAA). Use de-identified examples when you test.
+- Software suggests. People decide. Check what a skill produces before you use it.
 
-### Getting Design Feedback
+## Credits and licence
 
-```
-/critique
-```
+Adapted by SMILE-FX P.A. from the `design` plugin in Anthropic's [knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) (commit `da38ec1`), under the Apache License 2.0. SMILE-FX changed the plugin name and metadata, this README, the connector notes, and skill text that named the old plugin. The changes are listed in [MODIFICATIONS.md](../MODIFICATIONS.md). Licence: [LICENSE](LICENSE). Notices: [NOTICE](../NOTICE).
 
-Share a Figma link, screenshot, or describe your design. Get structured feedback on usability, visual hierarchy, consistency, and accessibility.
-
-### Auditing Your Design System
-
-```
-/design-system audit
-```
-
-I'll review your component library for consistency, completeness, and naming conventions. Get a report with specific improvement recommendations.
-
-### Writing UX Copy
-
-```
-/ux-copy error messages for payment flow
-```
-
-Get context-appropriate copy with tone guidance, alternatives, and localization notes.
-
-### Developer Handoff
-
-```
-/handoff
-```
-
-Share a Figma link and get a complete spec: measurements, design tokens, component states, interaction notes, and edge cases.
-
-### Accessibility Check
-
-```
-/accessibility
-```
-
-Share a design or URL. Get a WCAG 2.1 AA compliance report with specific issues, severity, and remediation steps.
-
-### Synthesizing Research
-
-```
-/research-synthesis
-```
-
-Upload interview transcripts, survey results, or usability test notes. Get themes, insights, and prioritized recommendations.
-
-## Standalone + Supercharged
-
-Every command and skill works without any integrations:
-
-| What You Can Do | Standalone | Supercharged With |
-|-----------------|------------|-------------------|
-| Design critique | Describe or screenshot | Figma MCP (pull designs directly) |
-| Design system | Describe your system | Figma MCP (audit component library) |
-| Handoff specs | Describe or screenshot | Figma MCP (exact measurements, tokens) |
-| UX copy | Describe the context | Knowledge base (brand voice guidelines) |
-| Accessibility | Describe or screenshot | Figma MCP, analytics for real usage data |
-| Research synthesis | Paste transcripts | User feedback tools (pull raw data) |
-
-## MCP Integrations
-
-> If you see unfamiliar placeholders or need to check which tools are connected, see [CONNECTORS.md](CONNECTORS.md).
-
-Connect your tools for a richer experience:
-
-| Category | Examples | What It Enables |
-|---|---|---|
-| **Design tool** | Figma | Pull designs, inspect components, access design tokens |
-| **User feedback** | Intercom, Productboard | Raw feedback, feature requests, NPS data |
-| **Project tracker** | Linear, Asana, Jira | Link designs to tickets, track implementation |
-| **Knowledge base** | Notion | Brand guidelines, design principles, research repository |
-| **Product analytics** | Amplitude, Mixpanel | Usage data for research synthesis and design decisions |
-
-See [CONNECTORS.md](CONNECTORS.md) for the full list of supported integrations.
+© 2026 SMILE-FX P.A. SMILE-FX® is a registered trademark of SMILE-FX P.A. SMILE-FX P.A. is not affiliated with, sponsored by or endorsed by Anthropic. Anthropic, Claude, Claude Code and Cowork are trademarks of Anthropic and are named here only to describe compatibility.

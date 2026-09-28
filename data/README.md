@@ -1,121 +1,65 @@
-# Data Analyst Plugin
+# SMILE-FX® Data
 
-A data analyst plugin primarily designed for [Cowork](https://claude.com/product/cowork), Anthropic's agentic desktop application — though it also works in Claude Code. SQL queries, data exploration, visualization, dashboards, and insight generation. Works with any data warehouse, any SQL dialect, and any analytics stack.
+> Writes SQL, explores data sets, runs statistics, builds charts and dashboards, and checks an analysis before you share it.
 
-## Installation
+**Install id:** `sfx-data` | **Version:** 1.0.0 | **Skills:** 10 | **Commands:** 0 | **Licence:** Apache-2.0
 
-```
-claude plugin marketplace add anthropics/knowledge-work-plugins
-claude plugin install data@knowledge-work-plugins
-```
+## Who it is for
 
-## What It Does
+Anyone who works with spreadsheets, exports or a data warehouse.
 
-This plugin transforms Claude into a data analyst collaborator. It helps you explore datasets, write optimized SQL, build visualizations, create interactive dashboards, and validate analyses before sharing with stakeholders.
+## Install
 
-### With a Data Warehouse Connection
+**Claude Code.** In a session:
 
-Connect your data warehouse MCP server (e.g., Snowflake, Databricks, BigQuery, or any SQL-compatible database) for the best experience. Claude will:
-
-- Query your data warehouse directly
-- Explore schemas and table metadata
-- Run analyses end-to-end without copy-pasting
-- Iterate on queries based on results
-
-### Without a Data Warehouse Connection
-
-Without a data warehouse connection, paste SQL results or upload CSV/Excel files for analysis and visualization. Claude can also write SQL queries for you to run manually, and then analyze the results you provide.
-
-## Commands
-
-| Command | Description |
-|---------|-------------|
-| `/analyze` | Answer data questions -- from quick lookups to full analyses |
-| `/explore-data` | Profile and explore a dataset to understand its shape, quality, and patterns |
-| `/write-query` | Write optimized SQL for your dialect with best practices |
-| `/create-viz` | Create publication-quality visualizations with Python |
-| `/build-dashboard` | Build interactive HTML dashboards with filters and charts |
-| `/validate` | QA an analysis before sharing -- methodology, accuracy, and bias checks |
-
-## Skills
-
-| Skill | Description |
-|-------|-------------|
-| `sql-queries` | SQL best practices across dialects, common patterns, and performance optimization |
-| `data-exploration` | Data profiling, quality assessment, and pattern discovery |
-| `data-visualization` | Chart selection, Python viz code patterns, and design principles |
-| `statistical-analysis` | Descriptive stats, trend analysis, outlier detection, and hypothesis testing |
-| `data-validation` | Pre-delivery QA, sanity checks, and documentation standards |
-| `interactive-dashboard-builder` | HTML/JS dashboard construction with Chart.js, filters, and styling |
-
-## Example Workflows
-
-### Ad-Hoc Analysis
-
-```
-You: /analyze What was our monthly revenue trend for the past 12 months, broken down by product line?
-
-Claude: [Writes SQL query] → [Executes against data warehouse] → [Generates trend chart]
-       → [Identifies key patterns: "Product line A grew 23% YoY while B was flat"]
-       → [Validates results with sanity checks]
+```text
+/plugin marketplace add wherewolf87/smile-fx-plugins
+/plugin install sfx-data@smile-fx-plugins
 ```
 
-### Data Exploration
+The install command opens the plugin panel so you can review it and pick a scope. From your shell, use `claude plugin marketplace add wherewolf87/smile-fx-plugins` and `claude plugin install sfx-data@smile-fx-plugins`.
 
-```
-You: /explore-data users table
+**Cowork.** Open **Customize**, then **Plugins**, then **Add marketplace**, and enter `wherewolf87/smile-fx-plugins`. Select **SMILE-FX Data** and **Install**, then connect your tools on its **Connectors** tab. Plugins need a paid Claude plan.
 
-Claude: [Profiles table: 2.3M rows, 47 columns]
-       → [Reports: created_at has 0.2% nulls, email has 99.8% cardinality]
-       → [Flags: status column has unexpected value "UNKNOWN" in 340 rows]
-       → [Suggests: "High-value dimensions to explore: plan_type, signup_source, country"]
-```
+Full steps: [install guide](../README.md#install).
 
-### Query Writing
+## Try asking
 
-```
-You: /write-query I need a cohort retention analysis -- users grouped by signup month,
-     showing what % are still active 1, 3, 6, and 12 months later. We use Snowflake.
+- "Profile this monthly revenue CSV and flag data quality issues."
+- "Write a SQL query for new customers by month."
+- "Build a dashboard from this spreadsheet."
 
-Claude: [Writes optimized Snowflake SQL with CTEs]
-       → [Adds comments explaining each step]
-       → [Includes performance notes about partition pruning]
-```
+## Skills (10)
 
-### Dashboard Building
+Claude uses a skill when your request matches it. You can also call one by name.
 
-```
-You: /build-dashboard Create a sales dashboard with monthly revenue, top products,
-     and regional breakdown. Here's the data: [pastes CSV]
+| Skill | What it does |
+|---|---|
+| `/sfx-data:analyze` | Answers data questions, from quick lookups to full analyses. |
+| `/sfx-data:build-dashboard` | Builds an interactive HTML dashboard with charts, filters and tables. |
+| `/sfx-data:create-viz` | Creates charts with Python. |
+| `/sfx-data:data-context-extractor` | Builds a company-specific data skill from what your analysts know. |
+| `/sfx-data:data-visualization` | Guidance and code for clear charts with matplotlib, seaborn or plotly. |
+| `/sfx-data:explore-data` | Profiles a data set: shape, quality and patterns. |
+| `/sfx-data:sql-queries` | Writes correct SQL across common warehouse dialects. |
+| `/sfx-data:statistical-analysis` | Runs descriptive statistics, trends, outlier checks and hypothesis tests. |
+| `/sfx-data:validate-data` | Checks an analysis for method, accuracy and bias before you share it. |
+| `/sfx-data:write-query` | Writes SQL for your database dialect. |
 
-Claude: [Generates self-contained HTML file]
-       → [Includes interactive Chart.js visualizations]
-       → [Adds dropdown filters for region and time period]
-       → [Opens in browser for review]
-```
+## Connectors
 
-### Pre-Share Validation
+Set up: BigQuery, Hex, Amplitude (US), Amplitude (EU), Atlassian (Jira, Confluence), Definite. Blank on purpose, connect them yourself: Snowflake, Databricks.
 
-```
-You: /validate [shares analysis document]
+Each connector signs in with your own account, and nothing connects until you do. [CONNECTORS.md](CONNECTORS.md) lists what each one needs.
 
-Claude: [Reviews methodology] → [Checks for survivorship bias in churn analysis]
-       → [Verifies aggregation logic] → [Flags: "Denominator excludes trial users
-          which could overstate conversion rate by ~5pp"]
-       → [Confidence: "Ready to share with noted caveat"]
-```
+## Good to know
 
-## Connecting Your Data Stack
+- Use de-identified or aggregate data unless your plan is covered by a signed BAA.
+- Do not put patient health information (PHI) into Claude, a plugin or a connected tool unless your Claude plan and every connected service are covered by a signed Business Associate Agreement (BAA). Use de-identified examples when you test.
+- Software suggests. People decide. Check what a skill produces before you use it.
 
-> If you see unfamiliar placeholders or need to check which tools are connected, see [CONNECTORS.md](CONNECTORS.md).
+## Credits and licence
 
-This plugin works best when connected to your data infrastructure. Add MCP servers for:
+Adapted by SMILE-FX P.A. from the `data` plugin in Anthropic's [knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) (commit `da38ec1`), under the Apache License 2.0. SMILE-FX changed the plugin name and metadata, this README, the connector notes, and skill text that named the old plugin. The changes are listed in [MODIFICATIONS.md](../MODIFICATIONS.md). Licence: [LICENSE](LICENSE). Notices: [NOTICE](../NOTICE).
 
-- **Data Warehouse**: Snowflake, Databricks, BigQuery, Definite, or any SQL-compatible database
-- **Analytics/BI**: Amplitude, Looker, Tableau, or similar
-- **Notebooks**: Jupyter, Hex, or similar
-- **Spreadsheets**: Google Sheets, Excel
-- **Data Orchestration**: Airflow, dbt, Dagster, Prefect
-- **Data Ingestion**: Fivetran, Airbyte, Stitch
-
-Configure MCP servers in your `.mcp.json` or Claude Code settings to enable direct data access.
+© 2026 SMILE-FX P.A. SMILE-FX® is a registered trademark of SMILE-FX P.A. SMILE-FX P.A. is not affiliated with, sponsored by or endorsed by Anthropic. Anthropic, Claude, Claude Code and Cowork are trademarks of Anthropic and are named here only to describe compatibility.

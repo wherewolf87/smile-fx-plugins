@@ -1,92 +1,63 @@
-# Finance & Accounting Plugin
+# SMILE-FX® Finance
 
-A finance and accounting plugin primarily designed for [Cowork](https://claude.com/product/cowork), Anthropic's agentic desktop application — though it also works in Claude Code. Supports month-end close, journal entry preparation, account reconciliation, financial statement generation, variance analysis, and SOX audit support.
+> Prepares journal entries, reconciliations, financial statements and variance analysis, and supports month-end close and audit prep.
 
-> **Important**: This plugin assists with finance and accounting workflows but does not provide financial, tax, or audit advice. All outputs should be reviewed by qualified financial professionals before use in financial reporting, regulatory filings, or audit documentation.
+**Install id:** `sfx-finance` | **Version:** 1.0.0 | **Skills:** 8 | **Commands:** 0 | **Licence:** Apache-2.0
 
-## Installation
+## Who it is for
 
-```bash
-claude plugin marketplace add anthropics/knowledge-work-plugins
-claude plugin install finance@knowledge-work-plugins
+Owners, bookkeepers and controllers who close the books and explain the numbers.
+
+## Install
+
+**Claude Code.** In a session:
+
+```text
+/plugin marketplace add wherewolf87/smile-fx-plugins
+/plugin install sfx-finance@smile-fx-plugins
 ```
 
-## Commands
+The install command opens the plugin panel so you can review it and pick a scope. From your shell, use `claude plugin marketplace add wherewolf87/smile-fx-plugins` and `claude plugin install sfx-finance@smile-fx-plugins`.
 
-| Command | Description |
-|---------|-------------|
-| `/journal-entry` | Journal entry preparation — generate accruals, fixed asset entries, prepaids, payroll, and revenue entries with proper debits/credits and supporting detail |
-| `/reconciliation` | Account reconciliation — compare GL balances to subledger, bank, or third-party balances and identify reconciling items |
-| `/income-statement` | Income statement generation — produce P&L with period-over-period comparison and variance analysis |
-| `/variance-analysis` | Variance/flux analysis — decompose variances into drivers with narrative explanations and waterfall analysis |
-| `/sox-testing` | SOX compliance testing — generate sample selections, testing workpapers, and control assessments |
+**Cowork.** Open **Customize**, then **Plugins**, then **Add marketplace**, and enter `wherewolf87/smile-fx-plugins`. Select **SMILE-FX Finance** and **Install**, then connect your tools on its **Connectors** tab. Plugins need a paid Claude plan.
 
-## Skills
+Full steps: [install guide](../README.md#install).
 
-| Skill | Description |
-|-------|-------------|
-| `journal-entry-prep` | JE preparation best practices, standard accrual types, supporting documentation requirements, and review workflows |
-| `reconciliation` | Reconciliation methodology for GL-to-subledger, bank recs, and intercompany, with reconciling item categorization and aging |
-| `financial-statements` | Income statement, balance sheet, and cash flow statement formats with GAAP presentation and flux analysis methodology |
-| `variance-analysis` | Variance decomposition techniques (price/volume, rate/mix), materiality thresholds, narrative generation, and waterfall charts |
-| `close-management` | Month-end close checklist, task sequencing, dependencies, status tracking, and common close activities by day |
-| `audit-support` | SOX 404 control testing methodology, sample selection, documentation standards, and deficiency classification |
+## Try asking
 
-## Example Workflows
+- "Reconcile this bank export against the ledger export."
+- "Explain the variance between this month and last month."
+- "Draft our month-end close checklist."
 
-### Month-End Close
+## Skills (8)
 
-1. Run `/journal-entry ap-accrual 2024-12` to generate AP accrual entries
-2. Run `/journal-entry prepaid 2024-12` to amortize prepaid expenses
-3. Run `/journal-entry fixed-assets 2024-12` to book depreciation
-4. Run `/reconciliation cash 2024-12` to reconcile bank accounts
-5. Run `/reconciliation accounts-receivable 2024-12` to reconcile AR subledger
-6. Run `/income-statement monthly 2024-12` to generate the P&L with flux analysis
+Claude uses a skill when your request matches it. You can also call one by name.
 
-### Variance Analysis
+| Skill | What it does |
+|---|---|
+| `/sfx-finance:audit-support` | Supports control testing, sample selection and audit documentation. |
+| `/sfx-finance:close-management` | Sequences and tracks month-end close tasks. |
+| `/sfx-finance:financial-statements` | Builds the income statement, balance sheet and cash flow with period comparisons. |
+| `/sfx-finance:journal-entry` | Prepares journal entries with debits, credits and support. |
+| `/sfx-finance:journal-entry-prep` | Prepares month-end journal entries with supporting documentation. |
+| `/sfx-finance:reconciliation` | Reconciles ledger balances to subledgers, bank statements or other data. |
+| `/sfx-finance:sox-testing` | Builds SOX sample selections, testing workpapers and control assessments. |
+| `/sfx-finance:variance-analysis` | Breaks a variance into drivers with a written explanation. |
 
-1. Run `/variance-analysis revenue 2024-Q4 vs 2024-Q3` to analyze revenue variances
-2. Run `/variance-analysis opex 2024-12 vs budget` to investigate operating expense variances
-3. Review the waterfall analysis and provide context on unexplained variances
+## Connectors
 
-### SOX Testing
+Set up: BigQuery, Slack. Blank on purpose, connect them yourself: Snowflake, Databricks, Google Calendar, Gmail.
 
-1. Run `/sox-testing revenue-recognition 2024-Q4` to generate revenue control testing workpapers
-2. Run `/sox-testing procure-to-pay 2024-Q4` to test procurement controls
-3. Review sample selections and document test results
+Each connector signs in with your own account, and nothing connects until you do. [CONNECTORS.md](CONNECTORS.md) lists what each one needs.
 
-## MCP Integration
+## Good to know
 
-> If you see unfamiliar placeholders or need to check which tools are connected, see [CONNECTORS.md](CONNECTORS.md).
+- Outputs support your accountant. They are not tax or accounting advice.
+- Do not put patient health information (PHI) into Claude, a plugin or a connected tool unless your Claude plan and every connected service are covered by a signed Business Associate Agreement (BAA). Use de-identified examples when you test.
+- Software suggests. People decide. Check what a skill produces before you use it.
 
-This plugin works best when connected to your financial data sources via MCP servers. Add the relevant servers to your `.mcp.json`:
+## Credits and licence
 
-### ERP / Accounting System
+Adapted by SMILE-FX P.A. from the `finance` plugin in Anthropic's [knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) (commit `da38ec1`), under the Apache License 2.0. SMILE-FX changed the plugin name and metadata, this README, the connector notes, and skill text that named the old plugin. The changes are listed in [MODIFICATIONS.md](../MODIFICATIONS.md). Licence: [LICENSE](LICENSE). Notices: [NOTICE](../NOTICE).
 
-Connect your ERP (e.g., NetSuite, SAP) MCP server to pull trial balances, subledger data, and journal entries automatically.
-
-### Data Warehouse
-
-Connect your data warehouse (e.g., Snowflake, BigQuery) MCP server to query financial data, run variance analysis, and pull historical comparisons.
-
-### Spreadsheets
-
-Connect spreadsheet tools (e.g., Google Sheets, Excel) for workpaper generation, reconciliation templates, and financial model updates.
-
-### Analytics / BI
-
-Connect your BI platform (e.g., Tableau, Looker) to pull dashboards, KPIs, and trend data for variance explanations.
-
-> **Note:** Connect your ERP and data warehouse MCP servers to pull financial data automatically. Without these, you can paste data or upload files for analysis.
-
-## Configuration
-
-Add your data source MCP servers to the `mcpServers` section of `.mcp.json` in this plugin directory. The `recommendedCategories` field lists the types of integrations that enhance this plugin's capabilities:
-
-- `erp-accounting` — ERP or accounting system for GL, subledger, and JE data
-- `data-warehouse` — Data warehouse for financial queries and historical data
-- `spreadsheets` — Spreadsheet tools for workpaper generation
-- `analytics-bi` — BI tools for dashboards and KPI data
-- `documents` — Document storage for policies, memos, and support
-- `email` — Email for sending reports and requesting approvals
-- `chat` — Team communication for close status updates and questions
+© 2026 SMILE-FX P.A. SMILE-FX® is a registered trademark of SMILE-FX P.A. SMILE-FX P.A. is not affiliated with, sponsored by or endorsed by Anthropic. Anthropic, Claude, Claude Code and Cowork are trademarks of Anthropic and are named here only to describe compatibility.

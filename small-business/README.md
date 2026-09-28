@@ -1,117 +1,106 @@
-# Small Business — Your AI Business Assistant
+# SMILE-FX® Small Business
 
-**By Anthropic**
+> Runs the business side of a practice or small business: cash, bills, payroll prep, sales follow-up, marketing, reviews and hiring. Ask in plain words and it picks the right workflow. It asks before anything sends, posts or pays.
 
-One plugin that gives Claude everything it needs to help run your small
-business: 44 skills spanning finance, sales, marketing, operations, and
-hiring, plus a router that understands plain English.
+**Install id:** `sfx-small-business` | **Version:** 1.0.0 | **Skills:** 44 | **Commands:** 0 | **Licence:** Apache-2.0
 
-You don't need to memorize anything. Just tell Claude what you need — "I'm
-stressed about making payroll," "a customer is angry," "who owes me money?" —
-and it picks the right skill and walks you through it. Every skill pauses
-before taking action: nothing sends, posts, or gets paid without your say-so.
+## Who it is for
 
-> **Important**: This plugin assists with small business workflows but does not
-> provide financial, tax, legal, or HR advice. All outputs should be reviewed by
-> you (and where appropriate, a qualified professional) before use.
+Owners and office managers who run the business side of a practice: cash, bills, payroll prep, marketing, reviews and hiring.
 
----
+## Install
 
-## Getting started
+**Claude Code.** In a session:
 
-1. Install the plugin. In Cowork, install it from
-   [claude.com/plugins](https://claude.com/plugins/). In Claude Code:
+```text
+/plugin marketplace add wherewolf87/smile-fx-plugins
+/plugin install sfx-small-business@smile-fx-plugins
+```
 
-   ```bash
-   claude plugin marketplace add anthropics/knowledge-work-plugins
-   claude plugin install small-business@knowledge-work-plugins
-   ```
-2. Say **"get me started"** — a 15-minute setup connects your first two
-   tools, proves value with one real run, learns your business, and captures
-   your brand so every report comes out in your colors.
-3. From then on, just describe what you need.
+The install command opens the plugin panel so you can review it and pick a scope. From your shell, use `claude plugin marketplace add wherewolf87/smile-fx-plugins` and `claude plugin install sfx-small-business@smile-fx-plugins`.
 
-No tools connected yet? Every skill still works — from a CSV export, a
-pasted email, an uploaded PDF, or plain conversation. Connectors make it
-deeper, never mandatory.
+**Cowork.** Open **Customize**, then **Plugins**, then **Add marketplace**, and enter `wherewolf87/smile-fx-plugins`. Select **SMILE-FX Small Business** and **Install**, then connect your tools on its **Connectors** tab. Plugins need a paid Claude plan.
 
-Already connected a tool before installing? You may see it listed twice:
-once under your own connectors and once on this plugin's Connectors tab.
-It is the same tool. Either entry works, the plugin uses whichever is
-authorized, and you never need to connect both.
+Full steps: [install guide](../README.md#install).
 
----
+## Try asking
 
-## What you can say
+- "Get me started."
+- "Which bills are due in the next 14 days, and can we cover them?"
+- "Draft a job post and interview guide for a front desk coordinator."
 
-**Money & cash**
-- "Can I make payroll?" · "Cash forecast" · "Close the books"
-- "Pay the bills" · "Who owes me money?" · "Taxes" / "1099s"
-- "Build me a report" · "My recurring reports, on schedule"
+## First run
 
-**Sales & growth**
-- "Find me customers" · "Who should I call?" · "Call list"
-- "Write this outreach" · "Fill my funnel" · "Win back quiet customers"
-- "Quote this job" / "proposal" / "RFP" · "Update the CRM"
+Start with "Get me started." The `smb-onboard` skill connects your first two tools, runs one workflow and saves a short profile of your business so later skills need less explaining. It shows you the profile and asks before it saves.
 
-**Marketing**
-- "Is my marketing working?" · "Weekly growth brief"
-- "Make the content" · "Run this brief" · "My ads" · "SEO"
-- "What should I promote?"
+## Skills (44)
 
-**Customers & reputation**
-- "What are customers saying?" · "A customer is upset"
-- "Check my orders — anything about to blow up?"
+Claude uses a skill when your request matches it. You can also call one by name.
 
-**Operations & people**
-- "Go through my email" · "Brief me" · "Monday brief"
-- "Reorder" / "stock" · "Write a job post" · "Screen these applications"
-- "Review this contract" · "Grants" / "government bids"
+| Skill | What it does |
+|---|---|
+| `/sfx-small-business:ad-manager` | Reads ad results, explains what works and what wastes money, and drafts budget and creative changes for approval. |
+| `/sfx-small-business:ap-processor` | Reads and codes incoming bills, matches them to orders, and stages entries and a payment run for your approval. |
+| `/sfx-small-business:brand-style` | Captures your brand look and output preferences so every report and document follows them. |
+| `/sfx-small-business:build-agent` | Turns a task you repeat by hand into a named skill you can run on demand or on a schedule. |
+| `/sfx-small-business:build-connector` | Connects a tool that has no ready-made connector, through Zapier, with approval gates on anything that writes. |
+| `/sfx-small-business:business-pulse` | One-page snapshot of cash, sales, pipeline, this week's commitments and the item that needs you today. |
+| `/sfx-small-business:call-list` | Builds today's call list with talking points, calendar blocks and drafted follow-ups. |
+| `/sfx-small-business:canva-creator` | Turns an approved content brief into a posting calendar, Canva designs and drafted captions and emails. |
+| `/sfx-small-business:cash-flow-snapshot` | Forecasts cash 30, 60 and 90 days out from your ledger, payment tools or a CSV, with named risk flags. |
+| `/sfx-small-business:close-month` | Runs month-end in order: reconcile, refresh the cash forecast, then publish the close packet. |
+| `/sfx-small-business:content-strategy` | Finds what sells and what stalls, adds seasonality, and writes a 30-day content brief. |
+| `/sfx-small-business:contract-review` | Flags non-standard terms in NDAs, service agreements and vendor contracts, with a redline for your counsel. |
+| `/sfx-small-business:crm-autopilot` | Keeps contacts, deals and activity in your CRM current from email, calendar and call notes. |
+| `/sfx-small-business:grant-rfp-writer` | Finds grants and solicitations you qualify for, runs a go or no-go check, drafts the response and tracks deadlines. |
+| `/sfx-small-business:grow-pipeline` | Researches the market, builds a ranked prospect list, drafts outreach in your voice and logs it to the CRM. |
+| `/sfx-small-business:growth-pulse` | Checks whether growth is working: sales by channel, funnel, campaign return and customer sentiment. |
+| `/sfx-small-business:hiring-screener` | Scores applications against your stated rubric, drafts replies, schedules interviews and preps onboarding. |
+| `/sfx-small-business:inbox-manager` | Sorts a full inbox into what needs you, drafts replies and pulls out action items and deadlines. |
+| `/sfx-small-business:inventory-planner` | Works out what to reorder and when from sales and stock on hand, and drafts purchase orders. |
+| `/sfx-small-business:invoice-chase` | Drafts overdue invoice reminders matched to each customer's payment history. |
+| `/sfx-small-business:job-post-builder` | Builds a hiring packet from a brief: job post, interview guide with scoring rubric and offer letter template. |
+| `/sfx-small-business:lead-finder` | Builds a ranked list of prospects that look like your current customers, with contacts and signals. |
+| `/sfx-small-business:lead-triage` | Scores inbound HubSpot leads, ranks the ones worth a call today and drafts follow-ups. |
+| `/sfx-small-business:marketing-monday` | Weekly growth briefing: what works, what customers say, what competitors changed and three actions. |
+| `/sfx-small-business:monday-brief` | Monday morning briefing on one page: business snapshot, saved KPI reports and the week ahead. |
+| `/sfx-small-business:month-end-prep` | Reconciles the ledger against payment settlements, flags issues and writes a plain-language P&L narrative. |
+| `/sfx-small-business:outreach-composer` | Writes prospect outreach and follow-up sequences in your own voice and queues each send for approval. |
+| `/sfx-small-business:pay-the-bills` | Takes bills from the inbox to a staged payment run after a cash check, ready for one approval. |
+| `/sfx-small-business:payroll-prep` | Totals hours from timesheets, flags anomalies and stages payroll for line-by-line approval. |
+| `/sfx-small-business:plan-payroll` | Payroll readiness in one pass: cash forecast, overdue invoice reminders, then payroll prep. |
+| `/sfx-small-business:proposal-builder` | Turns call notes, photos or an RFP into a costed proposal or statement of work on your templates. |
+| `/sfx-small-business:reactivate` | Finds customers who stopped buying, ranks them and drafts win-back messages for approval. |
+| `/sfx-small-business:report-builder` | Turns a plain-words description of a recurring report into a repeatable report with a workbook. |
+| `/sfx-small-business:report-pack` | Runs your saved reports on a set cadence with a business snapshot for context. |
+| `/sfx-small-business:restock` | Turns sales velocity into a reorder, a purchase order, a vendor email and a matching ledger entry. |
+| `/sfx-small-business:review-reputation` | Groups public reviews and private feedback into themes, drafts review replies and spots customers at risk. |
+| `/sfx-small-business:seo-ai-visibility` | Audits how people and AI assistants find your site, and drafts the fixes. |
+| `/sfx-small-business:smb-onboard` | Guided setup: connects your first two tools, runs one workflow and learns your business. |
+| `/sfx-small-business:smb-router` | The front door: explains what the plugin can do and routes your request to the right skill. |
+| `/sfx-small-business:social-content-engine` | Keeps a rolling posting calendar, drafts on-brand graphics and captions, and stages posts for approval. |
+| `/sfx-small-business:speed-to-lead` | Drafts a reply to every new inquiry with real meeting times, for you to approve and send. |
+| `/sfx-small-business:tax-prep` | Confirms the books are closed, then prepares quarterly estimates or the year-end 1099 list for your accountant. |
+| `/sfx-small-business:tax-season-organizer` | Prepares tax-season material for your accountant. Not tax advice. |
+| `/sfx-small-business:ticket-deflector` | Reads a customer email or ticket, checks orders and history, and drafts a reply. Refunds only with your approval. |
 
-**Make it yours**
-- "Update my brand" — your colors and logo on every page, from one link
-- "Automate this" — turn a task you repeat into a named skill
-- "Connect to my ERP" — connect a tool that has no official connector
+## Connectors
 
-## The 44 skills
+Set up: Airwallex, Apollo, Atlassian (Jira, Confluence), Canva, Clay, Docusign, Emergent, Expensify, Gmail, Google Calendar, Google Drive, Gusto, HubSpot, Mailchimp, QuickBooks, monday.com, MYOB, Notion, PayPal, Ramp, RingCentral team chat, Shopify, Slack, Square, Stripe, TikTok Ads, Trello, Wix, Xero, Zapier, Zoho Books, Zoho CRM, Zoho Desk, Zoho Projects, Zoom.
 
-**Finance (12):** ap-processor · cash-flow-snapshot · close-month ·
-invoice-chase · month-end-prep · pay-the-bills · payroll-prep · plan-payroll
-· report-builder · report-pack · tax-prep · tax-season-organizer
+Each connector signs in with your own account, and nothing connects until you do. [CONNECTORS.md](CONNECTORS.md) lists what each one needs.
 
-**Sales & leads (8):** call-list · crm-autopilot · grow-pipeline ·
-lead-finder · lead-triage · outreach-composer · reactivate · speed-to-lead
+These connectors can take actions such as payments, payroll, record changes or e-signature requests: Airwallex, Docusign, Expensify, Gusto, QuickBooks, MYOB, PayPal, Ramp, Shopify, Square, Stripe, Xero, Zoho Books. Read every action before you approve it.
 
-**Marketing (8):** ad-manager · canva-creator · content-strategy ·
-growth-pulse · marketing-monday · review-reputation · seo-ai-visibility ·
-social-content-engine
+## Good to know
 
-**Customers & proposals (4):** contract-review · grant-rfp-writer ·
-proposal-builder · ticket-deflector
+- The skills are written to pause for your approval before anything sends, posts, pays or changes a record.
+- Tax and payroll skills prepare material for your accountant or payroll provider. They are not tax or legal advice.
+- Do not put patient health information (PHI) into Claude, a plugin or a connected tool unless your Claude plan and every connected service are covered by a signed Business Associate Agreement (BAA). Use de-identified examples when you test.
+- Software suggests. People decide. Check what a skill produces before you use it.
 
-**Operations & hiring (5):** hiring-screener · inbox-manager ·
-inventory-planner · job-post-builder · restock
+## Credits and licence
 
-**Briefings (2):** business-pulse · monday-brief
+Adapted by SMILE-FX P.A. from the `small-business` plugin in Anthropic's [knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) (commit `da38ec1`), under the Apache License 2.0. SMILE-FX changed the plugin name and metadata, this README, the connector notes, and skill text that named the old plugin. The changes are listed in [MODIFICATIONS.md](../MODIFICATIONS.md). Licence: [LICENSE](LICENSE). Notices: [NOTICE](../NOTICE).
 
-**Setup & building (5):** smb-onboard · smb-router · brand-style ·
-build-agent · build-connector
-
-Eleven of these (like close-month and plan-payroll) are workflows that chain
-other skills together with an approval checkpoint at every step.
-
----
-
-## How it keeps you safe
-
-- **Approval gates everywhere.** Nothing is sent, posted, paid, or written
-  to your systems without an explicit yes. Coding bills and paying bills are
-  two separate approvals. Payroll is staged; you press the button.
-- **No invented numbers.** A figure that can't be read is reported as
-  unreadable, never guessed.
-- **Your data stays yours.** Skills read what they need for the run and
-  write only what you approve.
-
----
-
-**Current version:** 1.35.1 — 2026-09-15
+© 2026 SMILE-FX P.A. SMILE-FX® is a registered trademark of SMILE-FX P.A. SMILE-FX P.A. is not affiliated with, sponsored by or endorsed by Anthropic. Anthropic, Claude, Claude Code and Cowork are trademarks of Anthropic and are named here only to describe compatibility.

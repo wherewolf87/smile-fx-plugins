@@ -1,140 +1,60 @@
-# Customer Support Plugin
+# SMILE-FX® Customer Support
 
-A customer support plugin primarily designed for [Cowork](https://claude.com/product/cowork), Anthropic's agentic desktop application — though it also works in Claude Code. Provides ticket triage, escalation management, response drafting, customer research, and knowledge base authoring for support teams.
+> Triages questions, drafts replies, packages escalations and turns resolved questions into help articles.
 
-## Installation
+**Install id:** `sfx-customer-support` | **Version:** 1.0.0 | **Skills:** 5 | **Commands:** 0 | **Licence:** Apache-2.0
 
+## Who it is for
+
+Front desk and patient experience teams who answer questions by email, chat or help desk.
+
+## Install
+
+**Claude Code.** In a session:
+
+```text
+/plugin marketplace add wherewolf87/smile-fx-plugins
+/plugin install sfx-customer-support@smile-fx-plugins
 ```
-claude plugin marketplace add anthropics/knowledge-work-plugins
-claude plugin install customer-support@knowledge-work-plugins
-```
 
-## What It Does
+The install command opens the plugin panel so you can review it and pick a scope. From your shell, use `claude plugin marketplace add wherewolf87/smile-fx-plugins` and `claude plugin install sfx-customer-support@smile-fx-plugins`.
 
-This plugin turns Claude into a customer support co-pilot. It helps you:
+**Cowork.** Open **Customize**, then **Plugins**, then **Add marketplace**, and enter `wherewolf87/smile-fx-plugins`. Select **SMILE-FX Customer Support** and **Install**, then connect your tools on its **Connectors** tab. Plugins need a paid Claude plan.
 
-- **Triage incoming tickets** with structured categorization, priority assessment, and routing recommendations
-- **Research customer questions** by synthesizing information from multiple sources with confidence scoring
-- **Draft professional responses** tailored to the situation, urgency, and communication channel
-- **Package escalations** with full context, reproduction steps, and business impact for engineering or product
-- **Write KB articles** from resolved issues to reduce future ticket volume
+Full steps: [install guide](../README.md#install).
 
-## Commands
+## Try asking
 
-| Command | Description |
+- "Sort these five inbound questions by urgency."
+- "Draft a warm, plain reply to this billing question."
+- "Turn this resolved question into a help article."
+
+## Skills (5)
+
+Claude uses a skill when your request matches it. You can also call one by name.
+
+| Skill | What it does |
 |---|---|
-| `/triage` | Categorize, prioritize, and route a support ticket or customer issue |
-| `/research` | Multi-source research on a customer question or topic |
-| `/draft-response` | Draft a customer-facing response for any situation |
-| `/escalate` | Package an escalation for engineering, product, or leadership |
-| `/kb-article` | Draft a knowledge base article from a resolved issue |
+| `/sfx-customer-support:customer-escalation` | Packages an escalation with full context for the right team. |
+| `/sfx-customer-support:customer-research` | Researches a customer question across sources, with attribution. |
+| `/sfx-customer-support:draft-response` | Drafts a customer reply suited to the situation and relationship. |
+| `/sfx-customer-support:kb-article` | Turns a resolved issue or common question into a help article. |
+| `/sfx-customer-support:ticket-triage` | Sorts and prioritizes a ticket or customer issue. |
 
-## Skills
+## Connectors
 
-| Skill | Description |
-|---|---|
-| `ticket-triage` | Category taxonomy, priority framework (P1-P4), routing rules, duplicate detection |
-| `customer-research` | Multi-source research methodology, source prioritization, answer synthesis |
-| `response-drafting` | Communication best practices, tone guidelines, templates for common scenarios |
-| `escalation` | Escalation tiers, structured escalation format, impact assessment, follow-up cadence |
-| `knowledge-management` | Article structure standards, writing for searchability, review cadence, maintenance |
+Set up: Slack, Intercom, HubSpot, Guru, Atlassian (Jira, Confluence), Notion. Blank on purpose, connect them yourself: Google Calendar, Gmail.
 
-## Data Sources
+Each connector signs in with your own account, and nothing connects until you do. [CONNECTORS.md](CONNECTORS.md) lists what each one needs.
 
-> If you see unfamiliar placeholders or need to check which tools are connected, see [CONNECTORS.md](CONNECTORS.md).
+## Good to know
 
-Connect your support platform, knowledge base, and communication tools for the best experience. Without them, provide customer context manually.
+- Remove patient details from a message before you paste it, unless your plan is covered by a signed BAA.
+- Do not put patient health information (PHI) into Claude, a plugin or a connected tool unless your Claude plan and every connected service are covered by a signed Business Associate Agreement (BAA). Use de-identified examples when you test.
+- Software suggests. People decide. Check what a skill produces before you use it.
 
-**Included MCP connections:**
-- Chat (Slack) for internal discussions and customer channel context
-- Support platform (Intercom) for ticket history and customer conversations
-- CRM (HubSpot) for account details and contact information
-- Knowledge base (Guru, Notion) for internal documentation and runbooks
-- Project tracker (Atlassian) for bug reports and feature requests
-- Email and cloud storage (Microsoft 365) for customer correspondence
+## Credits and licence
 
-**Additional options:**
-- See [CONNECTORS.md](CONNECTORS.md) for alternative tools in each category
+Adapted by SMILE-FX P.A. from the `customer-support` plugin in Anthropic's [knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) (commit `da38ec1`), under the Apache License 2.0. SMILE-FX changed the plugin name and metadata, this README, the connector notes, and skill text that named the old plugin. The changes are listed in [MODIFICATIONS.md](../MODIFICATIONS.md). Licence: [LICENSE](LICENSE). Notices: [NOTICE](../NOTICE).
 
-## Example Workflows
-
-### Triaging an Incoming Ticket
-
-```
-You: /triage Customer says their dashboard has been showing a blank
-     page since this morning — they're on the Enterprise plan
-
-Claude: Analyzing the issue...
-
-## Triage: Dashboard blank page — Enterprise customer
-
-**Category:** Bug
-**Priority:** P2 — High (core feature broken, enterprise customer)
-**Product area:** Dashboard / Frontend
-
-### Routing Recommendation
-Route to: Tier 2 Support (investigate browser/account specifics,
-then escalate to Engineering if reproducible)
-
-### Suggested Initial Response
-[Draft acknowledging the issue, asking clarifying questions
-about browser and any recent changes, offering status page link]
-```
-
-### Researching a Customer Question
-
-```
-You: /research Does our platform support SSO with Okta?
-
-Claude: Let me check across available sources...
-
-[Searches docs, knowledge base, previous conversations,
- and web sources — synthesizes answer with confidence
- level and source attribution]
-```
-
-### Packaging an Escalation
-
-```
-You: /escalate API returning 500 errors intermittently — 3
-     Enterprise customers reported this week
-
-Claude: I'll gather context and build the escalation brief...
-
-[Pulls ticket history, identifies affected accounts,
- structures reproduction steps, assesses business impact,
- and generates a structured escalation for engineering]
-```
-
-### Drafting a Response
-
-```
-You: /draft-response Customer escalation — their integration
-     has been down for 2 days and they're frustrated
-
-Claude: [Generates empathetic, professional response acknowledging
- the frustration, taking ownership, providing a clear action
- plan with timeline, and offering a call]
-```
-
-### Writing a KB Article
-
-```
-You: /kb-article How to configure webhook notifications —
-     just resolved this for the third customer this month
-
-Claude: [Generates a structured how-to article with prerequisites,
- step-by-step instructions, verification steps, and common
- issues — optimized for search]
-```
-
-## Configuration
-
-The plugin works out of the box with the included MCP connections. For the richest experience, connect additional data sources through your Claude settings:
-
-1. **Support platform**: Add your ticketing system for ticket history and customer context
-2. **Knowledge base**: Add your wiki for internal documentation and existing KB articles
-3. **Project tracker**: Add your issue tracker for bug reports and feature requests
-4. **CRM**: Add your CRM for account details and contact information
-
-Without these connections, the plugin will ask you to provide context manually and offer frameworks and templates you can fill in with your own data.
+© 2026 SMILE-FX P.A. SMILE-FX® is a registered trademark of SMILE-FX P.A. SMILE-FX P.A. is not affiliated with, sponsored by or endorsed by Anthropic. Anthropic, Claude, Claude Code and Cowork are trademarks of Anthropic and are named here only to describe compatibility.

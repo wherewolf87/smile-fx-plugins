@@ -1,135 +1,63 @@
-# Operations Plugin
+# SMILE-FX® Operations
 
-A business operations plugin primarily designed for [Cowork](https://claude.com/product/cowork), Anthropic's agentic desktop application — though it also works in Claude Code. Helps with vendor management, process documentation, change management, capacity planning, compliance tracking, and resource planning. Works with any ops team — standalone with your input, supercharged when you connect your ITSM, project tracker, and other tools.
+> Documents processes, reviews vendors, plans capacity, tracks compliance tasks and writes status reports.
 
-## Installation
+**Install id:** `sfx-operations` | **Version:** 1.0.0 | **Skills:** 9 | **Commands:** 0 | **Licence:** Apache-2.0
 
-```bash
-claude plugin marketplace add anthropics/knowledge-work-plugins
-claude plugin install operations@knowledge-work-plugins
+## Who it is for
+
+Office and practice managers who own processes, vendors and the compliance calendar.
+
+## Install
+
+**Claude Code.** In a session:
+
+```text
+/plugin marketplace add wherewolf87/smile-fx-plugins
+/plugin install sfx-operations@smile-fx-plugins
 ```
 
-## Commands
+The install command opens the plugin panel so you can review it and pick a scope. From your shell, use `claude plugin marketplace add wherewolf87/smile-fx-plugins` and `claude plugin install sfx-operations@smile-fx-plugins`.
 
-Explicit workflows you invoke with a slash command:
+**Cowork.** Open **Customize**, then **Plugins**, then **Add marketplace**, and enter `wherewolf87/smile-fx-plugins`. Select **SMILE-FX Operations** and **Install**, then connect your tools on its **Connectors** tab. Plugins need a paid Claude plan.
 
-| Command | Description |
+Full steps: [install guide](../README.md#install).
+
+## Try asking
+
+- "Write an SOP for opening the office each morning."
+- "Compare these two vendor quotes and list the risks."
+- "Build a calendar of our annual license and permit renewals."
+
+## Skills (9)
+
+Claude uses a skill when your request matches it. You can also call one by name.
+
+| Skill | What it does |
 |---|---|
-| `/vendor-review` | Evaluate a vendor — cost analysis, risk assessment, contract summary, and renewal recommendation |
-| `/process-doc` | Document a business process — flowcharts, RACI matrices, SOPs, and runbooks |
-| `/change-request` | Create a change management request — impact analysis, rollback plan, approval routing |
-| `/capacity-plan` | Plan resource capacity — workload analysis, headcount modeling, utilization forecasting |
-| `/status-report` | Generate a status report — project updates, KPIs, risks, and action items for leadership |
-| `/runbook` | Create or update an operational runbook — step-by-step procedures for recurring tasks |
+| `/sfx-operations:capacity-plan` | Plans workload and staffing capacity with a utilization forecast. |
+| `/sfx-operations:change-request` | Writes a change request with impact analysis and a rollback plan. |
+| `/sfx-operations:compliance-tracking` | Tracks compliance requirements and audit readiness. |
+| `/sfx-operations:process-doc` | Documents a process as a flowchart, a RACI chart and an SOP. |
+| `/sfx-operations:process-optimization` | Finds where a process slows down and proposes improvements. |
+| `/sfx-operations:risk-assessment` | Identifies, rates and plans for operational risks. |
+| `/sfx-operations:runbook` | Creates or updates a step-by-step runbook for a recurring task. |
+| `/sfx-operations:status-report` | Writes a status report with measures, risks and action items. |
+| `/sfx-operations:vendor-review` | Evaluates a vendor on cost and risk and gives a recommendation. |
 
-All commands work **standalone** (provide context and details) and get **supercharged** with MCP connectors.
+## Connectors
 
-## Skills
+Set up: Slack, Notion, Atlassian (Jira, Confluence), Asana. Blank on purpose, connect them yourself: Google Calendar, Gmail.
 
-Domain knowledge Claude uses automatically when relevant:
+Each connector signs in with your own account, and nothing connects until you do. [CONNECTORS.md](CONNECTORS.md) lists what each one needs.
 
-| Skill | Description |
-|---|---|
-| `vendor-management` | Evaluate, compare, and manage vendor relationships — contracts, performance, risk |
-| `process-optimization` | Analyze and improve business processes — identify bottlenecks, reduce waste, streamline workflows |
-| `change-management` | Plan and execute organizational or technical changes — communication, training, adoption |
-| `risk-assessment` | Identify, assess, and mitigate operational risks — risk registers, impact analysis, controls |
-| `compliance-tracking` | Track compliance requirements — audits, certifications, regulatory deadlines, policy adherence |
-| `resource-planning` | Plan and optimize resource allocation — capacity, utilization, forecasting, budget |
+## Good to know
 
-## Example Workflows
+- Do not put patient health information (PHI) into Claude, a plugin or a connected tool unless your Claude plan and every connected service are covered by a signed Business Associate Agreement (BAA). Use de-identified examples when you test.
+- Software suggests. People decide. Check what a skill produces before you use it.
 
-### Evaluating a Vendor
+## Credits and licence
 
-```
-/vendor-review
-```
+Adapted by SMILE-FX P.A. from the `operations` plugin in Anthropic's [knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) (commit `da38ec1`), under the Apache License 2.0. SMILE-FX changed the plugin name and metadata, this README, the connector notes, and skill text that named the old plugin. The changes are listed in [MODIFICATIONS.md](../MODIFICATIONS.md). Licence: [LICENSE](LICENSE). Notices: [NOTICE](../NOTICE).
 
-Provide the vendor name, contract details, or upload a proposal. Get a structured evaluation with cost analysis, risk flags, and a recommendation.
-
-### Documenting a Process
-
-```
-/process-doc employee offboarding
-```
-
-Describe the process or walk me through it. Get a complete SOP with flowchart, RACI matrix, and step-by-step procedures.
-
-### Submitting a Change Request
-
-```
-/change-request
-```
-
-Describe the change. Get an impact analysis, risk assessment, rollback plan, and communication template ready for approval.
-
-### Planning Capacity
-
-```
-/capacity-plan
-```
-
-Upload team data or describe your resources. Get utilization analysis, bottleneck identification, and headcount recommendations.
-
-### Leadership Status Report
-
-```
-/status-report
-```
-
-I'll pull updates from your connected tools (or ask you for input) and generate a polished status report with KPIs, risks, and next steps.
-
-### Creating a Runbook
-
-```
-/runbook monthly close process
-```
-
-Walk me through the process once. I'll document it as a repeatable runbook with checklists, troubleshooting, and escalation paths.
-
-## Standalone + Supercharged
-
-Every command and skill works without any integrations:
-
-| What You Can Do | Standalone | Supercharged With |
-|-----------------|------------|-------------------|
-| Vendor reviews | Provide details, upload proposals | Procurement, Knowledge base |
-| Process documentation | Describe the process | Knowledge base (existing docs) |
-| Change requests | Describe the change | ITSM, Project tracker |
-| Capacity planning | Upload data, describe team | Project tracker (workload data) |
-| Status reports | Provide updates manually | Project tracker, Chat, Calendar |
-| Runbooks | Walk through the process | Knowledge base, ITSM |
-
-## MCP Integrations
-
-> If you see unfamiliar placeholders or need to check which tools are connected, see [CONNECTORS.md](CONNECTORS.md).
-
-Connect your tools for a richer experience:
-
-| Category | Examples | What It Enables |
-|---|---|---|
-| **ITSM** | ServiceNow, Zendesk | Ticket management, change requests, incident tracking |
-| **Project tracker** | Asana, Jira, monday.com | Project status, resource allocation, task tracking |
-| **Knowledge base** | Notion, Confluence | Process docs, runbooks, policies |
-| **Chat** | Slack, Teams | Team coordination, approvals, status updates |
-| **Calendar** | Google Calendar, Microsoft 365 | Meeting scheduling, deadline tracking |
-| **Email** | Gmail, Microsoft 365 | Vendor communications, approvals |
-
-See [CONNECTORS.md](CONNECTORS.md) for the full list of supported integrations.
-
-## Settings
-
-Create a local settings file at `operations/.claude/settings.local.json` to personalize:
-
-```json
-{
-  "company": "Your Company",
-  "team": "Operations",
-  "reportingCadence": "weekly",
-  "approvalChain": ["Manager", "Director", "VP"],
-  "complianceFrameworks": ["SOC 2", "ISO 27001"],
-  "fiscalYearStart": "January"
-}
-```
-
-The plugin will ask you for this information interactively if it's not configured.
+© 2026 SMILE-FX P.A. SMILE-FX® is a registered trademark of SMILE-FX P.A. SMILE-FX P.A. is not affiliated with, sponsored by or endorsed by Anthropic. Anthropic, Claude, Claude Code and Cowork are trademarks of Anthropic and are named here only to describe compatibility.
