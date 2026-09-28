@@ -1,8 +1,20 @@
 {
-  "name": "marketing",
-  "version": "1.2.0",
-  "description": "Create content, plan campaigns, and analyze performance across marketing channels. Maintain brand voice consistency, track competitors, and report on what's working.",
+  "name": "sfx-marketing",
+  "displayName": "SMILE-FX Marketing",
+  "version": "1.0.0",
+  "description": "Plans campaigns, drafts content, checks brand voice, audits SEO and reports on results across your marketing channels.",
   "author": {
-    "name": "Anthropic"
-  }
+    "name": "SMILE-FX",
+    "url": "https://smile-fx-ai.vercel.app"
+  },
+  "homepage": "https://smile-fx-ai.vercel.app/plugins",
+  "repository": "https://github.com/wherewolf87/smile-fx-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "marketing",
+    "content",
+    "seo",
+    "campaigns",
+    "brand-voice"
+  ]
 }

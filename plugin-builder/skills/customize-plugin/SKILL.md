@@ -1,13 +1,14 @@
 ---
-name: cowork-plugin-customizer
+name: customize-plugin
 description: >
   Customize a Claude Code plugin for a specific organization's tools and workflows.
   Use when: customize plugin, set up plugin, configure plugin, tailor plugin, adjust plugin settings,
   customize plugin connectors, customize plugin skill, tweak plugin, modify plugin configuration.
 compatibility: Requires Cowork desktop app environment with access to mounted plugin directories (mnt/.local-plugins, mnt/.plugins).
 ---
+<!-- Modified by SMILE-FX P.A. in 2026: plugin and skill names rebranded for SMILE-FX Plugins. See MODIFICATIONS.md at the repository root. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
-# Cowork Plugin Customization
+# Plugin Customization
 
 Customize a plugin for a specific organization — either by setting up a generic plugin template for the first time, or by tweaking and refining an already-configured plugin.
 

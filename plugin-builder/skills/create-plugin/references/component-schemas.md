@@ -1,3 +1,5 @@
+<!-- Modified by SMILE-FX P.A. in 2026: plugin and skill names rebranded for SMILE-FX Plugins. See MODIFICATIONS.md at the repository root. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
+
 # Component Schemas
 
 Detailed format specifications for every plugin component type. Reference this when implementing components in Phase 4.
@@ -383,7 +385,7 @@ Check ~~project tracker for open tickets assigned to the user.
 Post a summary to ~~chat in the team channel.
 ```
 
-During customization (via the cowork-plugin-customizer skill), these get replaced with specific tool names.
+During customization (via the customize-plugin skill), these get replaced with specific tool names.
 
 ## README.md
 

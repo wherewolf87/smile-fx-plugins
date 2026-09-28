@@ -1,24 +1,21 @@
 {
-  "name": "small-business",
-  "displayName": "Small Business",
-  "version": "1.35.1",
-  "description": "Pre-built small business workflows to help you run and grow your business. Supports a majority of the tools you already use. You approve every step that touches money or customers. Install and then ask Claude to help you get onboarded.",
+  "name": "sfx-small-business",
+  "displayName": "SMILE-FX Small Business",
+  "version": "1.0.0",
+  "description": "Runs the business side of a practice or small business: cash, bills, payroll prep, sales follow-up, marketing, reviews and hiring. Ask in plain words and it picks the right workflow. It asks before anything sends, posts or pays.",
   "author": {
-    "name": "Anthropic"
+    "name": "SMILE-FX",
+    "url": "https://smile-fx-ai.vercel.app"
   },
+  "homepage": "https://smile-fx-ai.vercel.app/plugins",
+  "repository": "https://github.com/wherewolf87/smile-fx-plugins",
+  "license": "Apache-2.0",
   "keywords": [
-    "all-in-one",
-    "automation",
-    "finance",
-    "growth",
-    "hr",
-    "marketing",
-    "operations",
-    "sales",
     "small-business",
-    "smb",
-    "taxes",
-    "workflow",
-    "zapier"
+    "practice-management",
+    "cash-flow",
+    "payroll-prep",
+    "marketing",
+    "hiring"
   ]
 }

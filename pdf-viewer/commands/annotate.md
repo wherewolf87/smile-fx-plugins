@@ -2,6 +2,7 @@
 description: Collaboratively annotate a PDF — propose markup, review together, iterate
 argument-hint: "[path-or-url]"
 ---
+<!-- Modified by SMILE-FX P.A. in 2026: plugin and skill names rebranded for SMILE-FX Plugins. See MODIFICATIONS.md at the repository root. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 > If you need to check which tools are connected, see [CONNECTORS.md](../CONNECTORS.md).
 
@@ -40,7 +41,7 @@ execute directly. Still confirm with a screenshot.
 - **Comments:** note (sticky), freetext (visible on page)
 - **Shapes:** rectangle, circle, line
 - **Stamps:** any label — APPROVED, DRAFT, CONFIDENTIAL, REVIEWED
-- **Images:** signatures, initials, logos (see `/pdf-viewer:sign`)
+- **Images:** signatures, initials, logos (see `/sfx-pdf-viewer:sign`)
 
 ## Tips
 

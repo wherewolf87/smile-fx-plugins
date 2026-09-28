@@ -2,6 +2,7 @@
 description: Place a signature or initials image on a PDF
 argument-hint: "[path-or-url] [signature-image-path]"
 ---
+<!-- Modified by SMILE-FX P.A. in 2026: plugin and skill names rebranded for SMILE-FX Plugins. See MODIFICATIONS.md at the repository root. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 > If you need to check which tools are connected, see [CONNECTORS.md](../CONNECTORS.md).
 
@@ -51,4 +52,4 @@ annotation.
   viewer
 - Coordinate origin is top-left; a typical bottom-right signature on
   US Letter is around `x: 400, y: 700`
-- Pair with `/pdf-viewer:fill-form` for complete form workflows
+- Pair with `/sfx-pdf-viewer:fill-form` for complete form workflows

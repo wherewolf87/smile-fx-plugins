@@ -1,7 +1,9 @@
+<!-- Modified by SMILE-FX P.A. in 2026: plugin and skill names rebranded for SMILE-FX Plugins. See MODIFICATIONS.md at the repository root. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
+
 # Connector neutrality — plugin-wide rule
 
 Scope: **every skill, command, reference file, and onboarding flow.** This is
-Anthropic's positioning for the plugin, not a house preference: the owner's
+the plugin's positioning, not a house preference: the owner's
 tool set decides what gets called. The plugin never decides which vendor an
 owner should have.
 
@@ -81,13 +83,13 @@ being chosen for them.
 
 The plugin's manifest (`.mcp.json`) declares every connector in the router
 map so Cowork's plugin page can list them. Cowork registers each declared
-server under the plugin's name — `small-business:trello`, `small-business:hubspot`
+server under the plugin's name — `sfx-small-business:trello`, `sfx-small-business:hubspot`
 — and does not always merge it with the same product the owner already
 connected to their own account. For example, an owner with Trello
-attached can see both `Trello` (authorized) and `small-business:trello`
+attached can see both `Trello` (authorized) and `sfx-small-business:trello`
 (unauthorized). Same product, same server, two entries.
 
-**Identity is the product, not the registration.** `small-business:<name>` and
+**Identity is the product, not the registration.** `sfx-small-business:<name>` and
 `<name>` are one connector. Rules, in order:
 
 1. **Call whichever entry is authorized.** If both are, use the owner's own
@@ -105,10 +107,10 @@ attached can see both `Trello` (authorized) and `small-business:trello`
    the plugin's Connectors tab or add the connector to their account
    directly; either works, neither ranks above the other.
 5. **Owner-facing text names the product.** "Trello," never
-   `small-business:trello`. The business-context `Connected tools` line stores
+   `sfx-small-business:trello`. The business-context `Connected tools` line stores
    product names only, so a later skill never inherits a registration name.
 6. **Tool-name prefixes differ.** A plugin-scoped tool is named
-   `mcp__plugin_small-business_<server>__<tool>`; the owner's own is
+   `mcp__plugin_sfx-small-business_<server>__<tool>`; the owner's own is
    `mcp__<Server>__<tool>`. Anything that matches on tool names must match
    both forms.
 

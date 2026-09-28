@@ -1,3 +1,5 @@
+<!-- Modified by SMILE-FX P.A. in 2026: plugin and skill names rebranded for SMILE-FX Plugins. See MODIFICATIONS.md at the repository root. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
+
 # Connector call shapes — parameters that are easy to get wrong
 
 **Shared across the plugin.** Each line below is a call that fails
@@ -6,8 +8,8 @@ bug; all are shapes the connector requires and the tool description does not
 make obvious. Read the row for a connector before the first call to it.
 
 **Before any row: which entry to call.** A connector can be registered twice —
-the owner's own entry and the plugin's manifest copy (`small-business:<manifest
-key>`, tools prefixed `mcp__plugin_small-business_`). Call whichever is
+the owner's own entry and the plugin's manifest copy (`sfx-small-business:<manifest
+key>`, tools prefixed `mcp__plugin_sfx-small-business_`). Call whichever is
 authorized, the owner's if both. A refused call from the plugin copy while the
 owner's entry is live is not "not connected" and not a reason to take a
 skill's degradation path or ask for exports. The rule is

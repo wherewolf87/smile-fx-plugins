@@ -3,6 +3,7 @@ name: update
 description: Sync tasks and refresh memory from your current activity. Use when pulling new assignments from your project tracker into TASKS.md, triaging stale or overdue tasks, filling memory gaps for unknown people or projects, or running a comprehensive scan to catch todos buried in chat and email.
 argument-hint: "[--comprehensive]"
 ---
+<!-- Modified by SMILE-FX P.A. in 2026: plugin and skill names rebranded for SMILE-FX Plugins. See MODIFICATIONS.md at the repository root. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # Update Command
 
@@ -16,15 +17,15 @@ Keep your task list and memory current. Two modes:
 ## Usage
 
 ```bash
-/productivity:update
-/productivity:update --comprehensive
+/sfx-productivity:update
+/sfx-productivity:update --comprehensive
 ```
 
 ## Default Mode
 
 ### 1. Load Current State
 
-Read `TASKS.md` and `memory/` directory. If they don't exist, suggest `/productivity:start` first.
+Read `TASKS.md` and `memory/` directory. If they don't exist, suggest `/sfx-productivity:start` first.
 
 ### 2. Sync Tasks from External Sources
 

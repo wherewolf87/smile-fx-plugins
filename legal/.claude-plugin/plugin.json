@@ -1,8 +1,20 @@
 {
-  "name": "legal",
-  "version": "1.3.0",
-  "description": "Speed up contract review, NDA triage, and compliance workflows for in-house legal teams. Draft legal briefs, organize precedent research, and manage institutional knowledge.",
+  "name": "sfx-legal",
+  "displayName": "SMILE-FX Legal",
+  "version": "1.0.0",
+  "description": "Reviews contracts against your playbook, triages NDAs, checks compliance questions and drafts briefings for your counsel. It does not give legal advice.",
   "author": {
-    "name": "Anthropic"
-  }
+    "name": "SMILE-FX",
+    "url": "https://smile-fx-ai.vercel.app"
+  },
+  "homepage": "https://smile-fx-ai.vercel.app/plugins",
+  "repository": "https://github.com/wherewolf87/smile-fx-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "legal",
+    "contract-review",
+    "nda",
+    "compliance",
+    "e-signature"
+  ]
 }

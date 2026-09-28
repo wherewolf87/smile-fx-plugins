@@ -2,6 +2,7 @@
 description: Fill PDF form fields interactively with live visual feedback
 argument-hint: "[path-or-url]"
 ---
+<!-- Modified by SMILE-FX P.A. in 2026: plugin and skill names rebranded for SMILE-FX Plugins. See MODIFICATIONS.md at the repository root. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 > If you need to check which tools are connected, see [CONNECTORS.md](../CONNECTORS.md).
 
@@ -63,11 +64,11 @@ opens. The filled PDF is then displayed.
 > *After answers:* `interact` → `fill_form` + `get_screenshot`
 >
 > *You:* "Here's the filled form [screenshot]. The signature line is
-> still blank — want to add your signature with `/pdf-viewer:sign`?"
+> still blank — want to add your signature with `/sfx-pdf-viewer:sign`?"
 
 ## Notes
 
 - Signature fields are usually separate — fill text first, then hand
-  off to `/pdf-viewer:sign` for the image
+  off to `/sfx-pdf-viewer:sign` for the image
 - Checkbox/radio values are `true`/`false` or the option string
 - The user can always drag & edit fields directly in the viewer

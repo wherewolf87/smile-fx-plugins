@@ -1,8 +1,20 @@
 {
-  "name": "design",
-  "version": "1.2.0",
-  "description": "Accelerate design workflows — critique, design system management, UX writing, accessibility audits, research synthesis, and dev handoff. From exploration to pixel-perfect specs.",
+  "name": "sfx-design",
+  "displayName": "SMILE-FX Design",
+  "version": "1.0.0",
+  "description": "Critiques designs, writes interface copy, reviews accessibility, synthesizes research and prepares developer handoff notes.",
   "author": {
-    "name": "Anthropic"
-  }
+    "name": "SMILE-FX",
+    "url": "https://smile-fx-ai.vercel.app"
+  },
+  "homepage": "https://smile-fx-ai.vercel.app/plugins",
+  "repository": "https://github.com/wherewolf87/smile-fx-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "design",
+    "ux",
+    "accessibility",
+    "design-system",
+    "ux-writing"
+  ]
 }

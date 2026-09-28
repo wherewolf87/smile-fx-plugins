@@ -1,3 +1,5 @@
+<!-- Modified by SMILE-FX P.A. in 2026: plugin and skill names rebranded for SMILE-FX Plugins. See MODIFICATIONS.md at the repository root. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
+
 # Discovery
 
 This file gives instructions on how to discover ways to connect to the named tool, in a specific order. Once a section turns up a match, stop — no need to go down the other paths. Most of the time something already exists, and finding it takes ten minutes against an hour of building.
@@ -11,7 +13,7 @@ This file gives instructions on how to discover ways to connect to the named too
 1. Call `ToolSearch` with the exact product name as the query, e.g. `ToolSearch({query: "ServiceTrade", max_results: 5})`.
 2. If that returns nothing relevant, retry once with the vendor's category instead of the brand name (e.g. `"field service management"`).
 
-`ToolSearch` only finds connectors already configured for this session — a miss here doesn't rule out a server existing that just hasn't been added yet. A hit may come back twice, as the owner's own entry and as the plugin's `small-business:<name>` registration; that is one connector: use whichever entry is authorized, the owner's if both (`../../../shared/connector-neutrality.md`, "One connector, two registrations").
+`ToolSearch` only finds connectors already configured for this session — a miss here doesn't rule out a server existing that just hasn't been added yet. A hit may come back twice, as the owner's own entry and as the plugin's `sfx-small-business:<name>` registration; that is one connector: use whichever entry is authorized, the owner's if both (`../../../shared/connector-neutrality.md`, "One connector, two registrations").
 
 **Secondary — search the MCP Registry.** If `ToolSearch` comes up empty, check whether an MCP server exists for this tool anywhere in the open ecosystem:
 

@@ -1,8 +1,19 @@
 {
-  "name": "pdf-viewer",
-  "version": "0.2.0",
-  "description": "View, annotate, and sign PDFs in a live interactive viewer. Mark up contracts, fill forms with visual feedback, stamp approvals, and place signatures — then download the annotated copy.",
+  "name": "sfx-pdf-viewer",
+  "displayName": "SMILE-FX PDF Viewer",
+  "version": "1.0.0",
+  "description": "Opens PDFs in an interactive viewer so you can read, annotate, fill forms and place signatures, then download the marked-up copy.",
   "author": {
-    "name": "Anthropic"
-  }
+    "name": "SMILE-FX",
+    "url": "https://smile-fx-ai.vercel.app"
+  },
+  "homepage": "https://smile-fx-ai.vercel.app/plugins",
+  "repository": "https://github.com/wherewolf87/smile-fx-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "pdf",
+    "annotation",
+    "forms",
+    "signatures"
+  ]
 }

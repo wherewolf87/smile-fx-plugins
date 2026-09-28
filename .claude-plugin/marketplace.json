@@ -1,0 +1,293 @@
+{
+  "name": "smile-fx-plugins",
+  "owner": {
+    "name": "SMILE-FX",
+    "url": "https://smile-fx-ai.vercel.app"
+  },
+  "description": "Sixteen plugins for practice and business owners: small business operations, marketing, sales, customer support, finance, HR, legal, data and more. Adapted from Anthropic's open-source knowledge-work-plugins under the Apache License 2.0.",
+  "version": "1.0.0",
+  "plugins": [
+    {
+      "name": "sfx-small-business",
+      "displayName": "SMILE-FX Small Business",
+      "description": "Runs the business side of a practice or small business: cash, bills, payroll prep, sales follow-up, marketing, reviews and hiring. Ask in plain words and it picks the right workflow. It asks before anything sends, posts or pays.",
+      "source": "./small-business",
+      "category": "business",
+      "tags": [
+        "small-business",
+        "operations",
+        "finance",
+        "marketing",
+        "hiring"
+      ],
+      "author": {
+        "name": "SMILE-FX",
+        "url": "https://smile-fx-ai.vercel.app"
+      },
+      "homepage": "https://smile-fx-ai.vercel.app/plugins"
+    },
+    {
+      "name": "sfx-marketing",
+      "displayName": "SMILE-FX Marketing",
+      "description": "Plans campaigns, drafts content, checks brand voice, audits SEO and reports on results across your marketing channels.",
+      "source": "./marketing",
+      "category": "marketing",
+      "tags": [
+        "marketing",
+        "content",
+        "seo",
+        "campaigns"
+      ],
+      "author": {
+        "name": "SMILE-FX",
+        "url": "https://smile-fx-ai.vercel.app"
+      },
+      "homepage": "https://smile-fx-ai.vercel.app/plugins"
+    },
+    {
+      "name": "sfx-sales",
+      "displayName": "SMILE-FX Sales",
+      "description": "Preps calls, summarizes meetings, drafts follow-ups, researches accounts and reviews your pipeline, using your CRM, email, calendar and call notes, or uploaded files. It updates records or sends email only when you ask.",
+      "source": "./sales",
+      "category": "sales",
+      "tags": [
+        "sales",
+        "crm",
+        "pipeline",
+        "outreach"
+      ],
+      "author": {
+        "name": "SMILE-FX",
+        "url": "https://smile-fx-ai.vercel.app"
+      },
+      "homepage": "https://smile-fx-ai.vercel.app/plugins"
+    },
+    {
+      "name": "sfx-customer-support",
+      "displayName": "SMILE-FX Customer Support",
+      "description": "Triages questions, drafts replies, packages escalations and turns resolved questions into help articles.",
+      "source": "./customer-support",
+      "category": "support",
+      "tags": [
+        "support",
+        "help-desk",
+        "knowledge-base"
+      ],
+      "author": {
+        "name": "SMILE-FX",
+        "url": "https://smile-fx-ai.vercel.app"
+      },
+      "homepage": "https://smile-fx-ai.vercel.app/plugins"
+    },
+    {
+      "name": "sfx-operations",
+      "displayName": "SMILE-FX Operations",
+      "description": "Documents processes, reviews vendors, plans capacity, tracks compliance tasks and writes status reports.",
+      "source": "./operations",
+      "category": "operations",
+      "tags": [
+        "operations",
+        "process",
+        "vendors",
+        "compliance"
+      ],
+      "author": {
+        "name": "SMILE-FX",
+        "url": "https://smile-fx-ai.vercel.app"
+      },
+      "homepage": "https://smile-fx-ai.vercel.app/plugins"
+    },
+    {
+      "name": "sfx-finance",
+      "displayName": "SMILE-FX Finance",
+      "description": "Prepares journal entries, reconciliations, financial statements and variance analysis, and supports month-end close and audit prep.",
+      "source": "./finance",
+      "category": "finance",
+      "tags": [
+        "finance",
+        "accounting",
+        "close",
+        "reporting"
+      ],
+      "author": {
+        "name": "SMILE-FX",
+        "url": "https://smile-fx-ai.vercel.app"
+      },
+      "homepage": "https://smile-fx-ai.vercel.app/plugins"
+    },
+    {
+      "name": "sfx-human-resources",
+      "displayName": "SMILE-FX Human Resources",
+      "description": "Supports recruiting, onboarding, performance reviews, compensation analysis and policy questions.",
+      "source": "./human-resources",
+      "category": "people",
+      "tags": [
+        "hr",
+        "hiring",
+        "onboarding",
+        "performance"
+      ],
+      "author": {
+        "name": "SMILE-FX",
+        "url": "https://smile-fx-ai.vercel.app"
+      },
+      "homepage": "https://smile-fx-ai.vercel.app/plugins"
+    },
+    {
+      "name": "sfx-productivity",
+      "displayName": "SMILE-FX Productivity",
+      "description": "Keeps a task list and a working memory of your people, projects and shorthand, and pulls new tasks from your calendar, email and chat.",
+      "source": "./productivity",
+      "category": "productivity",
+      "tags": [
+        "productivity",
+        "tasks",
+        "memory"
+      ],
+      "author": {
+        "name": "SMILE-FX",
+        "url": "https://smile-fx-ai.vercel.app"
+      },
+      "homepage": "https://smile-fx-ai.vercel.app/plugins"
+    },
+    {
+      "name": "sfx-legal",
+      "displayName": "SMILE-FX Legal",
+      "description": "Reviews contracts against your playbook, triages NDAs, checks compliance questions and drafts briefings for your counsel. It does not give legal advice.",
+      "source": "./legal",
+      "category": "legal",
+      "tags": [
+        "legal",
+        "contracts",
+        "nda",
+        "compliance"
+      ],
+      "author": {
+        "name": "SMILE-FX",
+        "url": "https://smile-fx-ai.vercel.app"
+      },
+      "homepage": "https://smile-fx-ai.vercel.app/plugins"
+    },
+    {
+      "name": "sfx-data",
+      "displayName": "SMILE-FX Data",
+      "description": "Writes SQL, explores data sets, runs statistics, builds charts and dashboards, and checks an analysis before you share it.",
+      "source": "./data",
+      "category": "data",
+      "tags": [
+        "data",
+        "sql",
+        "analytics",
+        "dashboards"
+      ],
+      "author": {
+        "name": "SMILE-FX",
+        "url": "https://smile-fx-ai.vercel.app"
+      },
+      "homepage": "https://smile-fx-ai.vercel.app/plugins"
+    },
+    {
+      "name": "sfx-design",
+      "displayName": "SMILE-FX Design",
+      "description": "Critiques designs, writes interface copy, reviews accessibility, synthesizes research and prepares developer handoff notes.",
+      "source": "./design",
+      "category": "design",
+      "tags": [
+        "design",
+        "ux",
+        "accessibility"
+      ],
+      "author": {
+        "name": "SMILE-FX",
+        "url": "https://smile-fx-ai.vercel.app"
+      },
+      "homepage": "https://smile-fx-ai.vercel.app/plugins"
+    },
+    {
+      "name": "sfx-enterprise-search",
+      "displayName": "SMILE-FX Enterprise Search",
+      "description": "Searches your email, chat, documents and wikis in one request, and writes digests of what changed.",
+      "source": "./enterprise-search",
+      "category": "knowledge",
+      "tags": [
+        "search",
+        "knowledge",
+        "digest"
+      ],
+      "author": {
+        "name": "SMILE-FX",
+        "url": "https://smile-fx-ai.vercel.app"
+      },
+      "homepage": "https://smile-fx-ai.vercel.app/plugins"
+    },
+    {
+      "name": "sfx-product-management",
+      "displayName": "SMILE-FX Product Management",
+      "description": "Writes specs, plans roadmaps and sprints, synthesizes research, reviews metrics and drafts stakeholder updates.",
+      "source": "./product-management",
+      "category": "product",
+      "tags": [
+        "product",
+        "roadmap",
+        "specs",
+        "research"
+      ],
+      "author": {
+        "name": "SMILE-FX",
+        "url": "https://smile-fx-ai.vercel.app"
+      },
+      "homepage": "https://smile-fx-ai.vercel.app/plugins"
+    },
+    {
+      "name": "sfx-pdf-viewer",
+      "displayName": "SMILE-FX PDF Viewer",
+      "description": "Opens PDFs in an interactive viewer so you can read, annotate, fill forms and place signatures, then download the marked-up copy.",
+      "source": "./pdf-viewer",
+      "category": "documents",
+      "tags": [
+        "pdf",
+        "forms",
+        "signatures"
+      ],
+      "author": {
+        "name": "SMILE-FX",
+        "url": "https://smile-fx-ai.vercel.app"
+      },
+      "homepage": "https://smile-fx-ai.vercel.app/plugins"
+    },
+    {
+      "name": "sfx-engineering",
+      "displayName": "SMILE-FX Engineering",
+      "description": "Supports standups, code review, debugging, architecture decisions, incident response and technical documentation.",
+      "source": "./engineering",
+      "category": "engineering",
+      "tags": [
+        "engineering",
+        "code-review",
+        "incidents",
+        "docs"
+      ],
+      "author": {
+        "name": "SMILE-FX",
+        "url": "https://smile-fx-ai.vercel.app"
+      },
+      "homepage": "https://smile-fx-ai.vercel.app/plugins"
+    },
+    {
+      "name": "sfx-plugin-builder",
+      "displayName": "SMILE-FX Plugin Builder",
+      "description": "Builds new plugins from scratch and customizes existing ones for your own tools, terms and workflows.",
+      "source": "./plugin-builder",
+      "category": "plugin-tools",
+      "tags": [
+        "plugins",
+        "customization"
+      ],
+      "author": {
+        "name": "SMILE-FX",
+        "url": "https://smile-fx-ai.vercel.app"
+      },
+      "homepage": "https://smile-fx-ai.vercel.app/plugins"
+    }
+  ]
+}

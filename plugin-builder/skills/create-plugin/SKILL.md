@@ -1,13 +1,14 @@
 ---
-name: create-cowork-plugin
+name: create-plugin
 description: >
   Guide users through creating a new plugin from scratch in a cowork session.
   Use when users want to create a plugin, build a plugin, make a new plugin, develop a plugin, scaffold a plugin, start a plugin from scratch, or design a plugin.
   This skill requires Cowork mode with access to the outputs directory for delivering the final .plugin file.
 compatibility: Requires Cowork desktop app environment with access to the outputs directory for delivering .plugin files.
 ---
+<!-- Modified by SMILE-FX P.A. in 2026: plugin and skill names rebranded for SMILE-FX Plugins. See MODIFICATIONS.md at the repository root. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
-# Create Cowork Plugin
+# Create Plugin
 
 Build a new plugin from scratch through guided conversation. Walk the user through discovery, planning, design, implementation, and packaging — delivering a ready-to-install `.plugin` file at the end.
 

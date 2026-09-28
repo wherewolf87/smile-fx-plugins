@@ -10,6 +10,7 @@ description: >
   started," "what can you do," "I'm new to this," or is in their first session.
 allowed-tools: Read, WebFetch
 ---
+<!-- Modified by SMILE-FX P.A. in 2026: plugin and skill names rebranded for SMILE-FX Plugins. See MODIFICATIONS.md at the repository root. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # SMB Onboard
 
@@ -30,7 +31,7 @@ User: "get me started"
 
 1. **Welcome and assess.** Greet the owner briefly, then follow this decision order exactly — same inputs, same path, every time:
    1. Check memory for a `## Business context` block **first**. If it exists, take the return-session path: show the existing profile, ask what's changed, update only the fields that changed, then go straight to the matched recipe or the cadence. Do not re-interview, and do not re-offer connector setup — if a useful connector is missing, mention the category in one line at most and move on. If the block predates the Country, Currency, and Financial year end fields, fill just those three (from the ledger if connected, otherwise one question) and nothing else.
-   2. Only if no context block exists: check which connectors are already active. This is a read-only inventory — **do not pull any business data during this step.** Count by product, not by registration: the owner's own `Trello` and the plugin's `small-business:trello` are one connected tool, and an unauthorized plugin copy beside a live owner copy is connected, not missing (`../../shared/connector-neutrality.md`, "One connector, two registrations"). Data pulls happen in step 3, after the owner has picked a direction, and nowhere earlier.
+   2. Only if no context block exists: check which connectors are already active. This is a read-only inventory — **do not pull any business data during this step.** Count by product, not by registration: the owner's own `Trello` and the plugin's `sfx-small-business:trello` are one connected tool, and an unauthorized plugin copy beside a live owner copy is connected, not missing (`../../shared/connector-neutrality.md`, "One connector, two registrations"). Data pulls happen in step 3, after the owner has picked a direction, and nowhere earlier.
 
 2. **Pick two tools.** Ask: *"What are your biggest day-to-day headaches — money, customers, scheduling, or getting organized?"* Map the answer to the two **categories** in [reference/onboard-checklist.md](reference/onboard-checklist.md), then ask what the owner already uses in each ("what do you use for bookkeeping?"). Connect what they name if we have the connector; offer `build-connector` if we don't; fall back to the recipe's zero-connector path if they'd rather not. Never recommend a vendor inside a category — the rule is `../../shared/connector-neutrality.md`. Guide connection one at a time — never ask the owner to configure two simultaneously.
 

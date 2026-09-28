@@ -1,3 +1,5 @@
+<!-- Modified by SMILE-FX P.A. in 2026: plugin and skill names rebranded for SMILE-FX Plugins. See MODIFICATIONS.md at the repository root. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
+
 # Connector Map
 
 Required and optional connectors per skill, plus each skill's zero-connector fallback. The router uses this to avoid recommending something that will partially fail, and to offer the fallback path instead.
@@ -8,7 +10,7 @@ Every skill works with zero connectors. "Required" below means required for the 
 
 **Call shapes.** Parameter shapes that connectors require and tool descriptions do not make obvious are collected in [`../../../shared/connector-call-shapes.md`](../../../shared/connector-call-shapes.md); a skill reads the row for a connector before its first call to it.
 
-**One product, possibly two entries.** The owner's own connector and the plugin's manifest registration of it (`small-business:<name>`) count as one; a gate opens if either is authorized (`../../../shared/connector-neutrality.md`, "One connector, two registrations").
+**One product, possibly two entries.** The owner's own connector and the plugin's manifest registration of it (`sfx-small-business:<name>`) count as one; a gate opens if either is authorized (`../../../shared/connector-neutrality.md`, "One connector, two registrations").
 
 **Gates are categories, not vendors.** Where a row says "a ledger," any of MYOB, NetSuite, QuickBooks, Xero, or Zoho Books opens the gate; "a payments connector" is any of PayPal, Square, or Stripe; "a CRM" is any of HubSpot, Monday.com, Salesforce, or Zoho CRM (Salesforce is owner-added as a custom connector, not in the manifest); "a storefront" is either of Shopify or Square (the connectors that hold orders and stock); "Mail" is either of Gmail or Microsoft 365; "a file store" is either of Google Drive or Microsoft 365 (Microsoft 365 is one connector covering both of those categories, and is owner-added as a custom connector, not in the manifest); and none ranks above another (`../../../shared/connector-neutrality.md`). Vendor lists are alphabetical. Capability limits that matter to a gate are in the footnotes under each table, stated as what the connector holds, not as a ranking.
 

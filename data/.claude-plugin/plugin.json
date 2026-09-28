@@ -1,8 +1,20 @@
 {
-  "name": "data",
-  "version": "1.1.0",
-  "description": "Write SQL, explore datasets, and generate insights faster. Build visualizations and dashboards, and turn raw data into clear stories for stakeholders.",
+  "name": "sfx-data",
+  "displayName": "SMILE-FX Data",
+  "version": "1.0.0",
+  "description": "Writes SQL, explores data sets, runs statistics, builds charts and dashboards, and checks an analysis before you share it.",
   "author": {
-    "name": "Anthropic"
-  }
+    "name": "SMILE-FX",
+    "url": "https://smile-fx-ai.vercel.app"
+  },
+  "homepage": "https://smile-fx-ai.vercel.app/plugins",
+  "repository": "https://github.com/wherewolf87/smile-fx-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "data",
+    "sql",
+    "analytics",
+    "visualization",
+    "dashboards"
+  ]
 }

@@ -1,3 +1,5 @@
+<!-- Modified by SMILE-FX P.A. in 2026: plugin and skill names rebranded for SMILE-FX Plugins. See MODIFICATIONS.md at the repository root. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
+
 # Xero — Reconciliation Reference
 
 Sibling of [quickbooks-reconcile.md](quickbooks-reconcile.md). Same close
@@ -155,7 +157,7 @@ The rule is `../../../shared/currency-and-locale.md`.
 
 ## Graceful degradation — Xero not connected or not authorised
 
-Take this path only when no Xero entry works. An unauthorized `small-business:xero`
+Take this path only when no Xero entry works. An unauthorized `sfx-small-business:xero`
 beside the owner's own live Xero is connected — call the owner's entry instead
 (`../../../shared/connector-neutrality.md`, "One connector, two registrations").
 

@@ -3,6 +3,7 @@ name: task-management
 description: Simple task management using a shared TASKS.md file. Reference this when the user asks about their tasks, wants to add/complete tasks, or needs help tracking commitments.
 user-invocable: false
 ---
+<!-- Modified by SMILE-FX P.A. in 2026: plugin and skill names rebranded for SMILE-FX Plugins. See MODIFICATIONS.md at the repository root. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # Task Management
 
@@ -21,7 +22,7 @@ A visual dashboard is available for managing tasks and memory. **On first intera
 
 1. Check if `dashboard.html` exists in the current working directory
 2. If not, copy it from `${CLAUDE_PLUGIN_ROOT}/skills/dashboard.html` to the current working directory
-3. Inform the user: "I've added the dashboard. Run `/productivity:start` to set up the full system."
+3. Inform the user: "I've added the dashboard. Run `/sfx-productivity:start` to set up the full system."
 
 The task board:
 - Reads and writes to the same `TASKS.md` file

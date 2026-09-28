@@ -1,3 +1,5 @@
+<!-- Modified by SMILE-FX P.A. in 2026: plugin and skill names rebranded for SMILE-FX Plugins. See MODIFICATIONS.md at the repository root. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
+
 # Data Sources
 
 Which connector answers which part of the pulse. Pull in one parallel batch.
@@ -72,7 +74,7 @@ with an expired login or authorization error, the appendix line should say "Mail
 connection needs to be re-authorized — reconnect it in Connectors and rerun," not "no
 email data." Name the fix, then continue the pulse without the email views. Before
 writing that line, check the error did not come from the plugin's own registration
-(`small-business:intuit-mailchimp`, the manifest key) while the owner's Mailchimp entry is live — if the owner's
+(`sfx-small-business:intuit-mailchimp`, the manifest key) while the owner's Mailchimp entry is live — if the owner's
 entry works, use it and say nothing about reconnecting
 (`../../../shared/connector-neutrality.md`, "One connector, two registrations").
 

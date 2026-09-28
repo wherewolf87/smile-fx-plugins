@@ -1,8 +1,19 @@
 {
-  "name": "product-management",
-  "version": "1.2.0",
-  "description": "Write feature specs, plan roadmaps, and synthesize user research faster. Keep stakeholders updated and stay ahead of the competitive landscape.",
+  "name": "sfx-product-management",
+  "displayName": "SMILE-FX Product Management",
+  "version": "1.0.0",
+  "description": "Writes specs, plans roadmaps and sprints, synthesizes research, reviews metrics and drafts stakeholder updates.",
   "author": {
-    "name": "Anthropic"
-  }
+    "name": "SMILE-FX",
+    "url": "https://smile-fx-ai.vercel.app"
+  },
+  "homepage": "https://smile-fx-ai.vercel.app/plugins",
+  "repository": "https://github.com/wherewolf87/smile-fx-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "product-management",
+    "roadmap",
+    "specs",
+    "user-research"
+  ]
 }

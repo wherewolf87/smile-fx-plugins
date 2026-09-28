@@ -1,3 +1,5 @@
+<!-- Modified by SMILE-FX P.A. in 2026: plugin and skill names rebranded for SMILE-FX Plugins. See MODIFICATIONS.md at the repository root. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
+
 # Onboard checklist
 
 ## The seven interview questions
@@ -80,7 +82,7 @@ Write this block to the Cowork session memory directory under the heading `## Bu
 - **Business:** <one-liner — industry, product/service>
 - **Size:** <number of people, including owner>
 - **Top headaches:** <headache 1> · <headache 2> · <headache 3>
-- **Connected tools:** <comma-separated list of active connectors, by product name — "Trello", never a registration name like "small-business:trello">
+- **Connected tools:** <comma-separated list of active connectors, by product name — "Trello", never a registration name like "sfx-small-business:trello">
 - **Country:** <ISO 3166 two-letter code, e.g. GB, AU, NZ, US, CA>
 - **Currency:** <ISO 4217 code the business invoices in, e.g. GBP, AUD, USD>
 - **Financial year end:** <day and month, e.g. 30 June, 31 March, 31 December>

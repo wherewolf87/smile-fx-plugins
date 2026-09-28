@@ -1,3 +1,5 @@
+<!-- Modified by SMILE-FX P.A. in 2026: plugin and skill names rebranded for SMILE-FX Plugins. See MODIFICATIONS.md at the repository root. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
+
 # Zoho Books — Reconciliation Reference
 
 Sibling of [quickbooks-reconcile.md](quickbooks-reconcile.md) and
@@ -150,7 +152,7 @@ rule is `../../../shared/currency-and-locale.md`.
 ## Graceful degradation — Zoho Books not connected
 
 Take this path only when no Zoho Books entry works. An unauthorized
-`small-business:zoho-books` beside the owner's own live Zoho Books is connected —
+`sfx-small-business:zoho-books` beside the owner's own live Zoho Books is connected —
 call the owner's entry instead (`../../../shared/connector-neutrality.md`, "One
 connector, two registrations").
 

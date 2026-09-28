@@ -1,8 +1,20 @@
 {
-  "name": "finance",
-  "version": "1.3.0",
-  "description": "Streamline finance and accounting workflows, from journal entries and reconciliation to financial statements and variance analysis. Speed up audit prep, month-end close, and keeping your books clean.",
+  "name": "sfx-finance",
+  "displayName": "SMILE-FX Finance",
+  "version": "1.0.0",
+  "description": "Prepares journal entries, reconciliations, financial statements and variance analysis, and supports month-end close and audit prep.",
   "author": {
-    "name": "Anthropic"
-  }
+    "name": "SMILE-FX",
+    "url": "https://smile-fx-ai.vercel.app"
+  },
+  "homepage": "https://smile-fx-ai.vercel.app/plugins",
+  "repository": "https://github.com/wherewolf87/smile-fx-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "finance",
+    "accounting",
+    "month-end-close",
+    "reconciliation",
+    "variance-analysis"
+  ]
 }

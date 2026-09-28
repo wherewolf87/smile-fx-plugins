@@ -2,6 +2,7 @@
 name: start
 description: Initialize the productivity system and open the dashboard. Use when setting up the plugin for the first time, bootstrapping working memory from your existing task list, or decoding the shorthand (nicknames, acronyms, project codenames) you use in your todos.
 ---
+<!-- Modified by SMILE-FX P.A. in 2026: plugin and skill names rebranded for SMILE-FX Plugins. See MODIFICATIONS.md at the repository root. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # Start Command
 
@@ -36,8 +37,8 @@ Do NOT use `open` or `xdg-open` — in Cowork, the agent runs in a VM and shell 
 If everything was already initialized:
 ```
 Dashboard open. Your tasks and memory are both loaded.
-- /productivity:update to sync tasks and check memory
-- /productivity:update --comprehensive for a deep scan of all activity
+- /sfx-productivity:update to sync tasks and check memory
+- /sfx-productivity:update --comprehensive for a deep scan of all activity
 ```
 
 If memory hasn't been bootstrapped yet, continue to step 5.
@@ -147,7 +148,7 @@ Productivity system ready:
 - Memory: X people, X terms, X projects
 - Dashboard: open in browser
 
-Use /productivity:update to keep things current (add --comprehensive for a deep scan).
+Use /sfx-productivity:update to keep things current (add --comprehensive for a deep scan).
 ```
 
 ## Notes

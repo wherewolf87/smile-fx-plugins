@@ -10,6 +10,7 @@ description: >
   open-ended business request that doesn't clearly match a single skill.
 allowed-tools: Read, WebFetch
 ---
+<!-- Modified by SMILE-FX P.A. in 2026: plugin and skill names rebranded for SMILE-FX Plugins. See MODIFICATIONS.md at the repository root. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # SMB Router
 
@@ -152,7 +153,7 @@ Alongside the chat answer, render the overview as a visual catalog — an HTML a
 
 ### Step 5 — Connector-aware routing
 
-Before recommending, check which connectors are active. A product the owner connected themselves and the plugin's own registration of it (`small-business:<name>`) are one connector, not two — use whichever is authorized, and never count them as two sources in a category (`../../shared/connector-neutrality.md`, "One connector, two registrations"). Three rules, in order:
+Before recommending, check which connectors are active. A product the owner connected themselves and the plugin's own registration of it (`sfx-small-business:<name>`) are one connector, not two — use whichever is authorized, and never count them as two sources in a category (`../../shared/connector-neutrality.md`, "One connector, two registrations"). Three rules, in order:
 
 **1. Prefer what is already connected.** When a skill can run on more than
 one MCP, the connected one wins — always. Never recommend connecting a new

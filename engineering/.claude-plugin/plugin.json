@@ -1,8 +1,20 @@
 {
-  "name": "engineering",
-  "version": "1.2.0",
-  "description": "Streamline engineering workflows — standups, code review, architecture decisions, incident response, and technical documentation. Works with your existing tools or standalone.",
+  "name": "sfx-engineering",
+  "displayName": "SMILE-FX Engineering",
+  "version": "1.0.0",
+  "description": "Supports standups, code review, debugging, architecture decisions, incident response and technical documentation.",
   "author": {
-    "name": "Anthropic"
-  }
+    "name": "SMILE-FX",
+    "url": "https://smile-fx-ai.vercel.app"
+  },
+  "homepage": "https://smile-fx-ai.vercel.app/plugins",
+  "repository": "https://github.com/wherewolf87/smile-fx-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "engineering",
+    "code-review",
+    "debugging",
+    "incident-response",
+    "documentation"
+  ]
 }
