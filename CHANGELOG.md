@@ -14,7 +14,7 @@ First SMILE-FX release, prepared from Anthropic's [knowledge-work-plugins](https
 - `cowork-plugin-management` is now `sfx-plugin-builder`; its skills are `create-plugin` and `customize-plugin`.
 - Every plugin version reset to 1.0.0. Upstream versions are recorded in [MODIFICATIONS.md](MODIFICATIONS.md).
 - New README for the repository and for each plugin, with skill and command lists counted from the files.
-- Long dashes in 54 skill and command descriptions replaced with commas or colons, to match the SMILE-FX writing style. No other wording changed. The files are listed in [MODIFICATIONS.md](MODIFICATIONS.md).
+- Long dashes in 54 skill and command descriptions and 2 argument hints replaced with commas or colons, to match the SMILE-FX writing style. No other wording changed. The files are listed in [MODIFICATIONS.md](MODIFICATIONS.md).
 - New CONNECTORS.md with setup notes for every connector. The Definite connector address is left blank because the upstream address returned HTTP 404 on September 27, 2026.
 - Apache-2.0 LICENSE in every plugin folder, plus NOTICE, MODIFICATIONS.md, SECURITY.md and CONTRIBUTING.md.
 - Not included from upstream: bio-research, the five partner-built plugins, the external marketplace entries and the upstream `.github` automation.

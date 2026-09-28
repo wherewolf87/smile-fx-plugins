@@ -175,7 +175,7 @@ This repository is one of three free resources from SMILE-FX®. The AI Operating
 
 ## Credits and licence
 
-SMILE-FX® Plugins adapts 16 plugins from Anthropic's open-source [knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) at commit `da38ec1` (September 24, 2026), under the Apache License 2.0. SMILE-FX P.A. renamed and rebranded them, rewrote the documentation and adjusted connector setup. Skill instructions are unchanged apart from renamed references and the punctuation of some skill descriptions (long dashes replaced with commas or colons).
+SMILE-FX® Plugins adapts 16 plugins from Anthropic's open-source [knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) at commit `da38ec1` (September 24, 2026), under the Apache License 2.0. SMILE-FX P.A. renamed and rebranded them, rewrote the documentation and adjusted connector setup. Skill instructions are unchanged apart from renamed references and the punctuation of some skill descriptions and argument hints (long dashes replaced with commas or colons).
 
 - Licence: [LICENSE](LICENSE) (Apache License 2.0, also in every plugin folder)
 - Attribution: [NOTICE](NOTICE)

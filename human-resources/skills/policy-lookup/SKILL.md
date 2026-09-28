@@ -1,8 +1,9 @@
 ---
 name: policy-lookup
 description: Find and explain company policies in plain language. Trigger with "what's our PTO policy", "can I work remotely from another country", "how do expenses work", or any plain-language question about benefits, travel, leave, or handbook rules.
-argument-hint: "<policy topic — PTO, benefits, travel, expenses, etc.>"
+argument-hint: "<policy topic: PTO, benefits, travel, expenses, etc.>"
 ---
+<!-- Modified by SMILE-FX P.A. in 2026 for SMILE-FX Plugins. MODIFICATIONS.md at the repository root lists what changed in this file. Original: https://github.com/anthropics/knowledge-work-plugins (Apache License 2.0). -->
 
 # /policy-lookup
 

@@ -145,6 +145,8 @@ All other files in this folder are unchanged from upstream.
 | `human-resources/CONNECTORS.md` | intro rewritten; category table corrected to match `.mcp.json` (placeholders unchanged); setup notes added for every connector |
 | `human-resources/README.md` | rewritten: SMILE-FX install steps, skill and command lists counted from the files, connector notes, health data note, credits |
 | `human-resources/skills/comp-analysis/SKILL.md` | front matter `description`: long dash replaced with a colon, no other wording changed; the value is now in quotes so the colon stays valid YAML; SMILE-FX modification notice added |
+| `human-resources/skills/people-report/SKILL.md` | front matter `argument-hint`: long dash replaced with a colon, no other wording changed; SMILE-FX modification notice added |
+| `human-resources/skills/policy-lookup/SKILL.md` | front matter `argument-hint`: long dash replaced with a colon, no other wording changed; SMILE-FX modification notice added |
 | `human-resources/LICENSE` | added (copy of the Apache License 2.0) |
 
 All other files in this folder are unchanged from upstream.
