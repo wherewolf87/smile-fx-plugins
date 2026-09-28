@@ -1,0 +1,13 @@
+SMILE-FX Plugins
+© 2026 SMILE-FX P.A. (SMILE-FX modifications and original files)
+
+Includes software adapted from Anthropic's knowledge-work-plugins (https://github.com/anthropics/knowledge-work-plugins), licensed under the Apache License 2.0. Modified by SMILE-FX P.A.
+
+Upstream snapshot: commit da38ec1ee89d41e5380e652a97382695003396e7 (September 24, 2026).
+Sixteen of its plugin folders are included. The changes are listed in MODIFICATIONS.md.
+The upstream files and the SMILE-FX modifications are distributed under the Apache License, Version 2.0. See LICENSE.
+
+SMILE-FX® is a registered trademark of SMILE-FX P.A. The logo files in assets/ are trademarks of SMILE-FX P.A.; they are not licensed under the Apache License and may not be reused without written permission.
+
+SMILE-FX P.A. is not affiliated with, sponsored by or endorsed by Anthropic. Anthropic, Claude, Claude Code and Cowork are trademarks of Anthropic and are named here only to describe compatibility.
+Names of connected services (for example HubSpot, Slack, Canva, Stripe) are trademarks of their owners and are used only to describe compatibility. Naming a product does not mean its maker endorses or sponsors SMILE-FX®.
